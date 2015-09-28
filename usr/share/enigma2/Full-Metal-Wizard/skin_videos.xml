@@ -217,7 +217,8 @@
 		<widget position="780,180" size="450,414" source="Service" render="Label" font="Regular;20" halign="left" backgroundColor="background" zPosition="1" >
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget position="1118,600" size="35,20" name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="on" />
+		<widget name="movie_sort" position="1118,600" size="35,20" pixmaps="icons/msels_az_31-1.png,icons/msels_31-1_az.png,icons/msels_shuffle.png,icons/msels_za_1-31.png,icons/msels_1-31_za.png,icons/msels_faz.png,icons/msels_fza.png,icons/msels_rec.png,icons/msels_az_1-31.png,icons/msels_za_31-1.png" zPosition="10" transparent="1" alphatest="on"/>
+		<widget position="1158,600" size="35,20" name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="on" />
 		<widget source="Service" render="Label" position="780,520" size="460,20" font="Regular;18" foregroundColor="grey" transparent="1" zPosition="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
@@ -229,6 +230,28 @@
 		</widget>
 		<widget backgroundColor="background" name="DescriptionBorder" position="0,0" size="0,0" />
 	</screen> 
+
+	<screen name="MovieSelectionSlim" position="center,center" size="560,550">
+		<widget name="waitingtext" position="0,0" size="560,375" font="Regular;21" halign="center" valign="center" transparent="0" foregroundColor="window-fg" backgroundColor="window-bg" zPosition="4" />
+		<widget name="list" position="0,0" size="560,375" zPosition="3" scrollbarMode="showOnDemand" foregroundColor="window-fg" backgroundColor="darkgrey" transparent="1" enableWrapAround="1" />
+		<widget source="Service" render="Label" position="0,377" size="380,25" zPosition="1" backgroundColor="black" font="Bold;22" noWrap="1" transparent="1" valign="top" foregroundColor="infobar_service_frgrnd">
+			<convert type="MovieInfo">RecordServiceName</convert>
+		</widget>
+		<widget source="Service" render="Label" position="380,377" zPosition="1" size="80,25" transparent="1" backgroundColor="black" font="Bold;22" halign="right" foregroundColor="infobar_service_frgrnd">
+			<convert type="ServiceTime">Duration</convert>
+			<convert type="ClockToText">AsLength</convert>
+		</widget>
+		<widget source="Service" render="Label" position="0,405" size="560,66" font="Regular;19" backgroundColor="black" foregroundColor="window-fg" valign="top" zPosition="1" transparent="1">
+			<convert type="MovieInfo">MetaDescription</convert>
+		</widget>
+		<widget name="freeDiskSpace" position="0,476" size="440,28" font="Regular;22" halign="left" transparent="1" foregroundColor="menu-title-frgrnd" backgroundColor="menu-time-bkgrnd" />
+		<widget name="movie_sort" position="485,480" size="35,20" pixmaps="icons/msels_az_31-1.png,icons/msels_31-1_az.png,icons/msels_shuffle.png,icons/msels_za_1-31.png,icons/msels_1-31_za.png,icons/msels_faz.png,icons/msels_fza.png,icons/msels_rec.png,icons/msels_az_1-31.png,icons/msels_za_31-1.png" zPosition="10" transparent="1" alphatest="on"/>
+		<widget name="movie_off" position="525,480" size="35,20" pixmaps="icons/msele_ask.png,icons/msele_movielist.png,icons/msele_quit.png,icons/msele_pause.png,icons/msele_playlist.png,icons/msele_playlistquit.png,icons/msele_loop.png,icons/msele_rep.png" zPosition="10" transparent="1" alphatest="on"/>
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<panel name="MenuBlue1Panel" />
+	</screen>
 
 <!-- Media Portal -->
 	<screen name="haupt_Screen" position="0,0" size="1280,720" flags="wfNoBorder">
