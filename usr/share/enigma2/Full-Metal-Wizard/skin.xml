@@ -552,7 +552,38 @@ self.autoResize()
 	<screen flags="wfNoBorder" name="HelpMenu" backgroundColor="un44000000" position="0,0" size="1280,720" title="Help">
 		<panel name="FullScreenWindow" />
 		<panel name="FullscreenHelpButtonPanel" />
-		<widget name="list" position="500,110" scrollbarMode="showOnDemand" size="660,450" transparent="1" zPosition="2"/>
+		<widget source="list" render="Listbox" position="500,110" scrollbarMode="showOnDemand" size="660,450" transparent="1" zPosition="2">
+			<convert type="TemplatedMultiContent">
+				{
+				  "templates": {
+				    # Template for simple string help items
+				    # Use data[1] = helpText and data[2] = ""  for non-indented text
+				    # and data[1] = "" and data[2] = helpText  for indented text (20 pixel indent)
+				    "default": [
+				      38,  # itemHeight
+				      [
+					MultiContentEntryText(pos=(0, 0), size=(640, 28), font=0, text=1),
+					MultiContentEntryText(pos=(20, 0), size=(620, 28), font=0, text=2),
+				      ],
+				    ],
+				    # Template for list/tuple help items
+				    # Use data[1:3] = helpTuple and data[3:5] = ["", ""] for non-indented text
+				    # and data[1:3] = ["", ""] and data[3:5] = helpTuple for indented text
+				    "extended": [
+				      50,  # itemHeight
+				      [
+					MultiContentEntryText(pos=(0, 0), size=(640, 26), font=0, text=1),
+					MultiContentEntryText(pos=(20, 0), size=(640, 26), font=0, text=2),
+					MultiContentEntryText(pos=(0, 28), size=(640, 20), color=0x00AAAAAA, color_sel=0x00AAAAAA, font=1, text=3),
+					MultiContentEntryText(pos=(20, 28), size=(640, 20), color=0x00AAAAAA, color_sel=0x00AAAAAA, font=1, text=4),
+				      ],
+				    ],
+				  },
+				  "fonts": [gFont("Regular", 24), gFont("Regular", 18)],
+				  "itemHeight": 38
+				}
+			</convert>
+		</widget>
 		<widget alphatest="on" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="250,110" size="154,500" zPosition="10"/>
 		<!--+ For the key indicator pixmaps, "position" is used for
 		    | the position of the pixmap "hotspot".
