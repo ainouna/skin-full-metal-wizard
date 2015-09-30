@@ -172,8 +172,7 @@
 	<include filename="Full-Metal-Wizard/skin_epg.xml"/>
 
 	<screen position="0,240" size="1280,670" backgroundColor="transparent2" flags="wfNoBorder" name="GeneralMenu">
-  <eLabel position="0,65" size="1280,415" backgroundColor="background" zPosition="-1" />
-
+		<eLabel position="0,65" size="1280,415" backgroundColor="background" zPosition="-1" />
 		<widget position="0,10" size="1280,100" source="id_mainmenu_ext" render="Micon" path="gmenu/" alphatest="on" zPosition="2" transparent="1" />
 		<widget position="0,120" size="1280,76" name="list" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
 		
