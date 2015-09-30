@@ -16,9 +16,48 @@
 	<screen name="GeneralSetup" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Setup" >
 		<panel name="SetupCommon" />
 		<ePixmap position="480, 120" size="410, 460" borderColor="blue" borderWidth="2" transparent="1" />
-		<widget name="list" position="485, 125" size="400, 450" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" />
+		<widget source="list" render="Listbox" position="485, 125" size="400, 450" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" >
+			# Eval is used to allow parameterisation of the
+			# template used in the old embedded template to be
+			# used in the same way here.
+			# Functions imported into Components.Converter.TemplatedMultiContent
+			# must also be forwarded into the eval().
+
+			# Data indexes:
+			# 1: item name
+			# 2: item end text
+			# 3: item short description
+			<convert type="TemplatedMultiContent">
+				eval("""{
+					  "template": [
+					    MultiContentEntryText(pos=(padding_width, 0), size=(width - scrollbar_width - 2 * padding_width - endtext_width, 32), text=1),
+					    MultiContentEntryText(pos=(width - scrollbar_width - padding_width - endtext_width, 0), size=(endtext_width, 32), text=2),
+					    MultiContentEntryText(pos=(padding_width, 32), size=(width - scrollbar_width - 2 * padding_width, 18), color=0x00AAAAAA, color_sel=0x00AAAAAA, font=1, text=3),
+					  ],
+					  "fonts": [gFont("Regular", 28), gFont("Regular", 14)],
+					  "itemHeight": 50
+					}""",
+					dict(width=400, endtext_width=20, scrollbar_width=10, padding_width=10,
+					     MultiContentEntryText=MultiContentEntryText, gFont=gFont)
+				)
+			</convert>
+		</widget>
 		<ePixmap position="900,120" size="330,460" borderColor="blue" borderWidth="2" transparent="1" />
-		<widget name="sublist" position="905,125" size="320,450" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget source="sublist" render="Listbox" position="905,125" size="320,450" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" >
+			<convert type="TemplatedMultiContent">
+				eval("""{
+					  "template": [
+					    MultiContentEntryText(pos=(padding_width, 0), size=(width - scrollbar_width - 2 * padding_width, 23), text=1),
+					    MultiContentEntryText(pos=(padding_width, 23), size=(width - scrollbar_width - 2 * padding_width, 17), color=0x00AAAAAA, color_sel=0x00AAAAAA, font=1, text=2),
+					  ],
+					  "fonts": [gFont("Regular", 20), gFont("Regular", 14)],
+					  "itemHeight": 45
+					}""",
+					dict(width=320, scrollbar_width=10, padding_width=10,
+					     MultiContentEntryText=MultiContentEntryText, gFont=gFont)
+				)
+			</convert>
+		</widget>
 	</screen>
 	<!-- Setup -->
 	<screen name="Setup" position="0,0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Setup">
