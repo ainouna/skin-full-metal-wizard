@@ -172,21 +172,8 @@
 	<include filename="Full-Metal-Wizard/skin_epg.xml"/>
 
 	<screen position="0,240" size="1280,670" backgroundColor="transparent2" flags="wfNoBorder" name="GeneralMenu">
-  <eLabel position="0,65" size="1280,415" backgroundColor="background" zPosition="-1" />
-  <widget name="frame" position="12,15" size="170,220" zPosition="1" alphatest="on" />
-
-		
-		<widget position="40,15" size="1200,25" name="title" font="Regular;22"  zPosition="2" transparent="1" foregroundColors="#555555,#999999" />
-
-		<widget position="22,10" size="150,150" source="id_mainmenu_plugins_tumb_ext_0" render="Micon" pixmap="Full-Metal-Wizard/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="200,10" size="150,150" source="id_mainmenu_plugins_tumb_ext_1" render="Micon" pixmap="Full-Metal-Wizard/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="378,10" size="150,150" source="id_mainmenu_plugins_tumb_ext_2" render="Micon" pixmap="Full-Metal-Wizard/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="556,10" size="150,150" source="id_mainmenu_plugins_tumb_ext_3" render="Micon" pixmap="Full-Metal-Wizard/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="734,10" size="150,150" source="id_mainmenu_plugins_tumb_ext_4" render="Micon" pixmap="Full-Metal-Wizard/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="912,10" size="150,150" source="id_mainmenu_plugins_tumb_ext_5" render="Micon" pixmap="Full-Metal-Wizard/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		<widget position="1090,10" size="150,150" source="id_mainmenu_plugins_tumb_ext_6" render="Micon" pixmap="Full-Metal-Wizard/gmenu/gmenu_plugin_bg.png" alphatest="on" zPosition="2" transparent="1" />
-		
-		<widget position="0,10" size="1280,100" source="id_mainmenu_ext" render="Micon" path="Full-Metal-Wizard/gmenu/" alphatest="on" zPosition="2" transparent="1" />
+		<eLabel position="0,65" size="1280,415" backgroundColor="background" zPosition="-1" />
+		<widget position="0,10" size="1280,100" source="id_mainmenu_ext" render="Micon" path="gmenu/" alphatest="on" zPosition="2" transparent="1" />
 		<widget position="0,120" size="1280,76" name="list" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
 		
 		<widget position="15,200" size="250,250" name="list_sub_0" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
@@ -195,17 +182,17 @@
 		<widget position="765,200" size="250,250" name="list_sub_3" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
 		<widget position="1015,200" size="250,250" name="list_sub_4" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
 		
-		<widget position="122,190" size="35,10" name="up_sub_0" pixmap="Full-Metal-Wizard/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="372,190" size="35,10" name="up_sub_1" pixmap="Full-Metal-Wizard/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="622,190" size="35,10" name="up_sub_2" pixmap="Full-Metal-Wizard/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="872,190" size="35,10" name="up_sub_3" pixmap="Full-Metal-Wizard/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="1122,190" size="35,10" name="up_sub_4" pixmap="Full-Metal-Wizard/gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="122,190" size="35,10" name="up_sub_0" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="372,190" size="35,10" name="up_sub_1" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="622,190" size="35,10" name="up_sub_2" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="872,190" size="35,10" name="up_sub_3" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="1122,190" size="35,10" name="up_sub_4" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
 		
-		<widget position="122,450" size="35,10" name="down_sub_0" pixmap="Full-Metal-Wizard/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="372,450" size="35,10" name="down_sub_1" pixmap="Full-Metal-Wizard/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="622,450" size="35,10" name="down_sub_2" pixmap="Full-Metal-Wizard/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="872,450" size="35,10" name="down_sub_3" pixmap="Full-Metal-Wizard/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="1122,450" size="35,10" name="down_sub_4" pixmap="Full-Metal-Wizard/gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="122,450" size="35,10" name="down_sub_0" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="372,450" size="35,10" name="down_sub_1" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="622,450" size="35,10" name="down_sub_2" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="872,450" size="35,10" name="down_sub_3" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="1122,450" size="35,10" name="down_sub_4" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
 	</screen>
 	
 	<!-- Generic Menu Screen -->
