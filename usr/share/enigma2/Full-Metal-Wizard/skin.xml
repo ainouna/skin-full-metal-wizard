@@ -453,8 +453,8 @@ self.autoResize()
 		<widget name="picture" pixmap="picon_default.png" position="0,0" size="100,60" alphatest="on" zPosition="1"/>
 	</screen>
 
-	<screen name="UnhandledKey" flags="wfNoBorder" position="620,30" size="100,100" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
-		<widget name="UnhandledKeyPixmap" pixmap="Full-Metal-Wizard/unhandled-key.png" position="0,0" size="100,100" alphatest="off"/>
+	<screen name="UnhandledKey" flags="wfNoBorder" position="605,30" size="70,70" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
+		<widget name="UnhandledKeyPixmap" pixmap="Full-Metal-Wizard/unhandled-key.png" position="0,0" size="70,70" alphatest="off"/>
 	</screen>
 
 	<!-- EventView -->
