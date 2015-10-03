@@ -918,12 +918,7 @@ self.autoResize()
 		<eLabel font="Regular;28" position="675,140" size="485,35" text="Time/Date Input" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="white" position="665,180" size="450,2" zPosition="2"/>
 		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_red.png" position="240,625" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_green.png" position="440,625" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_yellow.png" position="640,625" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_blue.png" position="840,625" size="200,60" zPosition="2"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="oktext" position="440,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<panel name="FullScreenColourPanel" />
 	</screen>
 
 	<screen name="SkinSelector" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Choose your Skin">
