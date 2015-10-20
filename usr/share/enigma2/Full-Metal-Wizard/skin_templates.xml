@@ -33,23 +33,23 @@
 
 	<screen name="RedPanel">
 		<ePixmap position="185,0" size="200,60" alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_red.png" zPosition="1" />
-		<widget position="185,0" size="200,36" name="key_red" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
-		<widget position="185,0" size="200,36" source="key_red" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" render="Label" transparent="1" zPosition="4" />
+		<widget position="185,0" size="200,36" name="key_red" borderWidth="1" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
+		<widget position="185,0" size="200,36" source="key_red" borderWidth="1" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" render="Label" transparent="1" zPosition="4" />
 	</screen>
 	<screen name="GreenPanel">
 		<ePixmap position="420,0" size="200,60" alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_green.png" zPosition="1" />
-		<widget position="420,0" size="200,36" name="key_green" backgroundColor="#1f771f" font="Regular;20" halign="center" valign="center" transparent="1" zPosition="3" />
-		<widget position="420,0" size="200,36" source="key_green" backgroundColor="#1f771f" font="Regular;20" halign="center" valign="center" render="Label" transparent="1" zPosition="4" />
+		<widget position="420,0" size="200,36" name="key_green" borderWidth="1" backgroundColor="#1f771f" font="Regular;20" halign="center" valign="center" transparent="1" zPosition="3" />
+		<widget position="420,0" size="200,36" source="key_green" borderWidth="1" backgroundColor="#1f771f" font="Regular;20" halign="center" valign="center" render="Label" transparent="1" zPosition="4" />
 	</screen>
 	<screen name="YellowPanel">
 		<ePixmap position="650,0" size="200,60" alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_yellow.png" zPosition="1" />
-		<widget position="650,0" size="200,36" name="key_yellow" backgroundColor="#a08500" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
-		<widget position="650,0" size="200,36" source="key_yellow" backgroundColor="#a08500" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="4" />
+		<widget position="650,0" size="200,36" name="key_yellow" borderWidth="1" backgroundColor="#a08500" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
+		<widget position="650,0" size="200,36" source="key_yellow" borderWidth="1" backgroundColor="#a08500" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="4" />
 	</screen>
 	<screen name="BluePanel">
 		<ePixmap position="885,0" size="200,60" alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_blue.png" zPosition="1" />
-		<widget position="885,0" size="200,36" name="key_blue" backgroundColor="#18188b" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
-		<widget position="885,0" size="200,36" source="key_blue" backgroundColor="#18188b" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="4" />
+		<widget position="885,0" size="200,36" name="key_blue" borderWidth="1" backgroundColor="#18188b" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
+		<widget position="885,0" size="200,36" source="key_blue" borderWidth="1" backgroundColor="#18188b" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="4" />
 	</screen>
 
 	<screen name="MenuButtonPanel">
