@@ -181,11 +181,11 @@
 		<widget position="872,110" size="35,10" name="up_sub_3" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
 		<widget position="1122,110" size="35,10" name="up_sub_4" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
 		
-		<widget position="15,120" size="250,300" name="list_sub_0" transparent="1" enableWrapAround="1"/>
-		<widget position="265,120" size="250,300" name="list_sub_1" transparent="1" enableWrapAround="1"/>
-		<widget position="515,120" size="250,300" name="list_sub_2" transparent="1" enableWrapAround="1"/>
-		<widget position="765,120" size="250,300" name="list_sub_3" transparent="1" enableWrapAround="1"/>
-		<widget position="1015,120" size="250,300" name="list_sub_4" transparent="1" enableWrapAround="1"/>
+		<widget position="15,120" size="250,300" name="list_sub_0" transparent="1" borderWidth="1" enableWrapAround="1"/>
+		<widget position="265,120" size="250,300" name="list_sub_1" transparent="1" borderWidth="1" enableWrapAround="1"/>
+		<widget position="515,120" size="250,300" name="list_sub_2" transparent="1" borderWidth="1" enableWrapAround="1"/>
+		<widget position="765,120" size="250,300" name="list_sub_3" transparent="1" borderWidth="1" enableWrapAround="1"/>
+		<widget position="1015,120" size="250,300" name="list_sub_4" transparent="1" borderWidth="1" enableWrapAround="1"/>
 		
 		<widget position="122,420" size="35,10" name="down_sub_0" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
 		<widget position="372,420" size="35,10" name="down_sub_1" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
