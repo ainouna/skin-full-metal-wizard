@@ -181,6 +181,15 @@
 		<widget position="872,110" size="35,10" name="up_sub_3" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
 		<widget position="1122,110" size="35,10" name="up_sub_4" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
 		
+		<!-- The sublist widgets can be skinned with:
+			selectedColor="#00ffffff"
+			enabledColor="#00999999"
+			offColor="#00555555"
+			font="Regular;22"
+			itemHeight="50"
+		      The values above are the defaults. The widget height
+		      should be 6 * itemHeight
+		-->
 		<widget position="15,120" size="250,300" name="list_sub_0" transparent="1" borderWidth="1" enableWrapAround="1"/>
 		<widget position="265,120" size="250,300" name="list_sub_1" transparent="1" borderWidth="1" enableWrapAround="1"/>
 		<widget position="515,120" size="250,300" name="list_sub_2" transparent="1" borderWidth="1" enableWrapAround="1"/>
@@ -452,8 +461,8 @@ self.autoResize()
 		<widget name="picture" pixmap="picon_default.png" position="0,0" size="100,60" alphatest="on" zPosition="1"/>
 	</screen>
 
-	<screen name="UnhandledKey" flags="wfNoBorder" position="620,30" size="100,100" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
-		<widget name="UnhandledKeyPixmap" pixmap="Full-Metal-Wizard/unhandled-key.png" position="0,0" size="100,100" alphatest="off"/>
+	<screen name="UnhandledKey" flags="wfNoBorder" position="605,30" size="70,70" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
+		<widget name="UnhandledKeyPixmap" pixmap="Full-Metal-Wizard/unhandled-key.png" position="0,0" size="70,70" alphatest="off"/>
 	</screen>
 
 	<!-- EventView -->
@@ -898,12 +907,7 @@ self.autoResize()
 		<eLabel font="Regular;28" position="675,140" size="485,35" text="Time/Date Input" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="white" position="665,180" size="450,2" zPosition="2"/>
 		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_red.png" position="240,625" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_green.png" position="440,625" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_yellow.png" position="640,625" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_blue.png" position="840,625" size="200,60" zPosition="2"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="canceltext" position="240,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="oktext" position="440,625" size="200,36" transparent="1" valign="center" zPosition="3"/>
+		<panel name="FullScreenColourPanel" />
 	</screen>
 
 	<screen name="SkinSelector" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Choose your Skin">
