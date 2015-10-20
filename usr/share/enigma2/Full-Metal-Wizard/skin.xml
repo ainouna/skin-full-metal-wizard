@@ -83,7 +83,7 @@
 		<font filename="md_khmurabi_10.ttf" name="LCD" scale="100"/>
 		<font filename="md_khmurabi_10.ttf" name="Regular" scale="100"/>
 		<font filename="md_khmurabi_10.ttf" name="Replacement" scale="100" replacement="1"/>
-		<font filename="md_khmurabi_10.ttf" name="Console" scale="100"/>
+		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
 		<font filename="md_khmurabi_10.ttf" name="Named" scale="100"/>
 		<alias name="Fixed" font="Console" size="20" height="25" />
 	</fonts>
