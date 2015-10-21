@@ -83,7 +83,7 @@
 		<font filename="md_khmurabi_10.ttf" name="LCD" scale="100"/>
 		<font filename="md_khmurabi_10.ttf" name="Regular" scale="100"/>
 		<font filename="md_khmurabi_10.ttf" name="Replacement" scale="100" replacement="1"/>
-		<font filename="md_khmurabi_10.ttf" name="Console" scale="100"/>
+		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
 		<font filename="md_khmurabi_10.ttf" name="Named" scale="100"/>
 		<alias name="Fixed" font="Console" size="20" height="25" />
 	</fonts>
@@ -171,20 +171,15 @@
 	<include filename="Full-Metal-Wizard/skin_videos.xml"/>
 	<include filename="Full-Metal-Wizard/skin_epg.xml"/>
 
-	<screen position="0,240" size="1280,670" backgroundColor="transparent2" flags="wfNoBorder" name="GeneralMenu">
+	<screen position="0,240" size="1280,480" backgroundColor="transparent2" flags="wfNoBorder" name="GeneralMenu">
 		<eLabel position="0,65" size="1280,415" backgroundColor="background" zPosition="-1" />
 		<widget position="0,10" size="1280,100" source="id_mainmenu_ext" render="Micon" path="gmenu/" alphatest="on" zPosition="2" transparent="1" />
-
-		<!-- The list widget can be skinned with:
-			selectedColor="#00ffffff"
-			enabledColor="#00dddddd"
-			offColor="#00777777"
-			font="Regular;23"
-			itemHeight="76"
-		      The values above are the defaults. The widget height
-		      needs to match the itemHeight,
-		-->
-		<widget position="0,120" size="1280,76" name="list" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
+		
+		<widget position="122,110" size="35,10" name="up_sub_0" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="372,110" size="35,10" name="up_sub_1" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="622,110" size="35,10" name="up_sub_2" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="872,110" size="35,10" name="up_sub_3" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
+		<widget position="1122,110" size="35,10" name="up_sub_4" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
 		
 		<!-- The sublist widgets can be skinned with:
 			selectedColor="#00ffffff"
@@ -193,25 +188,19 @@
 			font="Regular;22"
 			itemHeight="50"
 		      The values above are the defaults. The widget height
-		      should be 5 * itemHeight
+		      should be 6 * itemHeight
 		-->
-		<widget position="15,200" size="250,250" name="list_sub_0" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
-		<widget position="265,200" size="250,250" name="list_sub_1" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
-		<widget position="515,200" size="250,250" name="list_sub_2" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
-		<widget position="765,200" size="250,250" name="list_sub_3" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
-		<widget position="1015,200" size="250,250" name="list_sub_4" transparent="1"  backgroundColorSelected="#41000000" enableWrapAround="1"/>
+		<widget position="15,120" size="250,300" name="list_sub_0" transparent="1" borderWidth="1" enableWrapAround="1"/>
+		<widget position="265,120" size="250,300" name="list_sub_1" transparent="1" borderWidth="1" enableWrapAround="1"/>
+		<widget position="515,120" size="250,300" name="list_sub_2" transparent="1" borderWidth="1" enableWrapAround="1"/>
+		<widget position="765,120" size="250,300" name="list_sub_3" transparent="1" borderWidth="1" enableWrapAround="1"/>
+		<widget position="1015,120" size="250,300" name="list_sub_4" transparent="1" borderWidth="1" enableWrapAround="1"/>
 		
-		<widget position="122,190" size="35,10" name="up_sub_0" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="372,190" size="35,10" name="up_sub_1" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="622,190" size="35,10" name="up_sub_2" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="872,190" size="35,10" name="up_sub_3" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		<widget position="1122,190" size="35,10" name="up_sub_4" pixmap="gmenu/gmenu_up.png" alphatest="on" zPosition="2"/>
-		
-		<widget position="122,450" size="35,10" name="down_sub_0" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="372,450" size="35,10" name="down_sub_1" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="622,450" size="35,10" name="down_sub_2" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="872,450" size="35,10" name="down_sub_3" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
-		<widget position="1122,450" size="35,10" name="down_sub_4" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="122,420" size="35,10" name="down_sub_0" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="372,420" size="35,10" name="down_sub_1" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="622,420" size="35,10" name="down_sub_2" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="872,420" size="35,10" name="down_sub_3" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
+		<widget position="1122,420" size="35,10" name="down_sub_4" pixmap="gmenu/gmenu_down.png" alphatest="on" zPosition="2"/>
 	</screen>
 	
 	<!-- Generic Menu Screen -->
