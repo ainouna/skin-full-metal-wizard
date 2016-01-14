@@ -113,17 +113,22 @@
 		<widget position="880,20" size="388,25" source="session.CurrentService" render="Label" font="Regular;22" foregroundColor="#00FEE620" borderWidth="1" borderColor="#0015215b" transparent="1" valign="top" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>		
-		<widget position="25,40" size="65,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
+		<widget position="25,40" size="58,30" source="Event" render="Label" halign="right" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget position="120,40" size="760,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
+		<eLabel position="83,40" size="15,30" text="-" halign="right" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620" />
+		<widget position="98,40" size="58,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
+			<convert type="EventTime">EndTime</convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget position="180,40" size="680,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget position="25,75" size="825,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="#00ffffff" backgroundColor="#0015215b" transparent="1" valign="top">
+		<widget position="25,75" size="835,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="#00ffffff" backgroundColor="#0015215b" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget position="25,220" size="825,45" source="Title" render="Label" font="Regular;24" valign="bottom" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
+		<widget position="25,220" size="835,45" source="Title" render="Label" font="Regular;24" valign="bottom" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
 		<widget position="880,240" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
