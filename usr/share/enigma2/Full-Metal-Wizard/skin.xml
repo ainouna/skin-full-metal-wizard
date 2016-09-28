@@ -1600,4 +1600,8 @@ self.autoResize()
 		<widget name="restxt" position="10,25" size="280,20" font="Regular;18" transparent="1" />
 	</screen>
 
+	<screen name="QuitMainloopScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
+		<ePixmap pixmap="icons/input_info.png" position="c-27,c-60" size="53,53" alphatest="on" backgroundColor="black" />
+		<widget name="text" position="center,c+5" size="720,100" font="Regular;22" halign="center" backgroundColor="black" />
+	</screen>
 </skin>
