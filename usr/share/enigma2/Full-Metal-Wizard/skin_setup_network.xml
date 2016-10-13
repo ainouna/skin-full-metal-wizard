@@ -262,7 +262,7 @@
 	<screen name="AutoMountEdit" backgroundColor="un44000000" position="0,0" size="1280,720" flags="wfNoBorder" title="MountEdit">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenVKeyIconButtonPanel"/>		
+		<widget name="VKeyIcon" position="1110,635" size="50,35" pixmap="skin_default/buttons/key_text.png" zPosition="10" transparent="1" alphatest="on" />
 		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
@@ -293,7 +293,7 @@
 	<screen name="UserDialog" backgroundColor="un44000000" position="0,0" size="1280,720" title="User Dialog">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenVKeyIconButtonPanel"/>		
+		<widget name="VKeyIcon" position="1110,635" size="50,35" pixmap="skin_default/buttons/key_text.png" zPosition="10" transparent="1" alphatest="on" />
 		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
