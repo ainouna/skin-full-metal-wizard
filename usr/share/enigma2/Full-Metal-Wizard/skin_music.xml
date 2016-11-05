@@ -64,7 +64,7 @@
 		<widget name="station" position="240, 510" zPosition="1" size="950, 40" font="Regular;18" transparent="1" backgroundColor="black"/>
 		<widget name="console" position="240, 550" zPosition="1" size="950, 50" font="Regular;18" transparent="1" backgroundColor="black"/>
 		<widget name="cover" zPosition="2" position="127, 490" size="102,110" alphatest="blend"/>
-		<ePixmap position="75, 70" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on"/>
+		<ePixmap position="75, 70" zPosition="4" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IniSHOUTcast/shoutcast-logo1-fs8.png" transparent="1" alphatest="on"/>
 		<eLabel position="127, 148" size="1060, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="127, 479" size="1060, 2" backgroundColor="crypt_emm"/>
 	</screen>
