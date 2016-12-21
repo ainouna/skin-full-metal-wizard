@@ -89,7 +89,7 @@
 			EntryBackgroundColor="#0000022b" RecordBackgroundColor="#008a0000" ZapBackgroundColor="#00006f00"
 			EntryBackgroundColorSelected="#00d8c653" RecordBackgroundColorSelected="#00FF3737" ZapBackgroundColorSelected="#0055FF37"
 			EntryForegroundColor="white" RecordForegroundColor="white" ZapForegroundColor="white"
-			EntryForegroundColorSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" />
+			EntryForegroundColorSelected="black" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" />
 		<widget name="timeline_now" position="0,60" zPosition="3" size="20,600" pixmap="epg/timeline-now.png" alphatest="blend" />
 		<panel name="FullScreenLowColourPanel" />
 		<panel name="FullscreenLowMenuButtonPanel"/>
@@ -149,7 +149,7 @@
 			EntryBackgroundColor="#0000022b" RecordBackgroundColor="#008a0000" ZapBackgroundColor="#00006f00"
 			EntryBackgroundColorSelected="#00d8c653" RecordBackgroundColorSelected="#00FF3737" ZapBackgroundColorSelected="#0055FF37"
 			EntryForegroundColor="white" RecordForegroundColor="white" ZapForegroundColor="white"
-			EntryForegroundColorSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" />
+			EntryForegroundColorSelected="black" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" />
 		<widget position="0,300" size="20,370" name="timeline_now" zPosition="3" pixmap="epg/timeline-now-pig.png" alphatest="blend" />
 		<panel name="FullScreenLowColourPanel" />
 		<panel name="FullscreenLowMenuButtonPanel"/>
@@ -178,7 +178,7 @@
 		<widget position="0,69" size="2,4" name="timeline4" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
 		<widget position="0,69" size="2,4" name="timeline5" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
 		<widget name="bouquetlist" position="0,75" size="1280,85" itemHeight="42" backgroundColor="#0015215b" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="0,75" size="1280,85" backgroundColor="#0015215b" EntryForegroundColorSelected="#0015215b" RecordForegroundColorSelected="#0015215b" ZapForegroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
+		<widget name="list" position="0,75" size="1280,85" backgroundColor="#0015215b" EntryForegroundColorSelected="#0015215b" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="#0015215b" ZapForegroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
 		<widget name="timeline_now" position="0,72" zPosition="3" size="19,91" pixmap="epg/timeline-now-infobar.png" alphatest="blend" />
 		<panel name="FullscreenSmallRedPanel"/>
 		<panel name="FullscreenSmallGreenPanel"/>
