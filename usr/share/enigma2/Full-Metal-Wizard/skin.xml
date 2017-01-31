@@ -87,6 +87,9 @@
 		<font filename="md_khmurabi_10.ttf" name="Named" scale="100"/>
 		<alias name="Fixed" font="Console" size="20" height="25" />
 	</fonts>
+	<parameters>
+		<parameter name="AllowUserDatesAndTimes" value="1,1" />
+	</parameters>
 	<windowstyle type="skinned" id="0">
 		<title offset="20,8" font="Named;23"/>
 		<color name="Background" color="transpBlack"/>
