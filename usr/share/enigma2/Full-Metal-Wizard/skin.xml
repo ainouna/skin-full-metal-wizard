@@ -1543,7 +1543,7 @@ self.autoResize()
    <convert type="ClockToText">Default</convert>
   </widget>
   <widget source="global.CurrentTime" render="Label" position="1068, 595" size="140, 20" font="Named; 16" valign="top" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
-   <convert type="ClockToText">Format:%a %d %b %Y</convert>
+   <convert type="ClockToText">ShortFullDate</convert>
   </widget>
   <ePixmap position="234, 520" size="36, 36" pixmap="Full-Metal-Wizard/icons/icon_stop.png" alphatest="on" transparent="1"/>
  </screen>
