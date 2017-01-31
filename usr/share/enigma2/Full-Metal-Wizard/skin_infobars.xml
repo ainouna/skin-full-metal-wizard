@@ -57,12 +57,12 @@
 
 	<!-- Clock -->
 
-	<screen name="InfoBarClock" position="0,0" size="124,50" backgroundColor="transparent2" flags="wfNoBorder">
-		<widget position="0,0" size="124,28" source="global.CurrentTime" render="Label" font="Regular; 26" halign="center" foregroundColor="twhite" backgroundColor="transpBlack" transparent="1">
-			<convert type="ClockToText">Format:%H:%M:%S</convert>
+	<screen name="InfoBarClock" position="0,0" size="150,50" backgroundColor="transparent2" flags="wfNoBorder">
+		<widget position="0,0" size="150,28" source="global.CurrentTime" render="Label" font="Regular; 26" halign="center" foregroundColor="twhite" backgroundColor="transpBlack" transparent="1">
+			<convert type="ClockToText">WithSeconds</convert>
 		</widget>
-		<widget position="0,30" size="124,20" source="global.CurrentTime" render="Label" font="Regular; 17" halign="center" foregroundColor="titulos" backgroundColor="transpBlack" transparent="1">
-			<convert type="ClockToText">Format:%d %b %Y</convert>
+		<widget position="0,30" size="150,20" source="global.CurrentTime" render="Label" font="Regular; 17" halign="center" foregroundColor="titulos" backgroundColor="transpBlack" transparent="1">
+			<convert type="ClockToText">ShortFullDate</convert>
 		</widget>
 	</screen>
 
@@ -133,7 +133,7 @@
 		<!--	Body -->
 		<ePixmap position="0,17" size="1280,155" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
 		<!--	Separator between service num/picon and rest of bar -->
-		<ePixmap position="172,26" size="2,110" pixmap="Full-Metal-Wizard/navy_lineamed-fs8.png" />
+		<ePixmap position="180,26" size="2,110" pixmap="Full-Metal-Wizard/navy_lineamed-fs8.png" />
 
 		<!-- Bottom bar - service number, name & picon -->
 
@@ -148,7 +148,7 @@
 
 		<!-- Date/Time top left of bar -->
 
-		<panel position="38,26" size="164,50" >
+		<panel position="25,26" size="150,50" >
 			<panel name="InfoBarClock" />
 		</panel>
 
@@ -470,7 +470,7 @@
 		<ePixmap position="0,17" size="1280,100" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
 
 		<!-- Date/Time top left of bar -->
-		<panel position="38,32" size="164,50" >
+		<panel position="25,32" size="150,50" >
 			<panel name="InfoBarClock" />
 		</panel>
 
