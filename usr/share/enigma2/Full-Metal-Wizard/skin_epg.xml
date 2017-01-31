@@ -29,7 +29,7 @@
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="1160,10" size="100,28" font="Regular;26" foregroundColor="#00b3b3b3" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="1110,10" size="150,28" font="Regular;26" foregroundColor="#00b3b3b3" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="910,40" size="350,25" font="Regular;20" foregroundColor="#00b3b3b3" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
@@ -70,7 +70,7 @@
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Electronic Program Guide">
 		<widget position="25,0" size="825,30" source="Title" render="Label" font="Regular;25" valign="bottom" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
 		<widget position="900,0" size="330,30" source="global.CurrentTime" render="Label" font="Regular;20" valign="bottom" foregroundColor="#00FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
-			<convert type="ClockToText">Format:%a, %d %b %Y %H:%M</convert>
+			<convert type="ClockToText">LongFullDate</convert>
 		</widget>
 		<widget position="1230,31" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
@@ -114,16 +114,11 @@
 		<widget position="880,20" size="388,25" source="session.CurrentService" render="Label" font="Regular;22" foregroundColor="#00FEE620" borderWidth="1" borderColor="#0015215b" transparent="1" valign="top" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>		
-		<widget position="25,40" size="58,30" source="Event" render="Label" halign="right" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Format:%H:%M</convert>
+		<widget position="25,40" size="220,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
+			<convert type="EventTime">Times</convert>
+			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel position="83,40" size="15,30" text="-" halign="right" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620" />
-		<widget position="98,40" size="58,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
-			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-		<widget position="180,40" size="680,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
+		<widget position="250,40" size="610,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget position="25,75" size="835,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="#00ffffff" backgroundColor="#0015215b" transparent="1" valign="top">
@@ -135,7 +130,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget position="920,240" size="330,25" source="global.CurrentTime" render="Label" font="Regular;22" valign="bottom" foregroundColor="#00FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
-			<convert type="ClockToText">Format:%a, %d %b %Y %H:%M</convert>
+			<convert type="ClockToText">LongFullDate</convert>
 		</widget>
 		<widget position="20,75" size="830,217" name="bouquetlist" foregroundColorSelected="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
 		<widget position="0,270" size="1280,30" name="timeline_text" TimelineTicksOn="yes" TimelineTickAlignment="right" TimelineTextPadding="0" backgroundColor="#00010242" foregroundColor="#00FEE620" transparent="1" zPosition="1" />
