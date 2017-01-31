@@ -503,9 +503,22 @@ self.autoResize()
 
 	<screen name="EventViewSimple" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Eventview">
 		<panel name="FullScreenWindow" />
-		<widget name="datetime" position="430, 105" size="340,25" font="Named; 20" halign="center" backgroundColor="black" transparent="1" foregroundColor="white"/>
-		<widget name="duration" position="770, 105" size="340,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white"/>
+		<widget source="Event" render="Label" position="410, 105" size="400,25" backgroundColor="black" font="Named; 20" foregroundColor="white" halign="center" transparent="1">
+			<convert type="EventTime">Times</convert>
+			<convert type="ClockToText">LongFullDate,Default</convert>
+		</widget>
+		<widget source="Event" render="Label" position="810, 105" size="320,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
+		<widget position="750,20" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="-1">
+			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget name="FullDescription" position="90, 160" size="1040, 445" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
+		<widget name="datetime" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="epg_description" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="duration" position="0,0" size="0,0" font="Regular;20" transparent="1" />
 		<panel name="FullscreenMenuButtonPanel"/>
 		<panel name="FullscreenInfoButtonPanel" />
 	</screen>
