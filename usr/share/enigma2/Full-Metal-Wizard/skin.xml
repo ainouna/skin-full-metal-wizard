@@ -412,7 +412,7 @@
 		<eLabel backgroundColor="white" position="520,80" size="440,2" zPosition="2"/>
 		<widget enableWrapAround="1" name="list" position="520,95" scrollbarMode="showOnDemand" size="440,395" transparent="1" zPosition="2"/>
 		<widget backgroundColor="#41000000" font="Regular;28" foregroundColor="#3366cc" position="20,40" render="Label" size="460,26" source="global.CurrentTime" transparent="1" zPosition="1">
-			<convert type="ClockToText">Format:%H:%M %a %d %b %Y</convert>
+			<convert type="ClockToText">LongFullDate</convert>
 		</widget>
 	</screen>
 
