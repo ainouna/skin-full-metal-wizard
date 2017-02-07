@@ -87,6 +87,10 @@
 		<font filename="md_khmurabi_10.ttf" name="Named" scale="100"/>
 		<alias name="Fixed" font="Console" size="20" height="25" />
 	</fonts>
+	<parameters>
+		<parameter name="AllowUserDatesAndTimes" value="1,1" />
+		<parameter name="AllowUserDatesAndTimesDisplay" value="1" />
+	</parameters>
 	<windowstyle type="skinned" id="0">
 		<title offset="20,8" font="Named;23"/>
 		<color name="Background" color="transpBlack"/>
@@ -357,40 +361,39 @@
 		<widget source="session.CurrentService" render="Label" position="585, 80" size="625, 20" font="Named;18" halign="center" backgroundColor="black" foregroundColor="grey" transparent="1" zPosition="3">
 			<convert type="ServiceName">Provider</convert>
 		</widget>-->
-		<widget source="ServiceEvent" render="Label" position="50, 140" zPosition="1" size="526, 26" font="Named; 21" halign="center" foregroundColor="white" transparent="1" backgroundColor="black">
+		<widget source="ServiceEvent" render="Label" position="50, 140" zPosition="1" size="525, 26" font="Named; 21" halign="center" foregroundColor="white" transparent="1" backgroundColor="black">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="50, 211" zPosition="1" size="526, 25" font="Named; 21" halign="center" transparent="1" foregroundColor="white" backgroundColor="black">
+		<widget source="ServiceEvent" render="Label" position="50, 211" zPosition="1" size="525, 25" font="Named; 21" halign="center" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="50, 176" zPosition="1" size="70,22" font="Named; 19" halign="center" transparent="1" foregroundColor="white" backgroundColor="black">
+		<widget source="ServiceEvent" render="Label" position="50, 176" zPosition="1" size="80,22" font="Named; 19" halign="left" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">
-		</convert>
+			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="505, 176" zPosition="1" size="71, 22" font="Named; 19" halign="center" transparent="1" foregroundColor="white" backgroundColor="black">
+		<widget source="ServiceEvent" render="Label" position="495, 176" zPosition="1" size="80, 22" font="Named; 19" halign="right" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="EventTime">EndTime</convert>
-			<convert type="ClockToText"></convert>
+			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" position="137, 183" zPosition="1" pixmap="Full-Metal-Wizard/progress.png" size="350, 8" borderWidth="1" borderColor="uncccccc">
+		<widget source="ServiceEvent" render="Progress" position="135, 183" zPosition="1" pixmap="Full-Metal-Wizard/progress.png" size="355, 8" borderWidth="1" borderColor="uncccccc">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="50,246" size="80,24" backgroundColor="black" font="Named;20" foregroundColor="grey" transparent="1">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="130,246" size="446,24" backgroundColor="black" font="Named;18" foregroundColor="grey" halign="right" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="130,246" size="445,24" backgroundColor="black" font="Named;18" foregroundColor="grey" halign="right" transparent="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="50, 280" zPosition="1" size="526, 299" font="Regular; 20" transparent="1" backgroundColor="black" foregroundColor="grey">
+		<widget source="ServiceEvent" render="Label" position="50, 280" zPosition="1" size="525, 299" font="Regular; 20" transparent="1" backgroundColor="black" foregroundColor="grey">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 
 		<ePixmap position="50, 597" size="15, 10" pixmap="Full-Metal-Wizard/icons/icon_event.png" alphatest="on"/>
-		<widget position="70, 590" size="70, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey">
+		<widget position="70, 590" size="80, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey">
 			<convert type="EventTime">NextStartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget position="140, 590" size="436, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" noWrap="1" transparent="1" backgroundColor="black" foregroundColor="grey">
+		<widget position="155, 590" size="420, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" noWrap="1" transparent="1" backgroundColor="black" foregroundColor="grey">
 			<convert type="EventName">NextName</convert>
 		</widget>		
 	</screen>
@@ -410,7 +413,7 @@
 		<eLabel backgroundColor="white" position="520,80" size="440,2" zPosition="2"/>
 		<widget enableWrapAround="1" name="list" position="520,95" scrollbarMode="showOnDemand" size="440,395" transparent="1" zPosition="2"/>
 		<widget backgroundColor="#41000000" font="Regular;28" foregroundColor="#3366cc" position="20,40" render="Label" size="460,26" source="global.CurrentTime" transparent="1" zPosition="1">
-			<convert type="ClockToText">Format:%H:%M %a %d %b %Y</convert>
+			<convert type="ClockToText">LongFullDate</convert>
 		</widget>
 	</screen>
 
@@ -468,9 +471,19 @@ self.autoResize()
 	<!-- EventView -->
 	<screen name="EventView" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Eventview">
 		<panel name="FullScreenWindow" />
-		<widget name="channel" position="90, 105" size="340,25" font="Named; 20" backgroundColor="black" transparent="1" foregroundColor="white"/>
-		<widget name="datetime" position="430, 105" size="340,25" font="Named; 20" halign="center" backgroundColor="black" transparent="1" foregroundColor="white"/>
-		<widget name="duration" position="770, 105" size="340,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white"/>
+		<widget name="channel" position="90, 105" size="320,25" font="Named; 20" backgroundColor="black" transparent="1" foregroundColor="white"/>
+		<widget source="Event" render="Label" position="410, 105" size="400,25" backgroundColor="black" font="Named; 20" foregroundColor="white" halign="center" transparent="1">
+			<convert type="EventTime">Times</convert>
+			<convert type="ClockToText">LongFullDate,Default</convert>
+		</widget>
+		<widget source="Event" render="Label" position="810, 105" size="320,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
+		<widget position="750,20" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="-1">
+			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget name="epg_description" position="90, 160" size="1040, 416" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
 		<widget source="Event" render="Label" position="90,595" size="50,20" font="Regular;18" foregroundColor="white" transparent="1">
 			<convert type="EventName">SmallRating</convert>
@@ -481,6 +494,9 @@ self.autoResize()
 		<widget source="Event" render="Label" position="650,595" size="480,20" font="Regular;18" foregroundColor="white" halign="right" transparent="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
+		<widget name="FullDescription" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="datetime" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="duration" position="0,0" size="0,0" font="Regular;20" transparent="1" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel"/>
 		<panel name="FullscreenInfoButtonPanel" />
@@ -488,20 +504,47 @@ self.autoResize()
 
 	<screen name="EventViewSimple" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Eventview">
 		<panel name="FullScreenWindow" />
-		<widget name="datetime" position="430, 105" size="340,25" font="Named; 20" halign="center" backgroundColor="black" transparent="1" foregroundColor="white"/>
-		<widget name="duration" position="770, 105" size="340,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white"/>
+		<widget source="Event" render="Label" position="410, 105" size="400,25" backgroundColor="black" font="Named; 20" foregroundColor="white" halign="center" transparent="1">
+			<convert type="EventTime">Times</convert>
+			<convert type="ClockToText">LongFullDate,Default</convert>
+		</widget>
+		<widget source="Event" render="Label" position="810, 105" size="320,25" font="Named; 20" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
+		<widget position="750,20" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="-1">
+			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 		<widget name="FullDescription" position="90, 160" size="1040, 445" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
+		<widget name="datetime" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="epg_description" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="duration" position="0,0" size="0,0" font="Regular;20" transparent="1" />
 		<panel name="FullscreenMenuButtonPanel"/>
 		<panel name="FullscreenInfoButtonPanel" />
 	</screen>
 
-	<!--<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1">
+	<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1">
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
 		<widget source="Title" render="Label" position="20,10" size="850,43" font="Named;32" transparent="1" foregroundColor="#00b3b3b3" backgroundColor="#00151515" zPosition="1" />
-		<widget name="datetime" position="810,18" size="250,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="#12151515" transparent="1" noWrap="1" valign="top" halign="left" />
-		<widget name="duration" position="1060,18" size="150,26" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="#12151515" transparent="1" noWrap="1" valign="top" halign="left" />
+		<widget source="Event" render="Label" position="700,15" size="410,30" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="#12151515" transparent="1" noWrap="1" valign="top" halign="right">
+			<convert type="EventTime">Times</convert>
+			<convert type="ClockToText">Full,Default</convert>
+		</widget>
+		<widget source="Event" render="Label" position="1110,15" size="140,30" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="#12151515" transparent="1" noWrap="1" valign="top" halign="right">
+			<convert type="EventTime">Duration</convert>
+			<convert type="ClockToText">InMinutes</convert>
+		</widget>
 		<widget name="FullDescription" position="10,50" size="1260,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
-	</screen>-->
+		<widget name="datetime" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="duration" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="key_yellow" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="key_blue" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="key_green" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="epg_description" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="key_red" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+		<widget name="channel" position="0,0" size="0,0" font="Regular;20" transparent="1" />
+	</screen>
 
 	<screen name="EventViewContextMenu" position="center,center" size="560,250">
 		<widget name="menu"  render="Listbox" position="0,0" size="580,233" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1">
@@ -1515,7 +1558,7 @@ self.autoResize()
    <convert type="ClockToText">Default</convert>
   </widget>
   <widget source="global.CurrentTime" render="Label" position="1068, 595" size="140, 20" font="Named; 16" valign="top" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
-   <convert type="ClockToText">Format:%a %d %b %Y</convert>
+   <convert type="ClockToText">ShortFullDate</convert>
   </widget>
   <ePixmap position="234, 520" size="36, 36" pixmap="Full-Metal-Wizard/icons/icon_stop.png" alphatest="on" transparent="1"/>
  </screen>
