@@ -6,7 +6,7 @@
 	<screen name="FullScreenWindow">
 		<ePixmap position="50,36" size="14,14" pixmap="Full-Metal-Wizard/icons/clock.png" alphatest="on" zPosition="3" />
 		<widget position="75,30" size="375,25" source="global.CurrentTime" backgroundColor="black" font="Named;22" foregroundColor="white" halign="left" render="Label" transparent="1" zPosition="3">
-			<convert type="ClockToText">Format:%a %d %b %Y %H:%M</convert>
+			<convert type="ClockToText">LongFullDate</convert>
 		</widget>
 		<widget position="400,30" size="830,25" source="Title" backgroundColor="black" font="Named;22" foregroundColor="white" halign="right" render="Label" transparent="1" />
 		<eLabel position="50,65" size="1180,2" backgroundColor="darkgrey" zPosition="1" />
