@@ -89,7 +89,6 @@
 	</fonts>
 	<parameters>
 		<parameter name="AllowUserDatesAndTimes" value="1,1" />
-		<parameter name="AllowUserDatesAndTimesDisplay" value="1" />
 	</parameters>
 	<windowstyle type="skinned" id="0">
 		<title offset="20,8" font="Named;23"/>
