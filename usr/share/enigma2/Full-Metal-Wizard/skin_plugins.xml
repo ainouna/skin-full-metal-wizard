@@ -27,7 +27,7 @@
 		<panel name="FullScreenColourPanel" />
 		<ePixmap position="55,120" size="390,180" borderColor="grey" borderWidth="2" transparent="1"/>
 		<widget source="help" render="Label" position="60,125" size="380,170" font="Regular;18" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<panel name="SetupConfig" />
 	</screen>
 	<screen name="AutoTimerSettings" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Settings">
 		<panel name="FullScreenWindow" />
@@ -35,7 +35,7 @@
 		<eLabel position="910, 80" size="300, 22" font="Named; 20" backgroundColor="black" halign="right" transparent="1" text="Auto Timer Settings" foregroundColor="crypt_emm"/>
 		<ePixmap position="55,120" size="390,180" borderColor="grey" borderWidth="2" transparent="1"/>
 		<widget source="help" render="Label" position="60,125" size="380,170" font="Regular;18" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<panel name="SetupConfig" />
 	</screen>
 	<screen name="AutoTimerImporter" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Importer">
 		<panel name="FullScreenWindow" />
@@ -47,13 +47,13 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="55, 155" size="300,500" />
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<panel name="SetupConfig" />
 	</screen>
 	<screen name="AutoTimerServiceEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Service Editor">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="55, 155" size="300,500" />
-		<widget position="590, 145" size="610, 450" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<panel name="SetupConfig" />
 	</screen>
 
 	<!-- GMAIL PLUGIN -->
