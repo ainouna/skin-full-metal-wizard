@@ -1038,16 +1038,17 @@ self.autoResize()
 	</screen>
 
 	<screen flags="wfNoBorder" name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor">
-		<eLabel backgroundColor="grey" position="80,125" size="300,420" zPosition="1"/>
-		<eLabel backgroundColor="black" position="81,126" size="298,418" zPosition="2"/>
+		<eLabel backgroundColor="grey" position="40,125" size="390,420" zPosition="1"/>
+		<eLabel backgroundColor="black" position="41,126" size="388,418" zPosition="2"/>
 		<widget source="global.CurrentTime" render="Label" position="675, 40" size="500, 20" font="Named;18" halign="right" foregroundColor="white">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<widget position="90,135" render="Listbox" scrollbarMode="showOnDemand" size="280,400" source="cutlist" transparent="1" zPosition="3">
+		<widget position="50,135" render="Listbox" scrollbarMode="showOnDemand" size="370,400" source="cutlist" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 					    {"template": [
-					    MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
-					    MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
+					    MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(4)),
+					    MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(4)),
+					    MultiContentEntryText(pos=(280,2), size=(70, 20), text = 3, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(4))
 					    ],
 
 					    "fonts": [gFont("Regular", 20)],
@@ -1065,12 +1066,15 @@ self.autoResize()
 		</widget>
 		<widget name="SeekState" position="365,585" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>
 		<widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="position_arrow.png:3,5" position="479,587" size="696,20" zPosition="3"/>
-		<eLabel backgroundColor="black" font="Regular;20" position="110,630" size="140,22" text="OK = Menu" transparent="1" zPosition="1"/>
-		<ePixmap position="110, 582" size="48, 48" alphatest="blend" pixmap="icons/icon_rewind.png" zPosition="1"/>
-		<ePixmap position="158, 582" size="48, 48" alphatest="blend" pixmap="icons/icon_play.png"/>
-		<ePixmap position="206, 582" size="48, 48" alphatest="blend" pixmap="icons/icon_pause.png"/>
-		<ePixmap position="254, 582" size="48, 48" alphatest="blend" pixmap="icons/icon_forward.png"/>
-		<ePixmap position="302, 582" size="48, 48" alphatest="blend" pixmap="icons/icon_stop.png"/>
+		<ePixmap position="50, 550" size="35, 25" alphatest="on" pixmap="Full-Metal-Wizard/buttons/key_red.png"/>
+		<ePixmap position="50, 575" size="35, 25" alphatest="on" pixmap="Full-Metal-Wizard/buttons/key_green.png"/>
+		<ePixmap position="50, 600" size="35, 25" alphatest="on" pixmap="Full-Metal-Wizard/buttons/key_yellow.png"/>
+		<ePixmap position="50, 625" size="35, 25" alphatest="on" pixmap="Full-Metal-Wizard/buttons/key_blue.png"/>
+		<widget  position="90, 550" size="330,25" name="key_red"    backgroundColor="black" font="Regular;20" valign="center" transparent="1" zPosition="1"/>
+		<widget  position="90, 575" size="330,25" name="key_green"  backgroundColor="black" font="Regular;20" valign="center" transparent="1" zPosition="1"/>
+		<widget  position="90, 600" size="330,25" name="key_yellow" backgroundColor="black" font="Regular;20" valign="center" transparent="1" zPosition="1"/>
+		<widget  position="90, 625" size="330,25" name="key_blue"   backgroundColor="black" font="Regular;20" valign="center" transparent="1" zPosition="1"/>
+		<widget  position="90, 650" size="330,25" name="okbutton"   backgroundColor="black" font="Regular;20" valign="center" transparent="1" zPosition="1"/>
 		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
