@@ -24,7 +24,7 @@
 	  -->
 	<screen flags="wfNoBorder" name="CommonWizard" backgroundColor="background" position="0,0" size="1280,720" title="Welcome...">
 		<panel name="WizardTemplate"/>
-		<widget enableWrapAround="1" position="550,365" size="610,300" render="Listbox" source="list" transparent="1" zPosition="2">
+		<widget enableWrapAround="1" position="550,365" size="600,300" render="Listbox" source="list" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
