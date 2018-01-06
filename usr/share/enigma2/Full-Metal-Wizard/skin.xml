@@ -1074,11 +1074,11 @@ self.autoResize()
 	</screen>
 
 	<screen name="CutListMenu" position="center,center" size="510,485" backgroundColor="background" title="Cutlist editor - menu">
-		<widget source="menu" render="Listbox" position="0,0" size="485,440" backgroundColor="#41000000" scrollbarMode="showNever">
+		<widget source="menu" render="Listbox" position="0,0" size="485,465" backgroundColor="#41000000" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,0), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("Regular",28)],
-				"itemHeight": 40
+				"itemHeight": 38
 				}
 			</convert>
 		</widget>
