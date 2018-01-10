@@ -836,6 +836,11 @@ self.autoResize()
 		<widget position="62,32" size="333,20" name="Volume" pixmap="Full-Metal-Wizard/slider/slider_main.png" transparent="1" zPosition="9"/>
 	</screen>
 	
+	<!-- Video Resolution -->
+	<screen name="VideoResolution" position="center,center" size="300,60" title="Video Resolution">
+		<widget name="resolution" position="10,10" size="280,40" font="Regular;23" halign="left"/>
+	</screen>
+
 	<!-- Numberzap -->
 	<screen name="NumberZap" position="460,300" size="260,79" title="Channel">
 		<widget font="Regular;23" name="channel" position="35,15" size="110,25" valign="center"/>
