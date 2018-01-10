@@ -121,20 +121,22 @@
 		<ePixmap position="15,510" size="890,5" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GoogleNews/images/slider.png" alphatest="blend" transparent="1" backgroundColor="transparent"/>
 	</screen>
 	<!-- IMDB -->
-	<screen name="IMDB" flags="wfNoBorder" position="0,0" size="1280, 720" backgroundColor="un44000000" title="IMDb Details Plugin">
+	<screen name="IMDB" flags="wfNoBorder" position="0,0" size="1280,720" backgroundColor="un44000000" title="IMDb Details Plugin">
+		<panel name="FullScreenWindow"/>
+		<widget name="titellabel" position="235,75" size="820,30" font="Regular;25" transparent="1"/>
+		<widget name="starsbg" position="1020,75" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="2" alphatest="blend"/>
+		<widget name="stars" position="1020,75" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="3" transparent="1"/>
+		<widget name="ratinglabel" position="1020,96" size="210,24" font="Regular;20" halign="center" foregroundColor="unf0b400" transparent="1"/>
+		<widget name="poster" position="50,75" size="156,229" alphatest="blend"/>
+		<widget name="detailslabel" position="235,120" size="995,184" font="Regular;20" transparent="1"/>
+		<widget name="castlabel" position="50,315" size="1180,276" font="Regular;20" transparent="1"/>
+		<widget name="extralabel" position="50,110" size="1180,483" font="Regular;20" transparent="1"/>
+		<widget name="menu" position="50,170" size="1180,425" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="statusbar" position="50,603" size="1180,20" font="Regular;18" foregroundColor="uncccccc" transparent="1"/>
 		<panel name="FullScreenColourPanel" />
-		<widget name="titellabel" position="20, 10" size="744, 36" font="Regular;25" valign="center" transparent="1"/>
-		<widget name="starsbg" position="790,10" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="2" alphatest="blend"/>
-		<widget name="stars" position="790,10" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="3" transparent="1"/>
-		<widget name="ratinglabel" position="790,34" size="210,24" font="Regular;20" halign="center" foregroundColor="unf0b400" transparent="1"/>
-		<widget name="poster" position="30,60" size="110,180" alphatest="blend"/>
-		<widget name="detailslabel" position="170,60" size="650, 173" font="Regular;20" transparent="1"/>
-		<widget name="castlabel" position="20,245" size="1060, 235" font="Regular;20" transparent="1"/>
-		<widget name="extralabel" position="20,170" size="1060, 310" font="Regular;20" transparent="1"/>
-		<widget name="menu" position="20,170" size="1050,300" zPosition="3" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget name="statusbar" position="10,490" size="1080,20" font="Regular;18" foregroundColor="uncccccc" transparent="1"/>
-		<eLabel position="0,518" size="1100,2" backgroundColor="crypt_emm"/>
 		<panel name="FullscreenMenuButtonPanel"/>
+		<panel name="FullscreenInfoButtonPanel"/>
+		<panel name="FullscreenHelpButtonPanel"/>
 	</screen>
 	<!-- IP Channels -->
 	<screen name="ServerEditor" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" >
