@@ -1,20 +1,45 @@
 <skin>
+	<screen name="EPGSelectionInfoNoTitle">
+		<widget position="0,0" size="200,23" source="Event" render="Label" font="Regular;20" noWrap="1" transparent="1" backgroundColor="background">
+			<convert type="EventTime">Times</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget position="200,0" size="120,23" source="Event" render="Label" font="Regular;20" noWrap="1" transparent="1" foregroundColor="un53a9ff" backgroundColor="background">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<widget source="Event" render="Label" position="330,0" size="40,23" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="Event" render="Label" position="375,0" size="355,23" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+			<convert type="EventName">Rating</convert>
+		</widget>
+		<widget source="Event" render="Label" position="730,0" size="450,23" halign="right" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="Event" render="Label" position="0,23" size="1180,92" font="Regular;20" foregroundColor="grey" backgroundColor="background" transparent="1">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+	</screen>
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection">
 		<panel name="FullScreenWindow" />
 		<widget position="750,20" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="-1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="list" position="55, 73" size="1175, 425" transparent="1" scrollbarMode="showOnDemand"/>
-		<widget source="Event" render="Label" position="55, 515" size="1175, 104" font="Regular;18" foregroundColor="grey" backgroundColor="background" transparent="1">
-			<convert type="EventName">ExtendedDescription</convert>
-		</widget>
-		<widget name="number" position="157, 515" size="995, 104" font="Regular;22" backgroundColor="background" transparent="0" />
-		<eLabel position="50, 510" size="1180, 1" backgroundColor="crypt_emm"/>
+		<widget name="list" position="50, 73" size="1180, 425" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1"/>
+		<eLabel position="50, 501" size="1180, 1" backgroundColor="darkgrey"/>
+		<panel position="50,504" size="1180,115">
+			<panel name="EPGSelectionInfoNoTitle" />
+		</panel>
+		<widget name="number" conditional="number" position="50,504" size="1180,115" font="Regular;22" backgroundColor="background" transparent="0" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel"/>
 		<panel name="FullscreenInfoButtonPanel"/>
 		<panel name="FullscreenHelpButtonPanel"/>
+	</screen>
+	<screen name="EPGSearch" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Search">
+		<panel name="EPGSelection" />
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection Multi">
 		<widget position="0,0" size="1280,720" source="Event" render="Pixmap" pixmap="epg/multiepg.png" zPosition="-1">
