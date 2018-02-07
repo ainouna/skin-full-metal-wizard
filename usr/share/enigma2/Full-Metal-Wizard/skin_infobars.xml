@@ -195,7 +195,7 @@
 		<!-- Current event information -->
 
 		<!--	Start & end time -->
-		<widget source="session.Event_Now" render="Label" position="192,67" size="195,28" halign="left" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
+		<widget source="session.Event_Now" render="Label" position="192,67" size="198,28" halign="left" font="Regular; 21" backgroundColor="background" transparent="1" noWrap="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2" valign="center">
 			<convert type="EventTime">Times</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -220,7 +220,7 @@
 		<!-- Next event information -->
 
 		<!--	Start & end time -->
-		<widget source="session.Event_Next" render="Label" position="192,105" size="195,28" halign="left" font="Regular; 21" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Next" render="Label" position="192,105" size="198,28" halign="left" font="Regular; 21" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1" valign="top" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">Times</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
