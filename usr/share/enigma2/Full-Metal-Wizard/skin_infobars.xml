@@ -201,12 +201,12 @@
 		</widget>
 
 		<!--	Event name -->
-		<widget source="session.Event_Now" render="Label" position="390,60" size="500,36" halign="left" font="Regular; 30" backgroundColor="background" transparent="1" noWrap="1" foregroundColor="colorsel" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Now" render="Label" position="390,60" size="490,36" halign="left" font="Regular; 30" backgroundColor="background" transparent="1" noWrap="1" foregroundColor="colorsel" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventName">Name</convert>
 		</widget>
 
 		<!--	Event remaining time -->
-		<widget source="session.Event_Now" render="Label" position="890,67" size="100,28" halign="right" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget source="session.Event_Now" render="Label" position="880,67" size="110,28" halign="right" font="Regular; 21" backgroundColor="background" transparent="1" foregroundColor="un53a9ff" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>

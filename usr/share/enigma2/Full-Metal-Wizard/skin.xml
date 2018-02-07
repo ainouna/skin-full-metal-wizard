@@ -831,9 +831,9 @@ self.autoResize()
 	</screen>
 
 	<!-- Volume -->
-	<screen position="397,54" size="485,78" name="Volume" title="Volume" backgroundColor="#ff000000" flags="wfNoBorder" zPosition="8">
-		<ePixmap position="0,0" size="485,78" alphatest="blend" pixmap="Full-Metal-Wizard/general/volume_tx.png" />
-		<widget position="62,32" size="333,20" name="Volume" pixmap="Full-Metal-Wizard/slider/slider_main.png" transparent="1" zPosition="9"/>
+	<screen position="410,69" size="460,46" name="Volume" title="Volume" backgroundColor="#ff000000" flags="wfNoBorder" zPosition="8">
+		<ePixmap position="0,0" size="460,46" alphatest="blend" pixmap="Full-Metal-Wizard/general/volume_tx.png" />
+		<widget position="49,17" size="333,20" name="Volume" pixmap="Full-Metal-Wizard/slider/slider_main.png" transparent="1" zPosition="9"/>
 	</screen>
 	
 	<!-- Video Resolution -->
