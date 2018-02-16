@@ -21,6 +21,14 @@
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
+	<screen name="EPGSelectionInfoTitle">
+		<widget position="0,0" size="1180,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;25" noWrap="1" transparent="1" foregroundColor="#00FEE620">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<panel position="0,30" size="1180,115">
+			<panel name="EPGSelectionInfoNoTitle" />
+		</panel>
+	</screen>
 	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection">
 		<panel name="FullScreenWindow" />
 		<widget position="750,20" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="-1">
@@ -92,31 +100,42 @@
 		<panel name="FullscreenLowHelpButtonPanel"/>
 	</screen>
 
-	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Electronic Program Guide">
-		<widget position="25,0" size="825,30" source="Title" render="Label" font="Regular;25" valign="bottom" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
-		<widget position="900,0" size="330,30" source="global.CurrentTime" render="Label" font="Regular;20" valign="bottom" foregroundColor="#00FFFFFF" backgroundColor="#12151515" halign="right" transparent="1" zPosition="1">
-			<convert type="ClockToText">LongFullDate</convert>
+	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="#0015215b" flags="wfNoBorder" title="Electronic Program Guide">
+		<widget position="0,0" size="1280,720" source="Event" render="Pixmap" pixmap="epg/multiepg.png" zPosition="-1">
+			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,False</convert>
+			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget position="1230,31" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
+		<widget position="0,0" size="1280,720" source="Event" render="Pixmap" pixmap="epg/epg_icetv.png" zPosition="-1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget name="timeline_text" position="0,30" size="1280,30" backgroundColor="#00010242" foregroundColor="#00FEE620" TimelineTicksOn="yes" TimelineTickAlignment="right" TimelineTextPadding="0" transparent="1" zPosition="0" />
-		<widget position="0,52" size="2,7" name="timeline0" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
-		<widget position="0,52" size="2,7" name="timeline1" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
-		<widget position="0,52" size="2,7" name="timeline2" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
-		<widget position="0,52" size="2,7" name="timeline3" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
-		<widget position="0,52" size="2,7" name="timeline4" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
-		<widget position="0,52" size="2,7" name="timeline5" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
-		<widget name="bouquetlist" position="0,35" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
-		<widget name="list" position="0,65" size="1280,590" scrollbarMode="showNever" zPosition="1" transparent="1" backgroundColor="#0000022b" borderWidth="1" borderColor="#00444444"
+		<panel position="25,0" size="1180,145">
+			<panel name="EPGSelectionInfoTitle" />
+		</panel>
+		<widget position="25,145" size="825,30" source="Title" render="Label" font="Regular;25" valign="bottom" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="background" zPosition="1" />
+		<widget position="900,145" size="330,30" source="global.CurrentTime" render="Label" font="Regular;20" valign="bottom" foregroundColor="#00FFFFFF" backgroundColor="background" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">LongFullDate</convert>
+		</widget>
+		<widget position="1230,176" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
+			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="timeline_text" position="0,175" size="1280,30" backgroundColor="background" foregroundColor="#00FEE620" TimelineTicksOn="yes" TimelineTickAlignment="right" TimelineTextPadding="0" transparent="1" zPosition="0" />
+		<widget position="0,197" size="2,7" name="timeline0" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,197" size="2,7" name="timeline1" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,197" size="2,7" name="timeline2" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,197" size="2,7" name="timeline3" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,197" size="2,7" name="timeline4" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget position="0,197" size="2,7" name="timeline5" zPosition="3" pixmap="epg/timeline-tick.png" alphatest="blend" />
+		<widget name="bouquetlist" position="0,210" size="1280,590" foregroundColorSelected="black" scrollbarMode="showNever" zPosition="4" transparent="0" />
+		<widget name="list" position="0,210" size="1280,445" scrollbarMode="showNever" zPosition="1" transparent="1" backgroundColor="#0000022b" borderWidth="1" borderColor="#00444444"
 			ServiceBackgroundColor="#0000022b" ServiceBackgroundColorNow="#0000056f" ServiceForegroundColor="white" ServiceForegroundColorNow="white"
 			EntryBackgroundColor="#0000022b" RecordBackgroundColor="#008a0000" ZapBackgroundColor="#00006f00"
 			EntryBackgroundColorSelected="#00d69600" RecordBackgroundColorSelected="#00FF3737" ZapBackgroundColorSelected="#0055FF37"
 			EntryBackgroundColorNowSelected="#00d69600" EntryBackgroundColorNow="#0000056f"
 			EntryForegroundColor="white" RecordForegroundColor="white" ZapForegroundColor="white"
 			EntryForegroundColorSelected="black" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="white" ZapForegroundColorSelected="white" />
-		<widget name="timeline_now" position="0,60" zPosition="3" size="20,600" pixmap="epg/timeline-now.png" alphatest="blend" />
+		<widget name="timeline_now" position="0,205" zPosition="3" size="20,455" pixmap="epg/timeline-now.png" alphatest="blend" />
 		<panel name="FullScreenLowColourPanel" />
 		<panel name="FullscreenLowMenuButtonPanel"/>
 		<panel name="FullscreenLowInfoButtonPanel"/>
