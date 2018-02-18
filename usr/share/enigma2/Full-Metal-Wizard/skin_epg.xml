@@ -78,7 +78,7 @@
 		<widget source="session.CurrentService" render="Label" position="697,82" size="570,25" font="Regular;22" foregroundColor="#00b1762b" borderWidth="2" backgroundColor="#ff000000" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget name="bouquetlist" position="20,130" size="660,540" foregroundColor="#00FEE620" backgroundColor="#0315215b" foregroundColorSelected="#00000000" backgroundColorSelected="#00acacac" borderColor="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
+		<widget name="bouquetlist" position="20,130" size="660,530" foregroundColor="#00FEE620" backgroundColor="#0315215b" foregroundColorSelected="#00000000" backgroundColorSelected="#00acacac" borderColor="#0015215b" scrollbarMode="showNever" zPosition="4" transparent="1" />
 		<widget name="list" position="20,130" size="660,540" selectionPixmap="buttons/FocusBar_H36x660.png" zPosition="3" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
 		<widget name="now_button" pixmap="epg/now_next_more.png" position="30,85" zPosition="1" size="152,34" alphatest="on" />
 		<widget name="next_button" pixmap="epg/now_next_more.png" position="186,85" zPosition="1" size="152,34" alphatest="on" />
@@ -90,8 +90,25 @@
 		<widget name="next_text" position="207,85" zPosition="2" size="120,34" text="NEXT" font="Regular;20" halign="center" valign="center" foregroundColor="#00FEE620" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="more_text" position="361,85" zPosition="2" size="120,34" text="MORE" font="Regular;20" halign="center" valign="center" foregroundColor="#00FEE620" backgroundColor="#005c5c5c" transparent="1" />
 		<widget name="date" position="500,93" size="180,35" font="Regular;18" backgroundColor="#0015215b" valign="center" halign="left" transparent="1" />
-		<widget source="Event" render="Label" position="695,410" size="575,250" font="Regular;22" backgroundColor="#0015215b" foregroundColor="#00FEE620" transparent="1" valign="top" zPosition="2">
+		<widget position="695,410" size="200,23" source="Event" render="Label" font="Regular;20" noWrap="1" transparent="1" backgroundColor="background">
+			<convert type="EventTime">Times</convert>
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget position="895,410" size="120,23" source="Event" render="Label" font="Regular;20" noWrap="1" transparent="1" foregroundColor="un53a9ff" backgroundColor="background">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
+		</widget>
+		<widget source="Event" render="Label" position="695,433" size="575,161" font="Regular;20" foregroundColor="grey" transparent="1" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget source="Event" render="Label" position="695,600" size="410,23" font="Regular;20" foregroundColor="grey" transparent="1" zPosition="1">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="Event" render="Label" position="695,630" size="40,23" font="Regular;20" foregroundColor="grey" transparent="1" zPosition="1">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="Event" render="Label" position="740,630" size="365,23" font="Regular;20" foregroundColor="grey" transparent="1" zPosition="1">
+			<convert type="EventName">Rating</convert>
 		</widget>
 		<panel name="FullScreenLowColourPanel" />
 		<panel name="FullscreenLowMenuButtonPanel"/>
@@ -158,17 +175,27 @@
 		<widget position="880,20" size="388,25" source="session.CurrentService" render="Label" font="Regular;22" foregroundColor="#00FEE620" borderWidth="1" borderColor="#0015215b" transparent="1" valign="top" halign="center" noWrap="1" zPosition="5" >
 			<convert type="ServiceName">Name</convert>
 		</widget>		
-		<widget position="25,40" size="220,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
+		<widget position="25,40" size="610,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;25" noWrap="1" transparent="1" foregroundColor="#00FEE620">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget position="25,77" size="200,23" source="Event" render="Label" font="Regular;20" noWrap="1" transparent="1" backgroundColor="background">
 			<convert type="EventTime">Times</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget position="250,40" size="610,30" source="Event" render="Label" halign="left" backgroundColor="#0015215b" font="Regular;24" noWrap="1" transparent="1" foregroundColor="#00FEE620">
-			<convert type="EventName">Name</convert>
+		<widget position="225,77" size="120,23" source="Event" render="Label" font="Regular;20" noWrap="1" transparent="1" foregroundColor="un53a9ff" backgroundColor="background">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget position="25,75" size="835,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="#00ffffff" backgroundColor="#0015215b" transparent="1" valign="top">
+		<widget source="Event" render="Label" position="355,77" size="40,23" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+			<convert type="EventName">SmallRating</convert>
+		</widget>
+		<widget source="Event" render="Label" position="400,77" size="470,23" halign="right" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget position="25,105" size="845,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget position="25,220" size="835,45" source="Title" render="Label" font="Regular;24" valign="bottom" transparent="1" foregroundColor="#00FFFFFF" backgroundColor="#00151515" zPosition="1" />
+		<widget position="25,235" size="835,30" source="Title" render="Label" font="Regular;24" valign="bottom" transparent="1" foregroundColor="white" backgroundColor="background" zPosition="1" />
 		<widget position="880,240" size="40,18" source="Event" render="Pixmap" pixmap="epg/icetv_40x18.png" alphatest="blend" zPosition="1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
 			<convert type="ConditionalShowHide" />
