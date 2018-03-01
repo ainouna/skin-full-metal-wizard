@@ -523,18 +523,10 @@ self.autoResize()
 		<panel name="FullscreenInfoButtonPanel" />
 	</screen>
 
-	<screen name="InfoBarEventView" position="0,0" size="1280,250" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1">
-		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
-		<widget source="Title" render="Label" position="20,10" size="850,43" font="Named;32" transparent="1" foregroundColor="#00b3b3b3" backgroundColor="#00151515" zPosition="1" />
-		<widget source="Event" render="Label" position="700,15" size="410,30" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="#12151515" transparent="1" noWrap="1" valign="top" halign="right">
-			<convert type="EventTime">Times</convert>
-			<convert type="ClockToText">Full,Default</convert>
-		</widget>
-		<widget source="Event" render="Label" position="1110,15" size="140,30" font="Regular;26" foregroundColor="infobar-frgrnd" backgroundColor="#12151515" transparent="1" noWrap="1" valign="top" halign="right">
-			<convert type="EventTime">Duration</convert>
-			<convert type="ClockToText">InMinutes</convert>
-		</widget>
-		<widget name="FullDescription" position="10,50" size="1260,140" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
+	<screen name="InfoBarEventView" position="0,0" size="1280,160" backgroundColor="infobar_sunken" flags="wfNoBorder" zPosition="1">
+		<panel position="50,10" size="1180,145">
+			<panel name="EPGSelectionInfoTitle" />
+		</panel>
 		<widget name="datetime" position="0,0" size="0,0" font="Regular;20" transparent="1" />
 		<widget name="duration" position="0,0" size="0,0" font="Regular;20" transparent="1" />
 		<widget name="key_yellow" position="0,0" size="0,0" font="Regular;20" transparent="1" />
@@ -831,9 +823,9 @@ self.autoResize()
 	</screen>
 
 	<!-- Volume -->
-	<screen position="410,69" size="460,46" name="Volume" title="Volume" backgroundColor="#ff000000" flags="wfNoBorder" zPosition="8">
-		<ePixmap position="0,0" size="460,46" alphatest="blend" pixmap="Full-Metal-Wizard/general/volume_tx.png" />
-		<widget position="49,17" size="333,20" name="Volume" pixmap="Full-Metal-Wizard/slider/slider_main.png" transparent="1" zPosition="9"/>
+	<screen position="397,54" size="485,78" name="Volume" title="Volume" backgroundColor="#ff000000" flags="wfNoBorder" zPosition="8">
+		<ePixmap position="0,0" size="485,78" alphatest="blend" pixmap="Full-Metal-Wizard/general/volume_tx.png" />
+		<widget position="62,32" size="333,20" name="Volume" pixmap="Full-Metal-Wizard/slider/slider_main.png" transparent="1" zPosition="9"/>
 	</screen>
 	
 	<!-- Video Resolution -->
