@@ -413,15 +413,19 @@
 		</widget>
 
 		<!-- Event extended description -->
-		<widget position="20,112" size="560,306" source="session.Event_Now" render="Label" font="Regular; 19" valign="top" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget position="20,110" size="560,286" source="session.Event_Now" render="Label" font="Regular; 19" valign="top" backgroundColor="background" transparent="1" foregroundColor="foreground" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<!-- Event Rating and Genre Area -->
-		<widget source="session.Event_Now" render="Label" position="20,428" size="80,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" transparent="1">
-			<convert type="EventName">SmallRating</convert>
-		</widget>
-		<widget source="session.Event_Now" render="Label" position="110,428" size="470,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" halign="right" transparent="1">
+		<!-- Genre and Event Rating Area -->
+		<widget source="session.Event_Now" render="Label" position="20,402" size="560,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" transparent="1">
 			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Pixmap" position="20,427" size="40,20" alphatest="blend">
+			<convert type="EventName">RatingIcon</convert>
+			<convert type="ValueToPixmap">Path</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="65,428" size="515,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" transparent="1">
+			<convert type="EventName">Rating</convert>
 		</widget>
 	</screen>
 
@@ -451,15 +455,19 @@
 		</widget>
 
 		<!-- Event extended description -->
-		<widget position="20,112" size="500,306" source="session.Event_Next" render="Label" font="Regular; 18" valign="top" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
+		<widget position="20,110" size="500,273" source="session.Event_Next" render="Label" font="Regular; 18" valign="top" backgroundColor="background" transparent="1" foregroundColor="grey" shadowColor="#000000" shadowOffset="-2,-2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<!-- Event Rating and Genre Area -->
-		<widget source="session.Event_Next" render="Label" position="20,428" size="80,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" transparent="1">
-			<convert type="EventName">SmallRating</convert>
-		</widget>
-		<widget source="session.Event_Next" render="Label" position="110,428" size="410,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" halign="right" transparent="1">
+		<!-- Genre and Event Rating Area -->
+		<widget source="session.Event_Next" render="Label" position="20,402" size="500,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" transparent="1">
 			<convert type="EventName">Genre</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Pixmap" position="20,427" size="40,20" alphatest="blend">
+			<convert type="EventName">RatingIcon</convert>
+			<convert type="ValueToPixmap">Path</convert>
+		</widget>
+		<widget source="session.Event_Next" render="Label" position="65,428" size="455,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" transparent="1">
+			<convert type="EventName">Rating</convert>
 		</widget>
 	</screen>
 
