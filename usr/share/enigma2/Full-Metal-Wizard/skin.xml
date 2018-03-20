@@ -377,13 +377,17 @@
 		<widget source="ServiceEvent" render="Progress" position="135, 183" zPosition="1" pixmap="Full-Metal-Wizard/progress.png" size="355, 8" borderWidth="1" borderColor="uncccccc">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="50,246" size="80,24" backgroundColor="black" font="Named;20" foregroundColor="grey" transparent="1">
-			<convert type="EventName">SmallRating</convert>
-		</widget>
-		<widget source="ServiceEvent" render="Label" position="130,246" size="445,24" backgroundColor="black" font="Named;18" foregroundColor="grey" halign="right" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="50,246" size="525,23" backgroundColor="black" font="Named;20" foregroundColor="grey" transparent="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="50, 280" zPosition="1" size="525, 299" font="Regular; 20" transparent="1" backgroundColor="black" foregroundColor="grey">
+		<widget source="ServiceEvent" render="Pixmap" position="50,271" size="40,20" alphatest="blend">
+			<convert type="EventName">RatingIcon</convert>
+			<convert type="ValueToPixmap">Path</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="95,269" size="480,23" backgroundColor="black" font="Named;20" foregroundColor="grey" transparent="1">
+			<convert type="EventName">Rating</convert>
+		</widget>
+		<widget source="ServiceEvent" render="Label" position="50,304" zPosition="1" size="525,276" font="Regular; 20" transparent="1" backgroundColor="black" foregroundColor="grey">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 
@@ -484,10 +488,11 @@ self.autoResize()
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget name="epg_description" position="90, 160" size="1040, 416" font="Regular; 23" backgroundColor="background" transparent="1" foregroundColor="white"/>
-		<widget source="Event" render="Label" position="90,595" size="50,20" font="Regular;18" foregroundColor="white" transparent="1">
-			<convert type="EventName">SmallRating</convert>
+		<widget source="Event" render="Pixmap" position="90,594" size="40,20" alphatest="blend">
+			<convert type="EventName">RatingIcon</convert>
+			<convert type="ValueToPixmap">Path</convert>
 		</widget>
-		<widget source="Event" render="Label" position="140,595" size="500,20" font="Regular;18" foregroundColor="white" transparent="1">
+		<widget source="Event" render="Label" position="135,595" size="505,20" font="Regular;18" foregroundColor="white" transparent="1">
 			<convert type="EventName">Rating</convert>
 		</widget>
 		<widget source="Event" render="Label" position="650,595" size="480,20" font="Regular;18" foregroundColor="white" halign="right" transparent="1">
