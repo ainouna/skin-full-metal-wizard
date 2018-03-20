@@ -8,8 +8,9 @@
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget source="Event" render="Label" position="330,0" size="40,23" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
-			<convert type="EventName">SmallRating</convert>
+		<widget source="Event" render="Pixmap" position="330,1" size="40,20" alphatest="blend">
+			<convert type="EventName">RatingIcon</convert>
+			<convert type="ValueToPixmap">Path</convert>
 		</widget>
 		<widget source="Event" render="Label" position="375,0" size="355,23" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">Rating</convert>
@@ -104,8 +105,9 @@
 		<widget source="Event" render="Label" position="695,600" size="410,23" font="Regular;20" foregroundColor="grey" transparent="1" zPosition="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
-		<widget source="Event" render="Label" position="695,630" size="40,23" font="Regular;20" foregroundColor="grey" transparent="1" zPosition="1">
-			<convert type="EventName">SmallRating</convert>
+		<widget source="Event" render="Pixmap" position="695,631" size="40,20" alphatest="blend">
+			<convert type="EventName">RatingIcon</convert>
+			<convert type="ValueToPixmap">Path</convert>
 		</widget>
 		<widget source="Event" render="Label" position="740,630" size="365,23" font="Regular;20" foregroundColor="grey" transparent="1" zPosition="1">
 			<convert type="EventName">Rating</convert>
@@ -186,10 +188,14 @@
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget source="Event" render="Label" position="355,77" size="40,23" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="Event" render="Pixmap" position="355,78" size="40,20" alphatest="blend">
+			<convert type="EventName">RatingIcon</convert>
+			<convert type="ValueToPixmap">Path</convert>
+		</widget>
+		<widget source="Event" render="Label" position="400,77" size="40,23" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="Event" render="Label" position="400,77" size="470,23" halign="right" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="Event" render="Label" position="445,77" size="425,23" halign="right" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">Genre</convert>
 		</widget>
 		<widget position="25,105" size="845,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top">
