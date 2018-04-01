@@ -32,7 +32,7 @@
 	<screen name="MediaPlayerDirectoryBrowser" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="File Browser">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="235,200" size="166,162"/>
 		<widget position="590, 170" size="610, 415" name="filelist" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen flags="wfNoBorder"  name="LastFMScreenMain" position="0, 0" size="1280, 720" backgroundColor="background" title="Last.FM" >
@@ -77,7 +77,7 @@
 	<screen name="SHOUTcastStreamripperRecordingPath" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Select record path for streamripper">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="140,200" size="166,162"/>
 		<widget name="target" position="400, 150" size="705, 22" valign="center" font="Regular;22" transparent="1" backgroundColor="black"/>
 		<widget name="filelist" position="400, 200" zPosition="1" size="705, 380" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>

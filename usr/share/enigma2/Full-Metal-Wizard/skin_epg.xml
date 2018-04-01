@@ -356,7 +356,7 @@
 	<screen name="CrossEPG_Setup" position="0,0" size="1280, 720" backgroundColor="un44000000" title="CrossEPG Configuration" flags="wfNoBorder" >
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="235,200" size="166,162"/>
 		<widget position="590, 170" size="610, 410" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/frame/frame_400x200.png" position="50,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="information" position="100,210" size="300,160" transparent="1" valign="center" zPosition="2"/>
@@ -365,7 +365,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<eLabel backgroundColor="#009f1313" font="Regular;20" halign="center" text="Exit" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="235,200" size="166,162"/>
 		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -381,7 +381,7 @@
 	<screen name="CrossEPG_Providers" position="0,0" size="1280, 720" backgroundColor="un44000000"  title="CrossEPG Provider XMLTV-OpenTV-XEPGDB-MHW2-M7-RAI" flags="wfNoBorder" >
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="235,200" size="166,162"/>
 		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -397,7 +397,7 @@
 	<screen name="CrossEPG_Ordering" position="0,0" size="1280,720" title="CrossEPG Order Download List" backgroundColor="un44000000" flags="wfNoBorder" > 
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="235,200" size="166,162"/>
 		<widget source="list" render="Listbox" position="590, 170" size="610, 410" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="#41000000" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
@@ -432,7 +432,7 @@
 	<screen name="CrossEPG_About" position="0,0" size="1280,720" title="CrossEPG About" backgroundColor="un44000000" flags="wfNoBorder" > 
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="235,200" size="166,162"/>
 		<widget name="about" position="490, 170" size="710, 410" font="Regular;20" backgroundColor="black" transparent="1" zPosition="4" />
 	</screen>	
 </skin>
