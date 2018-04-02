@@ -60,7 +60,7 @@
 	<screen name="BackupSelection" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Select files/folders to backup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_timer.png" position="55,155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_timer.png" position="200,200" size="166,162"/>
 		<widget name="checkList" position="510,100" size="720,500" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<screen name="IpkgInstaller" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Ipkg Installer...">

@@ -86,7 +86,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenVKeyIconButtonPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="235,200" size="166,162"/>
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="MyTubeTasksScreen" backgroundColor="background" position="300,90" size="680,570" title="MyTubeTasksScreen">

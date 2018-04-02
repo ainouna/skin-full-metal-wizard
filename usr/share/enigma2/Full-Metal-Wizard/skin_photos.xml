@@ -56,7 +56,7 @@
 	<screen name="WebcamViewer" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_source_radio.png" position="275,200" size="166,162"/>
 		<widget position="665,115" render="Listbox" scrollbarMode="showOnDemand" backgroundColor="#41000000" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (20, 8), size = (400, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0) ],
@@ -91,7 +91,7 @@
 			</convert>
 		</widget>
 		<widget name="thumbnail" position="0,0" size="100,75" alphatest="on"/> <!-- fake entry for dynamic thumbnail resizing, currently there is no other way doing this. -->
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_source_radio.png" position="235,200" size="166,162"/>
 
 		<widget name="count" position="25,585" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="page" position="170,585" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
