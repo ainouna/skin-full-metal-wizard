@@ -1,7 +1,11 @@
 <skin>
 <!-- MyTubePlayer -->
 	<screen name="MyTubePlayer" position="0,0" zPosition="-1" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap pixmap="Full-Metal-Wizard/infobar.png" position="0, 70" size="1280,720" zPosition="-1"/>
+		<!-- Background -->
+		<!--	Top edge -->
+		<ePixmap position="0,548" size="1280,17" pixmap="Full-Metal-Wizard/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<!--	Body -->
+		<ePixmap position="0,565" size="1280,155" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
 		<ePixmap position="82, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" alphatest="on" transparent="1"/>
 		<ePixmap position="120, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_play.png" alphatest="on" transparent="1"/>
 		<ePixmap position="158, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_pause.png" alphatest="on" transparent="1"/>
@@ -14,7 +18,7 @@
 		<widget source="session.CurrentService" render="Label" font="Regular; 18" position="172, 665" size="57, 20" halign="left" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
-		<ePixmap position="1100, 593" size="100,40" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/plugin.png" alphatest="on" transparent="1"/>
+		<ePixmap position="1100, 593" size="100,40" zPosition="1" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
 		<widget source="global.CurrentTime" render="Label" position="1088, 641" size="120, 26" font="Named; 21" valign="top" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ClockToText">Default</convert>
 		</widget>

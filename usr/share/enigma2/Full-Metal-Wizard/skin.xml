@@ -618,7 +618,7 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
-		<widget alphatest="on" name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="250,110" size="154,500" zPosition="10"/>
+		<widget alphatest="on" name="rc" pixmaps="rc.png,rcold.png" position="250,110" size="154,500" zPosition="10"/>
 		<!--+ For the key indicator pixmaps, "position" is used for
 		    | the position of the pixmap "hotspot".
 		    | The screen positions the pixmap relative to the
@@ -903,13 +903,16 @@ self.autoResize()
 	<!-- Subservice quickzap -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SubservicesQuickzap" position="0,90" size="1280,720" title="Subservices">
 		<!-- Background -->
-		<ePixmap pixmap="Full-Metal-Wizard/general/infobar.png" position="0,0" size="1280,720" zPosition="-1"/>
+		<!--	Top edge -->
+		<ePixmap position="0,548" size="1280,17" pixmap="Full-Metal-Wizard/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<!--	Body -->
+		<ePixmap position="0,565" size="1280,155" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
 		<!-- Time -->
 		<widget backgroundColor="#41000000" font="Regular;30" halign="center" position="75,485" render="Label" size="95,35" source="global.CurrentTime" transparent="1" valign="bottom">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<!-- Channellogo (Picon) -->
-		<ePixmap pixmap="Full-Metal-Wizard/icons/picon_default.png" position="70,532" size="70,60" zPosition="2"/>
+		<ePixmap pixmap="picon_default.png" position="70,532" size="70,60" zPosition="2"/>
 		<widget backgroundColor="#33294a6b" font="Regular;30" halign="left" name="CurrentSubserviceNumber" position="185,485" shadowColor="black" shadowOffset="-1,-1" size="50,34" transparent="1" valign="bottom" zPosition="2"/>
 		<widget backgroundColor="#33294a6b" font="Regular;30" halign="left" position="235,485" render="Label" shadowColor="black" shadowOffset="-1,-1" size="600,34" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServiceName">Name</convert>
@@ -958,8 +961,8 @@ self.autoResize()
 	<screen name="TimeDateDurationInput" backgroundColor="background" position="center,center" size="500,180" title="Time/Date/Duration Input">
 		<widget name="config" position="20,10" size="460,90" itemHeight="30" backgroundColor="background" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
 		<widget name="description" position="20,e-75" size="460,42" font="Regular;18" foregroundColor="grey" halign="left" valign="top" />
-		<ePixmap name="red" position="20,e-28" size="15,16" pixmap="skin_default/buttons/button_red.png" alphatest="blend" />
-		<ePixmap name="green" position="170,e-28" size="15,16" pixmap="skin_default/buttons/button_green.png" alphatest="blend" />
+		<ePixmap name="red" position="20,e-28" size="15,16" pixmap="buttons/button_red.png" alphatest="blend" />
+		<ePixmap name="green" position="170,e-28" size="15,16" pixmap="buttons/button_green.png" alphatest="blend" />
 		<widget source="key_red" position="40,e-30" size="150,25" valign="top" halign="left" font="Regular;20" render="Label" />
 		<widget source="key_green" render="Label" position="190,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
 		<widget source="key_yellow" render="Label" position="340,e-30" size="150,25" valign="top" halign="left" font="Regular;20" />
@@ -1534,7 +1537,11 @@ self.autoResize()
  </screen>
 
  <screen name="MusicExplorer" position="0, 70" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1">
-  <ePixmap position="0, 0" zPosition="-1" size="1280,720" pixmap="Full-Metal-Wizard/infobar.png"/>
+  <!-- Background -->
+  <!--	Top edge -->
+  <ePixmap position="0,548" size="1280,17" pixmap="Full-Metal-Wizard/infobar/sombranewarr-fs8.png" zPosition="-1" />
+  <!--	Body -->
+  <ePixmap position="0,565" size="1280,155" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
   <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" alphatest="on" transparent="1"/>
   <ePixmap position="120, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_play.png" alphatest="on" transparent="1"/>
   <ePixmap position="158, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_pause.png" alphatest="on" transparent="1"/>

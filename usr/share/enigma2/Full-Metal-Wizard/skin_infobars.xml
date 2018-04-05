@@ -378,7 +378,7 @@
 		</widget>
 
 		<!--<ePixmap position="32,515" size="131,83" zPosition="30" pixmap="Full-Metal-Wizard/frame/frame_picon.png" transparent="1" alphatest="blend" />
-		<ePixmap position="51,525" size="100,60" zPosition="20" pixmap="Full-Metal-Wizard/picon_default.png" alphatest="blend" />-->
+		<ePixmap position="51,525" size="100,60" zPosition="20" pixmap="picon_default.png" alphatest="blend" />-->
 	</screen>
 
 
@@ -537,7 +537,10 @@
 
 	<screen name="DVDPlayer" flags="wfNoBorder" position="0, 0" size="1280,720" title="DVDPlayer" backgroundColor="transparent">
 		<!-- Background -->
-		<ePixmap position="0, 70" size="1280,720" pixmap="Full-Metal-Wizard/infobar.png" zPosition="-1"/>
+		<!--	Top edge -->
+		<ePixmap position="0,548" size="1280,17" pixmap="Full-Metal-Wizard/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<!--	Body -->
+		<ePixmap position="0,565" size="1280,155" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
 		<!-- Time -->
 		<widget position="1113, 661" size="95, 26" source="global.CurrentTime" render="Label" font="Named; 21" valign="bottom" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ClockToText">Default</convert>

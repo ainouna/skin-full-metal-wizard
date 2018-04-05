@@ -278,7 +278,7 @@
 		</widget>
 
 		<!-- REC icon -->
-		<widget source="session.RecordState" render="Pixmap" pixmap="easy-skin-aus-hd/infobar/ico_rec.png" position="926,22" size="36,36" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="infobar/ico_rec.png" position="926,22" size="36,36" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 
@@ -414,17 +414,17 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<widget name="version"            position="60,120" size="720,25" font="Regular;26" foregroundColor="bluette" backgroundColor="black" transparent="1" />
-		<ePixmap position="60,150" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />
+		<!--<ePixmap position="60,150" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />-->
 		<widget name="create"             position="60,180" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
 		<widget name="last_update"        position="60,210" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
-		<ePixmap position="60,240" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />
+		<!--<ePixmap position="60,240" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />-->
 		<widget name="headersdb_size"     position="60,270" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
 		<widget name="descriptorsdb_size" position="60,300" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
-		<ePixmap position="60,330" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />
+		<!--<ePixmap position="60,330" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />-->
 		<widget name="indexesdb_size"     position="60,360" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
 		<widget name="aliasesdb_size"     position="60,390" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
 		<widget name="total_size"         position="60,420" size="720,25" font="Regular;20" backgroundColor="black" transparent="1" />
-		<ePixmap position="60,450" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />
+		<!--<ePixmap position="60,450" zPosition="2" size="480,4" pixmap="mega32/menu/line.png" />-->
 		<widget name="channels_count"     position="60,480" size="720,25" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1" />
 		<widget name="events_count"       position="60,510" size="720,25" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1" />
 		<widget name="hashes_count"       position="60,540" size="720,25" font="Regular;20" foregroundColor="bluette" backgroundColor="black" transparent="1" />
