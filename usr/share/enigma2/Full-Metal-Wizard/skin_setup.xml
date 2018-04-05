@@ -80,23 +80,23 @@
 				}
 			</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_power_sleeptimer.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="menu/mainmenu_tasks_power_sleeptimer.png" position="275,200" render="Pixmap" size="166,162" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">mainmenu_tasks_power_sleeptimer</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget alphatest="on" pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_power_standby.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="menu/mainmenu_tasks_power_standby.png" position="275,200" render="Pixmap" size="166,162" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">mainmenu_tasks_power_standby</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget alphatest="on" pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_power_reboot.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="menu/mainmenu_tasks_power_reboot.png" position="275,200" render="Pixmap" size="166,162" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">mainmenu_tasks_power_reboot</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget alphatest="on" pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_power_shutdown.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="menu/mainmenu_tasks_power_shutdown.png" position="275,200" render="Pixmap" size="166,162" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">mainmenu_tasks_power_shutdown</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget alphatest="on" pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_power_restartshell.png" position="200,100" render="Pixmap" size="300,500" source="menu" zPosition="1">
+		<widget alphatest="on" pixmap="menu/mainmenu_tasks_power_restartshell.png" position="275,200" render="Pixmap" size="166,162" source="menu" zPosition="1">
 			<convert type="MenuEntryCompare">mainmenu_tasks_power_restartshell</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -106,7 +106,7 @@
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" title="Information">
 		<panel name="FullScreenWindow" />
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_info.png" position="200,100" size="300,500" zPosition="2" />
+		<ePixmap alphatest="on" pixmap="menu/mainmenu_tasks_info.png" position="275,200" size="166,162" zPosition="2" />
 		<widget backgroundColor="background" position="665,115" render="Listbox" scrollbarMode="showOnDemand" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
@@ -123,7 +123,7 @@
 
 	<screen name="SystemInfoPanel">
 		<panel name="FullScreenWindow" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_info.png" position="150,100" size="300,500" zPosition="2" />
+		<ePixmap pixmap="menu/mainmenu_tasks_info.png" position="275,200" size="166,162" zPosition="2" />
 	</screen>
 
 	<screen name="SystemInfoWidgetPanel">

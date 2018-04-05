@@ -3,7 +3,7 @@
 	<screen name="AP_ConfigScreen" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />  
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="235,200" size="166,162"/>
 		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 
@@ -11,7 +11,7 @@
 	<screen name="AutoTimerHelp" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Help">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="55, 155" size="300,500" />
+		<ePixmap alphatest="on" pixmap="menu/mainmenu_tasks_timer.png" position="200,200" size="166,162" />
 		<widget position="510, 120" size="720, 450" name="detailtext" itemHeight="50" font="Regular; 20" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="AutoTimerOverview" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Overview">
@@ -19,7 +19,7 @@
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="55, 155" size="300,500" />
+		<ePixmap alphatest="on" pixmap="menu/mainmenu_tasks_timer.png" position="200,200" size="166,162" />
 		<widget position="510, 120" size="720, 450" name="entries" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="AutoTimerEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Editor">
@@ -40,19 +40,19 @@
 	<screen name="AutoTimerImporter" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Importer">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="55, 155" size="300,500" />
+		<ePixmap alphatest="on" pixmap="menu/mainmenu_tasks_timer.png" position="200,200" size="166,162" />
 		<widget position="510, 120" size="720, 450" name="list" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="AutoTimerFilterEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Filter Editor">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="55, 155" size="300,500" />
+		<ePixmap alphatest="on" pixmap="menu/mainmenu_tasks_timer.png" position="200,200" size="166,162" />
 		<panel name="SetupConfig" />
 	</screen>
 	<screen name="AutoTimerServiceEditor" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Auto Timer Service Editor">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap alphatest="on" pixmap="easy-skin-aus-hd/menu/mainmenu_tasks_timer.png" position="55, 155" size="300,500" />
+		<ePixmap alphatest="on" pixmap="menu/mainmenu_tasks_timer.png" position="200,200" size="166,162" />
 		<panel name="SetupConfig" />
 	</screen>
 
@@ -102,14 +102,14 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<eLabel position="890, 80" size="320, 22" text="Google News" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_source_radio.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_source_radio.png" position="235,200" size="166,162"/>
 		<widget position="590, 150" size="610, 440" name="mylist" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen  name="GnewsFeedScreenContent" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<widget position="890, 80" size="320, 22" name="info" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
-		<ePixmap pixmap="easy-skin-aus-hd/menu/mainmenu_source_radio.png" position="45, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_source_radio.png" position="120,200" size="166,162"/>
 		<widget position="360, 150" size="830, 430" name="mylist" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="FMenusimple" position="center,center" size="920,600" title="Feed"  flags="wfNoBorder" >

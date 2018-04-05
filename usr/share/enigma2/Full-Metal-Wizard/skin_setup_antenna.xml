@@ -29,7 +29,7 @@
 		<panel name="FullScreenWindow" />  
 		<panel name="FullScreenColourPanel" />
 		<widget position="590, 170" size="610, 418" name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>	
-		<ePixmap position="55, 155" size="300, 500" pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup_system.png"/>	
+		<ePixmap position="235,200" size="166,162" pixmap="menu/mainmenu_tasks_setup_system.png"/>
 	</screen>
 	<!-- Automatic Scan -->
 	<screen name="ScanSimple" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Automatic service scan">
