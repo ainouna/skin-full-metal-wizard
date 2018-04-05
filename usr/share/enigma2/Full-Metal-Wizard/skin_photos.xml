@@ -11,7 +11,7 @@
 	<screen name="Pic_Exif" position="0,0" backgroundColor="background" size="1280,720" flags="wfNoBorder" title="PicturePlayer">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap position="55, 155" size="300, 500" pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup_photo.png"/>
+		<ePixmap position="55, 155" size="300, 500" pixmap="menu/mainmenu_tasks_setup_photo.png"/>
 		<widget source="menu" backgroundColor="background" render="Listbox" position="510, 130" size="700, 480" zPosition="3" scrollbarMode="showOnDemand" selectionDisabled="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (5, 7), size = (350, 30), flags = RT_HALIGN_LEFT, text = 0), 

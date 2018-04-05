@@ -71,8 +71,8 @@
 	<screen name="InfoBarOnlineIcons" position="0,0" size="22,22" backgroundColor="transparent2" flags="wfNoBorder">
 
 		<!--	Online software updates -->
-		<ePixmap position="0,0" size="22,22" pixmap="Full-Metal-Wizard/infobar/ico_update_off.png" alphatest="blend" />
-		<widget position="0,0" size="22,22" source="global.OnlineStableUpdateState" render="Pixmap" zPosition="1" pixmap="Full-Metal-Wizard/infobar/ico_update_on.png" alphatest="blend">
+		<ePixmap position="0,0" size="22,22" pixmap="infobar/ico_update_off.png" alphatest="blend" />
+		<widget position="0,0" size="22,22" source="global.OnlineStableUpdateState" render="Pixmap" zPosition="1" pixmap="infobar/ico_update_on.png" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
@@ -82,15 +82,15 @@
 	<screen name="InfoBarDTVIcons" position="0,0" size="97,20" backgroundColor="transparent2" flags="wfNoBorder">
 
 		<!--	HBBTV icon -->
-		<ePixmap position="0,0" size="56,20" pixmap="Full-Metal-Wizard/infobar/ico_hbbtv_off.png" alphatest="blend" />
-		<widget position="0,0" size="56,20" source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/infobar/ico_hbbtv_on.png" zPosition="1" alphatest="blend">
+		<ePixmap position="0,0" size="56,20" pixmap="infobar/ico_hbbtv_off.png" alphatest="blend" />
+		<widget position="0,0" size="56,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_hbbtv_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	Teletext icon -->
-		<ePixmap position="62,1" size="35,19" pixmap="Full-Metal-Wizard/infobar/ico_txt_off.png" alphatest="blend" />
-		<widget position="62,1" size="35,19" source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/infobar/ico_txt_on.png" zPosition="1" alphatest="blend">
+		<ePixmap position="62,1" size="35,19" pixmap="infobar/ico_txt_off.png" alphatest="blend" />
+		<widget position="62,1" size="35,19" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_txt_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -100,22 +100,22 @@
 
 	<screen name="InfoBarVideoIcons" position="0,0" size="136,21" backgroundColor="transparent2" flags="wfNoBorder">
 		<!--	Dolby audio icon -->
-		<ePixmap position="0,1" size="57,21" pixmap="Full-Metal-Wizard/infobar/ico_dolby_off.png" alphatest="blend" />
-		<widget position="0,1" size="57,21" source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/infobar/ico_dolby_on.png" zPosition="1" alphatest="blend">
+		<ePixmap position="0,1" size="57,21" pixmap="infobar/ico_dolby_off.png" alphatest="blend" />
+		<widget position="0,1" size="57,21" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_dolby_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	Widescreen icon -->
-		<ePixmap position="63,1" size="37,20" pixmap="Full-Metal-Wizard/infobar/ico_169_off.png" alphatest="blend" />
-		<widget position="63,1" size="37,20" source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/infobar/ico_169_on.png" zPosition="1" alphatest="blend">
+		<ePixmap position="63,1" size="37,20" pixmap="infobar/ico_169_off.png" alphatest="blend" />
+		<widget position="63,1" size="37,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_169_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 
 		<!--	HD TV icon -->
-		<ePixmap position="106,1" size="30,20" pixmap="Full-Metal-Wizard/infobar/ico_hd_off.png" alphatest="blend" />
-		<widget position="106,1" size="30,20" source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/infobar/ico_hd_on.png" zPosition="1" alphatest="blend">
+		<ePixmap position="106,1" size="30,20" pixmap="infobar/ico_hd_off.png" alphatest="blend" />
+		<widget position="106,1" size="30,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_hd_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">800,2000</convert>
 			<convert type="ConditionalShowHide" />
@@ -124,12 +124,12 @@
 
 	<screen name="InfoBarBroadcastTypeIcon" position="0,0" size="25,26" backgroundColor="transparent2" flags="wfNoBorder">
 		<!--	Digital broadcast type icons terrestrial/satellite -->
-		<widget source="session.FrontendInfo" render="Pixmap" position="0,0" size="25,26" pixmap="Full-Metal-Wizard/infobar/ico_dvb_s-fs8.png" alphatest="blend">
+		<widget source="session.FrontendInfo" render="Pixmap" position="0,0" size="25,26" pixmap="infobar/ico_dvb_s-fs8.png" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" position="0,0" size="25,26" pixmap="Full-Metal-Wizard/infobar/ico_dvb_t-fs8.png" alphatest="blend">
+		<widget source="session.FrontendInfo" render="Pixmap" position="0,0" size="25,26" pixmap="infobar/ico_dvb_t-fs8.png" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
@@ -205,7 +205,7 @@
 
 	<screen name="InfoBarSignalInfo" position="0,0" size="152,35" backgroundColor="transparent2" flags="wfNoBorder">
 		<!--	AGC bar -->
-		<widget position="0,6" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="Full-Metal-Wizard/progress_snr.png">
+		<widget position="0,6" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="progress_snr.png">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 
@@ -215,7 +215,7 @@
 		</widget>
 
 		<!--	SNR bar -->
-		<widget position="0,21" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="Full-Metal-Wizard/progress_snr.png">
+		<widget position="0,21" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="progress_snr.png">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 
@@ -232,11 +232,11 @@
 		<!-- Bottom infobar backgrounds and trim -->
 
 		<!--	Top edge -->
-		<ePixmap position="0,0" size="1280,17" pixmap="Full-Metal-Wizard/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<ePixmap position="0,0" size="1280,17" pixmap="infobar/sombranewarr-fs8.png" zPosition="-1" />
 		<!--	Body -->
-		<ePixmap position="0,17" size="1280,155" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
+		<ePixmap position="0,17" size="1280,155" pixmap="navy_fondo-fs8.png" zPosition="-1" />
 		<!--	Separator between service num/picon and rest of bar -->
-		<ePixmap position="180,26" size="2,110" pixmap="Full-Metal-Wizard/navy_lineamed-fs8.png" />
+		<ePixmap position="180,26" size="2,110" pixmap="navy_lineamed-fs8.png" />
 
 		<!-- Bottom bar - service number, name & picon -->
 
@@ -315,8 +315,8 @@
 		</widget>
 
 		<!--	Event progress bar -->
-		<ePixmap position="390,94" size="600,7" pixmap="Full-Metal-Wizard/progress_event_background.png" alphatest="on" transparent="1" />
-		<widget source="session.Event_Now" render="Progress" position="390,95" size="600,8" pixmap="Full-Metal-Wizard/progress_event.png" transparent="1" zPosition="1">
+		<ePixmap position="390,94" size="600,7" pixmap="progress_event_background.png" alphatest="on" transparent="1" />
+		<widget source="session.Event_Now" render="Progress" position="390,95" size="600,8" pixmap="progress_event.png" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 
@@ -358,7 +358,7 @@
 		<!-- Recording status -->
 
 		<!-- REC icon -->
-		<widget source="session.RecordState" render="Pixmap" pixmap="Full-Metal-Wizard/infobar/ico_rec.png" position="926,22" size="36,36" alphatest="blend">
+		<widget source="session.RecordState" render="Pixmap" pixmap="infobar/ico_rec.png" position="926,22" size="36,36" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 
@@ -368,7 +368,7 @@
 		</widget>
 
 		<!-- Progress bar for recording -->
-		<widget source="session.RecordState" position="695,50" render="Progress" zPosition="1" pixmap="Full-Metal-Wizard/progress_rec.png" size="258,4" borderWidth="0" transparent="1">
+		<widget source="session.RecordState" position="695,50" render="Progress" zPosition="1" pixmap="progress_rec.png" size="258,4" borderWidth="0" transparent="1">
 			<convert type="infoRecBm">Progress</convert>
 		</widget>
 
@@ -377,7 +377,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 
-		<!--<ePixmap position="32,515" size="131,83" zPosition="30" pixmap="Full-Metal-Wizard/frame/frame_picon.png" transparent="1" alphatest="blend" />
+		<!--<ePixmap position="32,515" size="131,83" zPosition="30" pixmap="frame/frame_picon.png" transparent="1" alphatest="blend" />
 		<ePixmap position="51,525" size="100,60" zPosition="20" pixmap="picon_default.png" alphatest="blend" />-->
 	</screen>
 
@@ -395,7 +395,7 @@
 		</widget>
 
 		<!-- Panel icon -->
-		<ePixmap position="7,42" size="40,37" name="logoazboxhd" pixmap="Full-Metal-Wizard/infobar/ico_tv.png" alphatest="blend" />
+		<ePixmap position="7,42" size="40,37" name="logoazboxhd" pixmap="infobar/ico_tv.png" alphatest="blend" />
 
 		<!-- Event name -->
 		<widget position="66,55" size="520,23" source="session.Event_Now" render="Label" halign="left" valign="top" font="Regular; 18" backgroundColor="background" transparent="1" noWrap="1" foregroundColor="colorsel" shadowColor="#000000" shadowOffset="-2,-2">
@@ -476,9 +476,9 @@
 		<!-- Bottom infobar backgrounds and trim -->
 
 		<!--	Top edge -->
-		<ePixmap position="0,0" size="1280,17" pixmap="Full-Metal-Wizard/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<ePixmap position="0,0" size="1280,17" pixmap="infobar/sombranewarr-fs8.png" zPosition="-1" />
 		<!--	Body -->
-		<ePixmap position="0,17" size="1280,100" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
+		<ePixmap position="0,17" size="1280,100" pixmap="navy_fondo-fs8.png" zPosition="-1" />
 
 		<!-- Date/Time top left of bar -->
 		<panel position="25,32" size="150,50" >
@@ -491,7 +491,7 @@
 		</widget>
 
 		<!--	Playback state icon -->
-		<widget name="statusicon" position="230,55" size="20,20" alphatest="on" pixmaps="Full-Metal-Wizard/icons/play.png,Full-Metal-Wizard/icons/pause.png,Full-Metal-Wizard/icons/stop.png,Full-Metal-Wizard/icons/forward.png,Full-Metal-Wizard/icons/backward.png,Full-Metal-Wizard/icons/slow.png,Full-Metal-Wizard/icons/blank.png" />
+		<widget name="statusicon" position="230,55" size="20,20" alphatest="on" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png,icons/blank.png" />
 
 		<!-- Playback speed indicator -->
 		<widget name="speed" position="205,77" size="45,20" font="Regular;16" halign="right" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
@@ -538,23 +538,23 @@
 	<screen name="DVDPlayer" flags="wfNoBorder" position="0, 0" size="1280,720" title="DVDPlayer" backgroundColor="transparent">
 		<!-- Background -->
 		<!--	Top edge -->
-		<ePixmap position="0,548" size="1280,17" pixmap="Full-Metal-Wizard/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<ePixmap position="0,548" size="1280,17" pixmap="infobar/sombranewarr-fs8.png" zPosition="-1" />
 		<!--	Body -->
-		<ePixmap position="0,565" size="1280,155" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
+		<ePixmap position="0,565" size="1280,155" pixmap="navy_fondo-fs8.png" zPosition="-1" />
 		<!-- Time -->
 		<widget position="1113, 661" size="95, 26" source="global.CurrentTime" render="Label" font="Named; 21" valign="bottom" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<!-- Channellogo (Picon) -->
-		<ePixmap position="75, 605" size="95,75" pixmap="Full-Metal-Wizard/frame/frame80_95x75.png" zPosition="1"/>
-		<ePixmap position="87, 616" size="70,53" pixmap="Full-Metal-Wizard/general/picon_movie.png" zPosition="2"/>
+		<ePixmap position="75, 605" size="95,75" pixmap="frame/frame80_95x75.png" zPosition="1"/>
+		<ePixmap position="87, 616" size="70,53" pixmap="general/picon_movie.png" zPosition="2"/>
 		<!-- Service name -->
 		<widget position="55, 560" size="1170, 25" source="session.CurrentService" render="Label" font="Named; 23" valign="center" halign="center" noWrap="1" backgroundColor="black" shadowColor="#000000" shadowOffset="-1,-1" transparent="1" foregroundColor="white">
 			  <convert type="ServiceName">Name</convert>
 		</widget>
 		<!-- Progressbar (movie position)-->
-		<ePixmap position="184, 595" size="600,16" pixmap="Full-Metal-Wizard/mpslider.png" zPosition="3" alphatest="on"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="204, 596" size="560,14" zPosition="2" pointer="Full-Metal-Wizard/pointer.png:13,3">
+		<ePixmap position="184, 595" size="600,16" pixmap="mpslider.png" zPosition="3" alphatest="on"/>
+		<widget source="session.CurrentService" render="PositionGauge" position="204, 596" size="560,14" zPosition="2" pointer="pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<!-- Elapsed time -->
@@ -568,15 +568,15 @@
 		<!-- Chapter info -->
 		<widget name="chapterLabel" position="184, 645" size="380, 22" font="Regular;20" foregroundColor="unc3c3c9" backgroundColor="black" transparent="1"/>
 		<!-- Icons for help -->
-		<ePixmap position="1056, 594" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1094, 594" pixmap="Full-Metal-Wizard/icons/icon_play.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1132, 594" pixmap="Full-Metal-Wizard/icons/icon_pause.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1170, 594" pixmap="Full-Metal-Wizard/icons/icon_forward.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1056, 594" pixmap="icons/icon_rewind.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1094, 594" pixmap="icons/icon_play.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1132, 594" pixmap="icons/icon_pause.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1170, 594" pixmap="icons/icon_forward.png" size="36,36" alphatest="on"/>
 		<!-- Audio icon (is there multichannel audio?) -->
-		<ePixmap pixmap="Full-Metal-Wizard/icons/i_dolby.png" position="1018, 594" zPosition="1" size="36,36" alphatest="on"/>
+		<ePixmap pixmap="icons/i_dolby.png" position="1018, 594" zPosition="1" size="36,36" alphatest="on"/>
 		<widget name="audioLabel" position="968, 645" size="130,22" font="Regular;18" backgroundColor="black" shadowColor="#1d354c" shadowOffset="-1,-1" transparent="1" valign="bottom"/>
 		<!-- Subtitle track info -->
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/icons/i_txt.png" position="980, 594" zPosition="1" size="36,36" alphatest="on">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/i_txt.png" position="980, 594" zPosition="1" size="36,36" alphatest="on">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -606,11 +606,11 @@
 		<widget font="Regular;20" position="20,110" render="Label" size="460,190" source="RdsDecoder" transparent="1">
 			<convert type="RdsInfo">RadioText</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Full-Metal-Wizard/icons/i_rass.png" position="70,310" render="Pixmap" size="48,48" source="RdsDecoder">
+		<widget alphatest="on" pixmap="icons/i_rass.png" position="70,310" render="Pixmap" size="48,48" source="RdsDecoder">
 		<convert type="RdsInfo">RasInteractiveAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" pixmap="Full-Metal-Wizard/icons/i_rec.png" position="20,310" render="Pixmap" size="48,48" source="session.RecordState">
+		<widget alphatest="on" pixmap="icons/i_rec.png" position="20,310" render="Pixmap" size="48,48" source="session.RecordState">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>

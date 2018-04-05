@@ -105,18 +105,18 @@
 		<color name="WindowTitleBackground" color="transpBlack"/>
 		<color name="WindowTitleForeground" color="listbox"/>
 		<borderset name="bsWindow">
-		      <pixmap pos="bpTopLeft" filename="Full-Metal-Wizard/b_tl.png"/>
-		      <pixmap pos="bpTop" filename="Full-Metal-Wizard/b_t.png"/>
-		      <pixmap pos="bpTopRight" filename="Full-Metal-Wizard/b_tr.png"/>
-		      <pixmap pos="bpLeft" filename="Full-Metal-Wizard/b_l.png"/>
-		      <pixmap pos="bpRight" filename="Full-Metal-Wizard/b_r.png"/>
-		      <pixmap pos="bpBottomLeft" filename="Full-Metal-Wizard/b_bl.png"/>
-		      <pixmap pos="bpBottom" filename="Full-Metal-Wizard/b_b.png"/>
-		      <pixmap pos="bpBottomRight" filename="Full-Metal-Wizard/b_br.png"/>
+		      <pixmap pos="bpTopLeft" filename="b_tl.png"/>
+		      <pixmap pos="bpTop" filename="b_t.png"/>
+		      <pixmap pos="bpTopRight" filename="b_tr.png"/>
+		      <pixmap pos="bpLeft" filename="b_l.png"/>
+		      <pixmap pos="bpRight" filename="b_r.png"/>
+		      <pixmap pos="bpBottomLeft" filename="b_bl.png"/>
+		      <pixmap pos="bpBottom" filename="b_b.png"/>
+		      <pixmap pos="bpBottomRight" filename="b_br.png"/>
 		</borderset>
 		<borderset name="bsListboxEntry">
-		      <pixmap pos="bpTop" filename="Full-Metal-Wizard/tib-v.png"/>
-		      <pixmap pos="bpBottom" filename="Full-Metal-Wizard/tib-v.png"/>
+		      <pixmap pos="bpTop" filename="tib-v.png"/>
+		      <pixmap pos="bpBottom" filename="tib-v.png"/>
 		</borderset>
 	</windowstyle>
 	<windowstyle type="skinned" id="1">
@@ -136,43 +136,43 @@
 
 	<!-- Switch menu pic -->
 	<switchpixmap>
-		<pixmap name="menu_on" filename="Full-Metal-Wizard/menu/menu_on.png"  />
-		<pixmap name="menu_off" filename="Full-Metal-Wizard/menu/menu_off.png" />
+		<pixmap name="menu_on" filename="menu/menu_on.png"  />
+		<pixmap name="menu_off" filename="menu/menu_off.png" />
 	</switchpixmap>
 	
 	<!-- Load Template Screens -->
-	<include filename="Full-Metal-Wizard/skin_templates.xml"/>
+	<include filename="skin_templates.xml"/>
 	<!-- Load Menu->Wizards Screens -->
-	<include filename="Full-Metal-Wizard/skin_wizards.xml"/>
+	<include filename="skin_wizards.xml"/>
 	<!-- Load Infobars Screens -->
-	<include filename="Full-Metal-Wizard/skin_infobars.xml"/>
+	<include filename="skin_infobars.xml"/>
 	<!-- Load Menu->Tasks Screens -->
-	<include filename="Full-Metal-Wizard/skin_setup.xml"/>
+	<include filename="skin_setup.xml"/>
 	<!-- Load Menu->Setup->System Screens -->
-	<include filename="Full-Metal-Wizard/skin_setup_system.xml"/>
+	<include filename="skin_setup_system.xml"/>
 	<!-- Load Menu->Setup->Network Screens -->
-	<include filename="Full-Metal-Wizard/skin_setup_network.xml"/>
+	<include filename="skin_setup_network.xml"/>
 	<!-- Load Menu->Setup->Antenna Screens -->
-	<include filename="Full-Metal-Wizard/skin_setup_antenna.xml"/>
+	<include filename="skin_setup_antenna.xml"/>
 	<!-- Load Menu->Setup->TV Screens -->
-	<include filename="Full-Metal-Wizard/skin_setup_tv.xml"/>
+	<include filename="skin_setup_tv.xml"/>
 	<!-- Load Menu->Setup->MEDIA Screens -->
-	<include filename="Full-Metal-Wizard/skin_setup_media.xml"/>
+	<include filename="skin_setup_media.xml"/>
 	<!-- Load Menu->Setup->Plugins  Screens -->
-	<include filename="Full-Metal-Wizard/skin_setup_plugins.xml"/>
+	<include filename="skin_setup_plugins.xml"/>
 	<!-- Load Menu->Setup->Storage  Screens -->
-	<include filename="Full-Metal-Wizard/skin_setup_storage.xml"/>
+	<include filename="skin_setup_storage.xml"/>
 	<!-- Load Menu->Setup->Storage  Screens -->
-	<include filename="Full-Metal-Wizard/skin_setup_swmanager.xml"/>
+	<include filename="skin_setup_swmanager.xml"/>
 	<!-- Load Menu->Plugins  Screens -->
-	<include filename="Full-Metal-Wizard/skin_plugins.xml"/>
+	<include filename="skin_plugins.xml"/>
 	<!-- Load Menu->Photos  Screens -->
-	<include filename="Full-Metal-Wizard/skin_photos.xml"/>
+	<include filename="skin_photos.xml"/>
 	<!-- Load Menu->Music Screens -->
-	<include filename="Full-Metal-Wizard/skin_music.xml"/>
+	<include filename="skin_music.xml"/>
 	<!-- Load Menu->Movies Screens -->
-	<include filename="Full-Metal-Wizard/skin_videos.xml"/>
-	<include filename="Full-Metal-Wizard/skin_epg.xml"/>
+	<include filename="skin_videos.xml"/>
+	<include filename="skin_epg.xml"/>
 
 	<screen position="0,240" size="1280,480" backgroundColor="transparent2" flags="wfNoBorder" name="GeneralMenu">
 		<eLabel position="0,65" size="1280,415" backgroundColor="background" zPosition="-1" />
@@ -251,7 +251,7 @@
 	<screen flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer Editor">
 		<panel name="FullScreenWindow" />
 		<widget position="590, 90" size="610, 500" name="timerlist" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<ePixmap pixmap="Full-Metal-Wizard/frame/frame_400x255.png" position="50,90" size="400,255" alphatest="on" />
+		<ePixmap pixmap="frame/frame_400x255.png" position="50,90" size="400,255" alphatest="on" />
 		<widget name="description" position="70,100" size="360,230"  font="Regular;20" halign="left" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullscreenInfoButtonPanel"/>
 		<panel name="FullScreenColourPanel" />
@@ -261,7 +261,7 @@
 	<screen flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" backgroundColor="un44000000"  title="Timer entry">
 		<panel name="FullScreenWindow" />
 		<widget position="590, 90" size="610, 500" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<ePixmap pixmap="Full-Metal-Wizard/frame/frame_400x255.png" position="50,90" size="400,255" alphatest="on" />
+		<ePixmap pixmap="frame/frame_400x255.png" position="50,90" size="400,255" alphatest="on" />
 		<widget name="description" position="70,100" size="360,235"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 		<widget name="HelpWindow" position="50,345" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<panel name="FullScreenColourPanel" />
@@ -321,41 +321,41 @@
 			    foregroundColorServiceNotAvail="#777777"
 			    picServiceEventProgressbar="slider/slider_1280x10_hfg.png"    
 			    serviceItemHeight="50" serviceNumberFont="Regular;23" serviceNameFont="Regular;22" serviceInfoFont="Regular;21" scrollbarMode="showAlways"/>
-	<!--	<ePixmap pixmap="Full-Metal-Wizard/icons/i_dolby_no.png" position="296, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/icons/i_dolby.png" position="296, 110" size="36,36" zPosition="2" alphatest="on">
+	<!--	<ePixmap pixmap="icons/i_dolby_no.png" position="296, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/i_dolby.png" position="296, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/i_format_no.png" position="259, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/icons/i_format.png" position="259, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="icons/i_format_no.png" position="259, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/i_format.png" position="259, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/i_txt_no.png" position="333, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/icons/i_txt.png" position="333, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="icons/i_txt_no.png" position="333, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/i_txt.png" position="333, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/i_fta.png" position="370, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/icons/i_crypt.png" position="370, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="icons/i_fta.png" position="370, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/i_crypt.png" position="370, 110" size="36,36" zPosition="2" alphatest="on">
 			  <convert type="ServiceInfo">IsCrypted</convert>
 			  <convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/i_sub_no.png" position="222, 110" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/icons/i_sub.png" position="222, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="icons/i_sub_no.png" position="222, 110" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/i_sub.png" position="222, 110" size="36,36" zPosition="2" alphatest="on">
 			  <convert type="ServiceInfo">SubservicesAvailable</convert>
 			  <convert type="ConditionalShowHide"/>
 		</widget>
-		<widget position="445, 110" size="36,36" source="session.RecordState" render="Pixmap" pixmap="Full-Metal-Wizard/icons/i_rec.png" zPosition="1">
+		<widget position="445, 110" size="36,36" source="session.RecordState" render="Pixmap" pixmap="icons/i_rec.png" zPosition="1">
 			  <convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/i_sd.png" position="1170,565" size="36,36" zPosition="1" alphatest="on"/>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="Full-Metal-Wizard/icons/i_hd.png" position="407, 110" size="36,36" zPosition="2" alphatest="on">
+		<ePixmap pixmap="icons/i_sd.png" position="1170,565" size="36,36" zPosition="1" alphatest="on"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="icons/i_hd.png" position="407, 110" size="36,36" zPosition="2" alphatest="on">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">800,2000</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap position="55, 105" size="126,82" pixmap="Full-Metal-Wizard/frame_hd.png" zPosition="1" alphatest="on"/>
+		<ePixmap position="55, 105" size="126,82" pixmap="frame_hd.png" zPosition="1" alphatest="on"/>
 		<widget source="ServiceEvent" render="Picon2" position="68,116" size="100,60" zPosition="2" transparent="1" alphatest="blend"/>
 		<widget source="session.CurrentService" render="Label" position="585, 80" size="625, 20" font="Named;18" halign="center" backgroundColor="black" foregroundColor="grey" transparent="1" zPosition="3">
 			<convert type="ServiceName">Provider</convert>
@@ -374,7 +374,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" position="135, 183" zPosition="1" pixmap="Full-Metal-Wizard/progress.png" size="355, 8" borderWidth="1" borderColor="uncccccc">
+		<widget source="ServiceEvent" render="Progress" position="135, 183" zPosition="1" pixmap="progress.png" size="355, 8" borderWidth="1" borderColor="uncccccc">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="50,246" size="525,23" backgroundColor="black" font="Named;20" foregroundColor="grey" transparent="1">
@@ -391,7 +391,7 @@
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 
-		<ePixmap position="50, 597" size="15, 10" pixmap="Full-Metal-Wizard/icons/icon_event.png" alphatest="on"/>
+		<ePixmap position="50, 597" size="15, 10" pixmap="icons/icon_event.png" alphatest="on"/>
 		<widget position="70, 590" size="80, 24" source="ServiceEvent" render="Label" font="Named; 18" valign="bottom" halign="center" transparent="1" backgroundColor="black" foregroundColor="grey">
 			<convert type="EventTime">NextStartTime</convert>
 			<convert type="ClockToText">Default</convert>
@@ -403,10 +403,10 @@
 
 	<!-- Channel selection - Radio -->
 	<screen name="ChannelSelectionRadio" position="150,100" size="980,560" title="Channel Selection" zPosition="-2">
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_red.png" position="90,500" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_green.png" position="290,500" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_yellow.png" position="490,500" size="200,60" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_blue.png" position="690,500" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_red.png" position="90,500" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_green.png" position="290,500" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_yellow.png" position="490,500" size="200,60" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_blue.png" position="690,500" size="200,60" zPosition="2"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="90,500" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="290,500" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" position="490,500" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -468,7 +468,7 @@ self.autoResize()
 	</screen>
 
 	<screen name="UnhandledKey" flags="wfNoBorder" position="605,30" size="70,70" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
-		<widget name="UnhandledKeyPixmap" pixmap="Full-Metal-Wizard/unhandled-key.png" position="0,0" size="70,70" alphatest="off"/>
+		<widget name="UnhandledKeyPixmap" pixmap="unhandled-key.png" position="0,0" size="70,70" alphatest="off"/>
 	</screen>
 
 	<!-- EventView -->
@@ -562,19 +562,19 @@ self.autoResize()
 		</widget>
 		<widget source="job_status" render="Label" position="20,112" size="480,26" font="Regular;23" />
 		<widget name="config" position="20,154" size="480,20" />
-		<widget source="cancelable" render="Pixmap" pixmap="Full-Metal-Wizard/buttons/button_200x60_red.png" position="20,200" size="200,60" alphatest="blend">
+		<widget source="cancelable" render="Pixmap" pixmap="buttons/button_200x60_red.png" position="20,200" size="200,60" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="cancelable" render="FixedLabel" text="Cancel" position="20,203" size="200,25" font="Regular;20" halign="center" valign="center" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="finished" render="Pixmap" pixmap="Full-Metal-Wizard/buttons/button_200x60_green.png" position="240,200" size="200,60" alphatest="blend">
+		<widget source="finished" render="Pixmap" pixmap="buttons/button_200x60_green.png" position="240,200" size="200,60" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="finished" render="FixedLabel" text="OK" position="240,203" size="200,25" font="Regular;20" halign="center" valign="center" transparent="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="backgroundable" render="Pixmap" pixmap="Full-Metal-Wizard/buttons/button_200x60_blue.png" position="250,200" size="200,60" alphatest="blend">
+		<widget source="backgroundable" render="Pixmap" pixmap="buttons/button_200x60_blue.png" position="250,200" size="200,60" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="backgroundable" render="FixedLabel" text="In background" position="250,203" size="200,25" font="Regular;20" halign="center" valign="center" transparent="1">
@@ -624,38 +624,38 @@ self.autoResize()
 		    | The screen positions the pixmap relative to the
 		    | hotspot, not the pixmap's top left corner
 		    +-->
-		<widget alphatest="blend" name="indicator_u0" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u1" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u2" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u3" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u4" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u5" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u6" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u7" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u8" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u9" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u10" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u11" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u12" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u13" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u14" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_u15" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l0" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l1" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l2" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l3" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l4" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l5" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l6" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l7" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l8" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l9" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l10" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l11" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l12" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l13" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l14" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
-		<widget alphatest="blend" name="indicator_l15" pixmap="Full-Metal-Wizard/yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u0" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u1" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u2" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u3" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u4" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u5" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u6" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u7" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u8" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u9" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u10" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u11" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u12" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u13" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u14" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_u15" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l0" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l1" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l2" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l3" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l4" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l5" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l6" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l7" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l8" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l9" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l10" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l11" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l12" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l13" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l14" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
+		<widget alphatest="blend" name="indicator_l15" pixmap="yellow_circle23x23.png" position="250,110" offset="11,11" size="23,23" zPosition="11"/>
 
 		<widget font="Regular;25" backgroundColor="crypt_emm" foregroundColor="yellow" halign="center" name="longshift_key0" position="500,565" size="660,30" transparent="1"/>
 		<widget font="Regular;25" backgroundColor="crypt_emm" foregroundColor="yellow" halign="center" name="longshift_key1" position="500,595" size="660,30" transparent="1"/>
@@ -685,7 +685,7 @@ self.autoResize()
 		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,230" transparent="1" zPosition="2"/>
 		<widget name="booklist" position="650,410" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,380" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullScreenColourPanel" />
@@ -708,7 +708,7 @@ self.autoResize()
 		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,230" transparent="1" zPosition="2"/>
 		<widget name="booklist" position="650,410" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,380" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullScreenColourPanel" />
@@ -724,7 +724,7 @@ self.autoResize()
 		<widget name="filelist" position="650,150" scrollbarMode="showOnDemand" size="510,230" transparent="1" zPosition="2"/>
 		<widget name="booklist" position="650,410" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,380" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullScreenColourPanel" />
@@ -768,7 +768,7 @@ self.autoResize()
 					}
 			</convert>
 		</widget>
-		<ePixmap position="150,195" size="400,200" pixmap="Full-Metal-Wizard/frame/frame_400x200.png" alphatest="on"  />
+		<ePixmap position="150,195" size="400,200" pixmap="frame/frame_400x200.png" alphatest="on"  />
 		<widget position="170,205" size="360,180" source="introduction" render="Label" zPosition="10" font="Regular;21" halign="center" valign="center" transparent="1"/>
 		<panel name="FullScreenColourPanel" />
 	</screen>
@@ -778,7 +778,7 @@ self.autoResize()
 		<eLabel position="675,140" size="430,35" text="Input device setup" font="Regular;28" transparent="1" zPosition="2" />
 		<eLabel position="665,180" size="450,2" backgroundColor="white" zPosition="2" />
 		<widget position="650,195" size="510,400" name="config" zPosition="2" />
-		<ePixmap position="150,195" size="400,200" pixmap="Full-Metal-Wizard/frame/frame_400x200.png" alphatest="on" zPosition="2" />
+		<ePixmap position="150,195" size="400,200" pixmap="frame/frame_400x200.png" alphatest="on" zPosition="2" />
 		<widget position="170,205" size="360,180" source="introduction" render="Label" valign="center" halign="center" font="Regular;20" transparent="1" zPosition="3" />
 		<panel name="FullScreenColourPanel" />
 	</screen>
@@ -789,10 +789,10 @@ self.autoResize()
 
 	<!-- RASS -->
 	<screen flags="wfNoBorder" name="RassInteractive" position="0,0" size="1280,720" title="RassInteractive">
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/icons/rass_logo.png" position="675,143" size="50,21" transparent="1"/>
+		<ePixmap alphatest="on" pixmap="icons/rass_logo.png" position="675,143" size="50,21" transparent="1"/>
 		<eLabel font="Regular;28" position="735,140" size="485,35" text="Interactive" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="white" position="665,180" size="450,2" zPosition="2"/>
-		<widget backgroundColor="#33000000" name="Marker" pixmap="Full-Metal-Wizard/menu/on_main_menu_485x50.png" position="650,195" size="510,400" transparent="1" zPosition="2"/>
+		<widget backgroundColor="#33000000" name="Marker" pixmap="menu/on_main_menu_485x50.png" position="650,195" size="510,400" transparent="1" zPosition="2"/>
 		<eLabel font="Regular;21" position="670,210" size="16,25" text="0" transparent="1" zPosition="3"/>
 		<eLabel font="Regular;21" position="1065,210" size="60,25" text="Index" transparent="1" zPosition="3"/>
 		<eLabel font="Regular;21" position="670,260" size="16,25" text="1" transparent="1" zPosition="3"/>
@@ -817,20 +817,20 @@ self.autoResize()
 
 	<!-- RDS info -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="RdsInfoDisplay" size="1280,720" zPosition="-2">
-		<widget alphatest="on" name="RassLogo" pixmap="Full-Metal-Wizard/icons/rass_logo.png" position="97,630" size="70,53" transparent="1" zPosition="2"/>
+		<widget alphatest="on" name="RassLogo" pixmap="icons/rass_logo.png" position="97,630" size="70,53" transparent="1" zPosition="2"/>
 		<widget backgroundColor="#000000" font="Regular;28" halign="left" name="RtpText" noWrap="1" position="185,565" shadowColor="#000000" shadowOffset="-1,-1" size="850,53" transparent="1" valign="bottom"/>
 		<widget backgroundColor="#000000" font="Regular;22" halign="left" name="RadioText" noWrap="1" position="185,630" shadowColor="#000000" shadowOffset="-1,-1" size="850,53" transparent="1" valign="bottom"/>
 	</screen>
 
 	<!-- Mute -->
 	<screen position="615,14" size="50,50" name="Mute" title="Mute" backgroundColor="#ff000000" flags="wfNoBorder" zPosition="10">
-		<ePixmap position="0,0" size="50,50" alphatest="blend" pixmap="Full-Metal-Wizard/general/mute_50x50_tx.png" />
+		<ePixmap position="0,0" size="50,50" alphatest="blend" pixmap="general/mute_50x50_tx.png" />
 	</screen>
 
 	<!-- Volume -->
 	<screen position="410,69" size="460,46" name="Volume" title="Volume" backgroundColor="#ff000000" flags="wfNoBorder" zPosition="8">
-		<ePixmap position="0,0" size="460,46" alphatest="blend" pixmap="Full-Metal-Wizard/general/volume_tx.png" />
-		<widget position="49,17" size="333,20" name="Volume" pixmap="Full-Metal-Wizard/slider/slider_main.png" transparent="1" zPosition="9"/>
+		<ePixmap position="0,0" size="460,46" alphatest="blend" pixmap="general/volume_tx.png" />
+		<widget position="49,17" size="333,20" name="Volume" pixmap="slider/slider_main.png" transparent="1" zPosition="9"/>
 	</screen>
 
 	<!-- Video Resolution -->
@@ -852,7 +852,7 @@ self.autoResize()
 
 	<!-- Numerical help dialog -->
 	<screen flags="wfNoBorder" name="NumericalTextInputHelpDialog" position="150,195" size="400,255" zPosition="2">
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/frame/frame_400x255.png" position="0,0" size="400,255" zPosition="-1"/>
+		<ePixmap alphatest="on" pixmap="frame/frame_400x255.png" position="0,0" size="400,255" zPosition="-1"/>
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="key1" position="20,30" size="120,30" valign="center"/>
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="key2" position="140,30" size="120,30" valign="center"/>
 		<widget backgroundColor="#44000000" font="Console;16" halign="center" name="key3" position="260,30" size="120,30" valign="center"/>
@@ -883,7 +883,7 @@ self.autoResize()
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
 		<panel name="FullscreenInfoButtonPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tv.png" position="55, 115" size="400,500"/>
+		<ePixmap pixmap="menu/mainmenu_tv.png" position="55, 115" size="400,500"/>
 		
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
 			    colorServiceDescription="#999999"
@@ -904,9 +904,9 @@ self.autoResize()
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="SubservicesQuickzap" position="0,90" size="1280,720" title="Subservices">
 		<!-- Background -->
 		<!--	Top edge -->
-		<ePixmap position="0,548" size="1280,17" pixmap="Full-Metal-Wizard/infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<ePixmap position="0,548" size="1280,17" pixmap="infobar/sombranewarr-fs8.png" zPosition="-1" />
 		<!--	Body -->
-		<ePixmap position="0,565" size="1280,155" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
+		<ePixmap position="0,565" size="1280,155" pixmap="navy_fondo-fs8.png" zPosition="-1" />
 		<!-- Time -->
 		<widget backgroundColor="#41000000" font="Regular;30" halign="center" position="75,485" render="Label" size="95,35" source="global.CurrentTime" transparent="1" valign="bottom">
 			<convert type="ClockToText">Default</convert>
@@ -918,13 +918,13 @@ self.autoResize()
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<!-- Blinking pixmap (recording in progress?) -->
-		<widget pixmap="Full-Metal-Wizard/icons/icon_rec.png" position="1150,556" render="Pixmap" size="48,48" source="session.RecordState" zPosition="1">
+		<widget pixmap="icons/icon_rec.png" position="1150,556" render="Pixmap" size="48,48" source="session.RecordState" zPosition="1">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
 
 	<screen name="Subtitles" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Subtitle selection">
-		<ePixmap pixmap="Full-Metal-Wizard/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -933,7 +933,7 @@ self.autoResize()
 		</widget>
 		<eLabel position="600, 135" size="320, 22" text="Subtitle selection" font="Named; 20" halign="right" transparent="1" zPosition="2" foregroundColor="crypt_emm" backgroundColor="black"/>
 		<eLabel position="455, 155" size="465, 2" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tv_channel.png" position="55,155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tv_channel.png" position="55,155" size="300,500"/>
 		<widget position="450, 195" size="400, 400" name="config" scrollbarMode="showOnDemand" transparent="1" zPosition="2"/>
 	</screen>
 
@@ -972,7 +972,7 @@ self.autoResize()
 	<screen name="SkinSelector" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Choose your Skin">
 		<panel name="FullScreenWindow" />
 		<widget position="655, 185" size="350, 375" name="SkinList" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-		<ePixmap position="125, 185" size="400,400" pixmap="Full-Metal-Wizard/frame/frame_400x300.png" alphatest="on" zPosition="2"/>
+		<ePixmap position="125, 185" size="400,400" pixmap="frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget position="200, 235" size="250,200" name="Preview" alphatest="on" zPosition="3"/>
 		<widget source="introduction" render="Label" position="110, 510" size="436, 24" zPosition="10" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1"/>
 		<panel name="FullScreenColourPanel" />
@@ -981,7 +981,7 @@ self.autoResize()
 	</screen>
 
 	<screen name="PTSTimeshiftState" position="center,40"  backgroundColor="background" size="420,70" >
-		<widget name="statusicon" position="12,5" size="20,20" pixmaps="Full-Metal-Wizard/icons/play.png,Full-Metal-Wizard/icons/pause.png,Full-Metal-Wizard/icons/stop.png,Full-Metal-Wizard/icons/forward.png,Full-Metal-Wizard/icons/backward.png,Full-Metal-Wizard/icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="statusicon" position="12,5" size="20,20" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" zPosition="5" alphatest="on" />
 		<widget name="speed" position="35,7" size="80,15" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="5" />
 		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;20" halign="left" foregroundColor="white"  backgroundColor="background">
 			<convert type="ServicePosition">Position</convert>
@@ -1009,14 +1009,14 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="200,10" size="90,20" font="Regular;17" foregroundColor="foreground" backgroundColor="background" halign="right" valign="top" transparent="1" zPosition="2">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<ePixmap position="10,30" size="280,15" zPosition="2" pixmap="Full-Metal-Wizard/slider_back.png" alphatest="on" />
-		<widget source="session.CurrentService" render="Progress" position="10,30" size="280,15" zPosition="3" pixmap="Full-Metal-Wizard/slider.png" transparent="1">
+		<ePixmap position="10,30" size="280,15" zPosition="2" pixmap="slider_back.png" alphatest="on" />
+		<widget source="session.CurrentService" render="Progress" position="10,30" size="280,15" zPosition="3" pixmap="slider.png" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 	</screen>
 
 	<screen name="SleepTimerEdit" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Sleep Timer">
-		<ePixmap pixmap="Full-Metal-Wizard/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 22" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1024,11 +1024,11 @@ self.autoResize()
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
-		<ePixmap position="150,195" size="400,200" pixmap="Full-Metal-Wizard/frame/frame_400x200.png" alphatest="on" zPosition="2" />
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<ePixmap position="150,195" size="400,200" pixmap="frame/frame_400x200.png" alphatest="on" zPosition="2" />
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
 		<widget position="200,210" size="300,170" name="current_status" valign="center" halign="center" font="Regular;20" backgroundColor="#31000000" transparent="1" zPosition="3" />
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -1066,11 +1066,11 @@ self.autoResize()
 		<widget name="SeekState" position="365,585" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>
 		<widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="position_arrow.png:3,5" position="479,587" size="696,20" zPosition="3"/>
 		<eLabel backgroundColor="black" font="Regular;20" position="110,630" size="140,22" text="OK = Menu" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
-		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_play.png"/>
-		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_pause.png"/>
-		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_forward.png"/>
-		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_stop.png"/>
+		<ePixmap pixmap="icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
+		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="icons/icon_play.png"/>
+		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="icons/icon_pause.png"/>
+		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="icons/icon_forward.png"/>
+		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="icons/icon_stop.png"/>
 		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
@@ -1112,18 +1112,18 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
-		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_play.png"/>
-		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_pause.png"/>
-		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_forward.png"/>
-		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_stop.png"/>
+		<ePixmap pixmap="icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
+		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="icons/icon_play.png"/>
+		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="icons/icon_pause.png"/>
+		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="icons/icon_forward.png"/>
+		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="icons/icon_stop.png"/>
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="un808888" pointer="position_arrow.png:3,5" foregroundColor="black"/>
 		<widget name="SeekState" position="365, 585" zPosition="10" size="100,25" halign="center" font="Regular;20" valign="center" transparent="1"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
 	</screen>
 
 	<screen name="StreamTVList" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="StreamTV List">
-		<ePixmap pixmap="Full-Metal-Wizard/icons/clock.png" position="50,30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="icons/clock.png" position="50,30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75,30" size="80,20" font="Named;16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 		<convert type="ClockToText">Default</convert>
 		</widget>
@@ -1132,10 +1132,10 @@ self.autoResize()
 		</widget>
 		<eLabel position="50,102" size="1160,1" backgroundColor="crypt_emm" zPosition="2"/>
 		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="140,200" size="166,162"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label"  position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label"  position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -1158,16 +1158,16 @@ self.autoResize()
 	</screen>
 
 	<screen name="AudioSelection" position="center,center" size="680,355" title="Audio">
-		<widget source="key_red" position="5,2" size="35,25" render="Pixmap" pixmap="Full-Metal-Wizard/buttons/key_red.png" alphatest="on">
+		<widget source="key_red" position="5,2" size="35,25" render="Pixmap" pixmap="buttons/key_red.png" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_green" position="5,32" size="35,25" render="Pixmap" pixmap="Full-Metal-Wizard/buttons/key_green.png" alphatest="on">
+		<widget source="key_green" position="5,32" size="35,25" render="Pixmap" pixmap="buttons/key_green.png" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_yellow" position="5,62" size="35,25" render="Pixmap" pixmap="Full-Metal-Wizard/buttons/key_yellow.png" alphatest="on">
+		<widget source="key_yellow" position="5,62" size="35,25" render="Pixmap" pixmap="buttons/key_yellow.png" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="key_blue" position="5,92" size="35,25" render="Pixmap" pixmap="Full-Metal-Wizard/buttons/key_blue.png" alphatest="on">
+		<widget source="key_blue" position="5,92" size="35,25" render="Pixmap" pixmap="buttons/key_blue.png" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget name="config" position="70,0" size="600,120" scrollbarMode="showNever" itemHeight="30" enableWrapAround="1" zPosition="3"/>
@@ -1195,7 +1195,7 @@ self.autoResize()
 			    }
 			</convert>
 		</widget>
-		<ePixmap position="5,330" size="35,25" pixmap="Full-Metal-Wizard/buttons/key_menu.png" alphatest="blend" transparent="1" />
+		<ePixmap position="5,330" size="35,25" pixmap="buttons/key_menu.png" alphatest="blend" transparent="1" />
 	</screen>
 
 	<screen name="ZapHistoryBrowser" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
@@ -1251,7 +1251,7 @@ self.autoResize()
 	  <!--<ePixmap pixmap="menu/mainmenu_tasks_setup_tv.png" position="235,200" size="166,162"/>-->
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/frame/frame_400x400.png" position="50,115" size="400,400" alphatest="on" />
+		<ePixmap pixmap="frame/frame_400x400.png" position="50,115" size="400,400" alphatest="on" />
 		<widget name="help" position="100,130" size="300,350"  font="Regular;19" halign="left" transparent="1" valign="center" zPosition="2"/>
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
@@ -1271,7 +1271,7 @@ self.autoResize()
 		<panel name="FullScreenColourPanel" />
 		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="170,419" size="166,162"/>
 		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/frame/frame_400x200.png" position="50,195" size="400,200"/>
+		<ePixmap alphatest="on" pixmap="frame/frame_400x200.png" position="50,195" size="400,200"/>
 		<widget font="Regular;20" halign="center" name="description" position="100,210" size="300,170" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Regular;20" halign="center" name="text" position="590,510" size="610, 30" transparent="1" valign="center" zPosition="2"/>
 	</screen>
@@ -1279,8 +1279,8 @@ self.autoResize()
 	<screen name="VlcMediaListScreen" position="90,90" size="1100,576" title="VlcMediaListScreen">
 		<eLabel position="800, 25" size="300, 22" text="vlc player" font="Regular; 20" halign="center"/>
 		<eLabel position="740,100" size="540,2" backgroundColor="crypt_emm"/>
-		<widget name="filelist_button_sel" pixmap="Full-Metal-Wizard/epg_now.png" position="125,100" zPosition="3" size="1100, 35" alphatest="on"/>
-		<widget name="playlist_button_sel" pixmap="Full-Metal-Wizard/epg_next.png" position="125,100" zPosition="3" size="1100,35" alphatest="on"/>
+		<widget name="filelist_button_sel" pixmap="epg_now.png" position="125,100" zPosition="3" size="1100, 35" alphatest="on"/>
+		<widget name="playlist_button_sel" pixmap="epg_next.png" position="125,100" zPosition="3" size="1100,35" alphatest="on"/>
 		<widget name="filelist_text" position="192,107" zPosition="4" size="185,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
 		<widget name="playlist_text" position="442,107" zPosition="4" size="185,25" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1"/>
 		<eLabel position="740,133" size="540,2" backgroundColor="crypt_emm"/>
@@ -1439,7 +1439,7 @@ self.autoResize()
  <screen name="VirtualKeyBoard" position="340,150" size="600,435" zPosition="99" title="Virtual keyboard">
   <eLabel position="0,0" size="600,2" backgroundColor="crypt_emm"/>
   <widget name="header" position="0,30" size="600,30" font="Regular;24" transparent="1" noWrap="1" halign="center"/>
-  <ePixmap pixmap="Full-Metal-Wizard/vkey_text.png" position="19,87" size="542,52" zPosition="-4" alphatest="on"/>
+  <ePixmap pixmap="vkey_text.png" position="19,87" size="542,52" zPosition="-4" alphatest="on"/>
   <widget name="text" position="22,90" size="536,46" font="Regular;40" transparent="1" noWrap="1" halign="right"/>
   <widget name="list" position="20,170" size="540,225" selectionDisabled="1" transparent="1"/>
   <eLabel position="0,408" size="600,2" backgroundColor="crypt_emm"/>
@@ -1539,21 +1539,21 @@ self.autoResize()
  <screen name="MusicExplorer" position="0, 70" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1">
   <!-- Background -->
   <!--	Top edge -->
-  <ePixmap position="0,548" size="1280,17" pixmap="Full-Metal-Wizard/infobar/sombranewarr-fs8.png" zPosition="-1" />
+  <ePixmap position="0,548" size="1280,17" pixmap="infobar/sombranewarr-fs8.png" zPosition="-1" />
   <!--	Body -->
-  <ePixmap position="0,565" size="1280,155" pixmap="Full-Metal-Wizard/navy_fondo-fs8.png" zPosition="-1" />
-  <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" alphatest="on" transparent="1"/>
-  <ePixmap position="120, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_play.png" alphatest="on" transparent="1"/>
-  <ePixmap position="158, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_pause.png" alphatest="on" transparent="1"/>
-  <ePixmap position="196, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_forward.png" alphatest="on" transparent="1"/>
+  <ePixmap position="0,565" size="1280,155" pixmap="navy_fondo-fs8.png" zPosition="-1" />
+  <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="icons/icon_rewind.png" alphatest="on" transparent="1"/>
+  <ePixmap position="120, 520" zPosition="0" size="36,36" pixmap="icons/icon_play.png" alphatest="on" transparent="1"/>
+  <ePixmap position="158, 520" zPosition="0" size="36,36" pixmap="icons/icon_pause.png" alphatest="on" transparent="1"/>
+  <ePixmap position="196, 520" zPosition="0" size="36,36" pixmap="icons/icon_forward.png" alphatest="on" transparent="1"/>
   <widget source="session.CurrentService" render="Label" position="55, 490" size="1220, 26" font="Named; 20" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
    <convert type="ServiceName">Name</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="370, 570" size="100, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" shadowColor="black" shadowOffset="-1,-1" transparent="1">
    <convert type="ServicePosition">Position</convert>
   </widget>
-  <ePixmap position="393, 540" size="600,16" pixmap="Full-Metal-Wizard/mpslider.png" zPosition="3" alphatest="on"/>
-  <widget source="session.CurrentService" render="PositionGauge" position="413, 541" size="560,14" zPosition="2" pointer="Full-Metal-Wizard/pointer.png:13,3">
+  <ePixmap position="393, 540" size="600,16" pixmap="mpslider.png" zPosition="3" alphatest="on"/>
+  <widget source="session.CurrentService" render="PositionGauge" position="413, 541" size="560,14" zPosition="2" pointer="pointer.png:13,3">
    <convert type="ServicePosition">Gauge</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="910, 570" size="100, 22" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1">
@@ -1568,11 +1568,11 @@ self.autoResize()
   <widget source="global.CurrentTime" render="Label" position="1068, 595" size="140, 20" font="Named; 16" valign="top" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
    <convert type="ClockToText">ShortFullDate</convert>
   </widget>
-  <ePixmap position="234, 520" size="36, 36" pixmap="Full-Metal-Wizard/icons/icon_stop.png" alphatest="on" transparent="1"/>
+  <ePixmap position="234, 520" size="36, 36" pixmap="icons/icon_stop.png" alphatest="on" transparent="1"/>
  </screen>
 
  <screen name="RSSSetup" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Simple RSS Reader Setup">
-  <ePixmap pixmap="Full-Metal-Wizard/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+  <ePixmap pixmap="icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
    <convert type="ClockToText">Default</convert>
   </widget>
@@ -1582,10 +1582,10 @@ self.autoResize()
   <eLabel position="50, 102" size="1160, 1" backgroundColor="crypt_emm" zPosition="2"/>
   <ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="140,200" size="166,162"/>
   <widget position="400, 170" size="810, 421" name="config" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" zPosition="2"/>
-  <ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
-  <ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
+  <ePixmap alphatest="on" pixmap="buttons/button_200x60_red.png" position="123, 635" size="200,60" zPosition="1"/>
+  <ePixmap alphatest="on" pixmap="buttons/button_200x60_green.png" position="398, 635" size="200,60" zPosition="1"/>
+  <ePixmap alphatest="on" pixmap="buttons/button_200x60_yellow.png" position="673, 635" size="200,60" zPosition="1"/>
+  <ePixmap alphatest="on" pixmap="buttons/button_200x60_blue.png" position="948, 635" size="200,60" zPosition="1"/>
   <widget backgroundColor="#9f1313" font="Regular;20" halign="center" source="key_red" render="Label" position="123, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
   <widget backgroundColor="#1f771f" font="Regular;20" halign="center" source="key_green" render="Label" position="398, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
   <widget backgroundColor="#a08500" font="Regular;20" halign="center" source="key_yellow" render="Label" position="673, 635" size="200,36" transparent="1" valign="center" zPosition="3"/>
@@ -1595,7 +1595,7 @@ self.autoResize()
  </screen>
  
  <screen name="RSSFeedView" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Simple RSS Reader">
-  <ePixmap pixmap="Full-Metal-Wizard/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+  <ePixmap pixmap="icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
    <convert type="ClockToText">Default</convert>
   </widget>
@@ -1618,7 +1618,7 @@ self.autoResize()
  </screen>
  
  <screen name="RSSEntryView" position="0,0" backgroundColor="un44000000" flags="wfNoBorder" size="1280,720" title="Simple RSS Reader">
-  <ePixmap pixmap="Full-Metal-Wizard/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+  <ePixmap pixmap="icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
    <convert type="ClockToText">Default</convert>
   </widget>
@@ -1632,7 +1632,7 @@ self.autoResize()
  </screen>
  
  <screen name="RSSOverview" position="0,0" backgroundColor="un44000000" flags="wfNoBorder" size="1280,720" title="Simple RSS Reader">
-  <ePixmap pixmap="Full-Metal-Wizard/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+  <ePixmap pixmap="icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
   <widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
    <convert type="ClockToText">Default</convert>
   </widget>
