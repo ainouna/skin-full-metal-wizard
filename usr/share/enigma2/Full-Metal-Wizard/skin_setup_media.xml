@@ -4,7 +4,7 @@
 	<screen name="MediaPlayerSettings" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
 		<widget position="590, 170" size="610, 415" name="config" itemHeight="50" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>  
 	<!-- Movie Browser -->

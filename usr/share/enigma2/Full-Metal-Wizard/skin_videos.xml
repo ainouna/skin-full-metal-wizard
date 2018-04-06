@@ -1,11 +1,15 @@
 <skin>
 <!-- MyTubePlayer -->
 	<screen name="MyTubePlayer" position="0,0" zPosition="-1" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-		<ePixmap pixmap="Full-Metal-Wizard/infobar.png" position="0, 70" size="1280,720" zPosition="-1"/>
-		<ePixmap position="82, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" alphatest="on" transparent="1"/>
-		<ePixmap position="120, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_play.png" alphatest="on" transparent="1"/>
-		<ePixmap position="158, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_pause.png" alphatest="on" transparent="1"/>
-		<ePixmap position="196, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_forward.png" alphatest="on" transparent="1"/>
+		<!-- Background -->
+		<!--	Top edge -->
+		<ePixmap position="0,548" size="1280,17" pixmap="infobar/sombranewarr-fs8.png" zPosition="-1" />
+		<!--	Body -->
+		<ePixmap position="0,565" size="1280,155" pixmap="navy_fondo-fs8.png" zPosition="-1" />
+		<ePixmap position="82, 601" zPosition="0" size="36,36" pixmap="icons/icon_rewind.png" alphatest="on" transparent="1"/>
+		<ePixmap position="120, 601" zPosition="0" size="36,36" pixmap="icons/icon_play.png" alphatest="on" transparent="1"/>
+		<ePixmap position="158, 601" zPosition="0" size="36,36" pixmap="icons/icon_pause.png" alphatest="on" transparent="1"/>
+		<ePixmap position="196, 601" zPosition="0" size="36,36" pixmap="icons/icon_forward.png" alphatest="on" transparent="1"/>
 		<eLabel position="55, 659" size="205, 1" backgroundColor="crypt_emm" zPosition="2"/>
 		<widget source="session.CurrentService" render="Label" font="Regular; 18" position="93, 665" size="57, 20" halign="right" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="ServiceInfo">VideoWidth</convert>
@@ -14,7 +18,7 @@
 		<widget source="session.CurrentService" render="Label" font="Regular; 18" position="172, 665" size="57, 20" halign="left" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
-		<ePixmap position="1100, 593" size="100,40" zPosition="1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/plugin.png" alphatest="on" transparent="1"/>
+		<ePixmap position="1100, 593" size="100,40" zPosition="1" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
 		<widget source="global.CurrentTime" render="Label" position="1088, 641" size="120, 26" font="Named; 21" valign="top" halign="right" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -27,8 +31,8 @@
 		<widget source="session.CurrentService" render="Label" position="325, 640" size="100, 24" font="Regular;21" halign="center" valign="center" backgroundColor="black" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<ePixmap position="393, 620" size="600,16" pixmap="Full-Metal-Wizard/mpslider.png" zPosition="3" alphatest="on"/>
-		<widget source="session.CurrentService" render="PositionGauge" position="413, 621" size="560,14" zPosition="2" pointer="Full-Metal-Wizard/pointer.png:13,3">
+		<ePixmap position="393, 620" size="600,16" pixmap="mpslider.png" zPosition="3" alphatest="on"/>
+		<widget source="session.CurrentService" render="PositionGauge" position="413, 621" size="560,14" zPosition="2" pointer="pointer.png:13,3">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="960, 640" size="100, 24" font="Regular;21" halign="center" valign="center" backgroundColor="black" transparent="1">
@@ -77,7 +81,7 @@
 		</widget>
 		<widget name="detailtext" position="350,225" size="730,280" zPosition="10" font="Regular;22" foregroundColor="white" backgroundColor="darkgrey" transparent="1"/>
 		<eLabel position="0,518" size="1100,2" backgroundColor="crypt_emm"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_red.png" position=" 80,525" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_red.png" position=" 80,525" size="200,60" zPosition="1"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position=" 80,525" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<ePixmap position="980,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
 		<widget name="thumbnail" position="0,0" size="180,135" alphatest="on"/> <!-- fake entry for dynamic thumbnail resizing, currently there is no other way doing this. -->
@@ -105,7 +109,7 @@
 				      </convert>
 		</widget>
 		<eLabel position="0,518" size="680,2" backgroundColor="crypt_emm"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/buttons/button_200x60_red.png" position=" 80,525" size="200,60" zPosition="1"/>
+		<ePixmap alphatest="on" pixmap="buttons/button_200x60_red.png" position=" 80,525" size="200,60" zPosition="1"/>
 		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position=" 80,525" size="200,36" transparent="1" valign="center" zPosition="3"/>
 		<ePixmap position="550,525" size="100,40" zPosition="4" pixmap="~/plugin.png" alphatest="on" transparent="1"/>
 		<widget name="title" position="0,0" size="0,0"/>
@@ -116,9 +120,9 @@
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
 		<panel name="FullscreenVKeyIconButtonPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/menu/mainmenu_source_youtube.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_source_youtube.png" position="55, 155" size="300,500"/>
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>		
-		<widget source="feedlist" selectionPixmap="Full-Metal-Wizard/menu/on_main_menu_625x85.png" backgroundColor="#41000000" render="Listbox" position="590, 160" size="635, 425" zPosition="2" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="feedlist" selectionPixmap="menu/on_main_menu_625x85.png" backgroundColor="#41000000" render="Listbox" position="590, 160" size="635, 425" zPosition="2" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (85,[
@@ -290,7 +294,7 @@
 		<widget source="session.VideoPicture" render="Pig" position="913,136" size="328,186" zPosition="3" backgroundColor="transparent" />
 		<eLabel position="912,135" size="330,188" backgroundColor="#00ffffff" zPosition="0" name="Videoback" foregroundColor="#00ffffff" />
 		<widget name="title" position="55,108" size="850,55" backgroundColor="#26181d20" transparent="1" zPosition="1" font="mediaportal; 26" valign="center" halign="left" foregroundColor="#00bbbbbb" />
-		<widget name="config" position="55,173" itemHeight="50" size="830,500" backgroundColor="#26181d20" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="Full-Metal-Wizard/menu/on_main_menu_820x50.png" zPosition="1" foregroundColor="#00bbbbbb" />
+		<widget name="config" position="55,173" itemHeight="50" size="830,500" backgroundColor="#26181d20" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="menu/on_main_menu_820x50.png" zPosition="1" foregroundColor="#00bbbbbb" />
 		<widget name="name" position="914,368" size="330,30" foregroundColor="#00ffffff" backgroundColor="#26181d20" transparent="1" font="mediaportal;28" valign="top" halign="center" />
 		<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MediaPortal/skins/liquidblue/images/setup.png" position="989,424"  zPosition="1" size="176,200" alphatest="on" />
 	</screen>	

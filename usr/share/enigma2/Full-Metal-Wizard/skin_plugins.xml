@@ -94,7 +94,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<ePixmap pixmap="easy-skin-aus-hd/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
+		<ePixmap pixmap="frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
 		<widget name="lab1" position="100,150" size="300,150"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<!-- Gmail News Plugin -->
@@ -148,7 +148,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<widget position="590, 145" size="610, 450" name="list" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<ePixmap position="50,195" size="400,200" alphatest="on" pixmap="easy-skin-aus-hd/frame/frame_400x200.png"/>
+		<ePixmap position="50,195" size="400,200" alphatest="on" pixmap="frame/frame_400x200.png"/>
 		<widget position="60,205" size="380,180" source="statusbar" render="Label" font="Regular;20" halign="center" valign="center" transparent="1" zPosition="2"/>		
 	</screen>
 	<!-- IP Channels for T-Pod Plugin -->

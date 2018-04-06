@@ -5,15 +5,15 @@
 	  -->
 	<screen flags="wfNoBorder" name="WizardTemplate" backgroundColor="background" position="0,0" size="1280,720" title="Welcome...">
 		<eLabel backgroundColor="white" position="565,80" size="550,2" zPosition="2"/>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="155, 30" size="500, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/frame/frame_595x250.png" position="545,95" size="595,250"/>
+		<ePixmap alphatest="on" pixmap="general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
+		<ePixmap alphatest="on" pixmap="frame/frame_595x250.png" position="545,95" size="595,250"/>
 		<widget font="Regular;20" halign="center" name="text" position="565,115" size="555,215" transparent="1" valign="center" zPosition="12"/>
 	</screen>
 
@@ -75,7 +75,7 @@
 	<screen flags="wfNoBorder" backgroundColor="background" name="LanguageWizard" position="0,0" size="1280,720" title="Language selection">
 		<eLabel font="Regular;28" position="675,40" size="485,35" text="Language Selection" transparent="1" zPosition="2"/>
 		<eLabel backgroundColor="white" position="665,80" size="470,2" zPosition="2"/>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -93,8 +93,8 @@
 				}
 			</convert>
 		</widget>
-		<widget alphatest="blend" name="wizard" pixmap="Full-Metal-Wizard/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="blend" pixmap="Full-Metal-Wizard/frame/frame_495x160.png" position="110,455" size="495,210"/>
+		<widget alphatest="blend" name="wizard" pixmap="general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
+		<ePixmap alphatest="blend" pixmap="frame/frame_495x160.png" position="110,455" size="495,210"/>
 		<widget backgroundColor="#41000000" font="Regular;20" halign="center" name="text" position="130,445" size="455,170" valign="center" zPosition="3" transparent="1" />
 	</screen>
 
@@ -113,7 +113,7 @@
 	<!-- Tutorial Wizard -->
 	<screen flags="wfNoBorder" backgroundColor="background" name="TutorialWizard" position="0,0" size="1280,720" title="Welcome...">
 		<eLabel font="Regular;28" position="675,40" size="485,35" text="Welcome..." transparent="1" zPosition="2"/>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
+		<ePixmap pixmap="icons/clock.png" position="50, 30" zPosition="3" size="14,14" alphatest="on"/>
 		<widget source="global.CurrentTime" render="Label" position="75, 30" size="80, 20" font="Named; 16" halign="left" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -121,8 +121,8 @@
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<eLabel backgroundColor="white" position="665,80" size="450,2" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/frame/frame_495x310.png" position="645,95" size="495,310"/>
+		<ePixmap alphatest="on" pixmap="general/wizard.png" position="140,195" size="220,220" transparent="1" zPosition="10"/>
+		<ePixmap alphatest="on" pixmap="frame/frame_495x310.png" position="645,95" size="495,310"/>
 		<widget font="Regular;20" halign="center" name="text" position="665,115" size="455,170" transparent="1" valign="center" zPosition="12"/>
 		<widget name="list" position="650,425" size="510,250" transparent="1" zPosition="2"/>
 	</screen>
