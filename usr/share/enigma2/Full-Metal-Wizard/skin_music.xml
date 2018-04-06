@@ -10,7 +10,7 @@
 		<eLabel backgroundColor="white" position="665,340" size="450,2" zPosition="2"/>
 		<widget enableWrapAround="1" name="filelist" position="650,120" scrollbarMode="showOnDemand" size="570,207" transparent="1" zPosition="2"/>
 		<widget enableWrapAround="1" name="playlist" position="650,347" scrollbarMode="showOnDemand" size="570,254" transparent="1" zPosition="2"/>
-		<widget alphatest="on" name="coverArt" pixmap="Full-Metal-Wizard/general/no_coverArt.png" position="250,150" size="200,200" transparent="1"/>
+		<widget alphatest="on" name="coverArt" pixmap="general/no_coverArt.png" position="250,150" size="200,200" transparent="1"/>
 		<widget font="Regular;22" name="title" position="120,370" size="470,26" transparent="1" valign="top" zPosition="2"/>
 		<eLabel backgroundColor="#777777" position="120,405" size="470,1" zPosition="2"/>
 		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="artisttext" position="100,420" size="100,19" transparent="1" valign="top" zPosition="2"/>
@@ -22,10 +22,10 @@
 		<widget font="Regular;18" foregroundColor="#777777" halign="right" name="genretext" position="100,495" size="100,19" transparent="1" valign="top" zPosition="2"/>
 		<widget font="Regular;18" name="genre" position="220,495" size="370,19" transparent="1" valign="top" zPosition="2"/>
 		<eLabel backgroundColor="#777777" position="120,530" size="470,1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/slider/slider_10x400_hbg.png" position="135,556" size="400,14" transparent="1" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Full-Metal-Wizard/slider/slider_10_fg_ab.png" position="135,556" size="7,14" transparent="1" zPosition="2"/>
-		<widget name="PositionGauge" pointer="Full-Metal-Wizard/slider/slider_10x497_hfg.png:490,0" position="142,555" size="393,14" transparent="1" zPosition="4"/>
-		<widget alphatest="on" name="repeat" pixmaps="Full-Metal-Wizard/buttons/button_20x20_blue_off.png,Full-Metal-Wizard/buttons/button_20x20_blue_on.png" position="560,554" size="20,20" transparent="1" zPosition="2"/>	
+		<ePixmap alphatest="on" pixmap="slider/slider_10x400_hbg.png" position="135,556" size="400,14" transparent="1" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="slider/slider_10_fg_ab.png" position="135,556" size="7,14" transparent="1" zPosition="2"/>
+		<widget name="PositionGauge" pointer="slider/slider_10x497_hfg.png:490,0" position="142,555" size="393,14" transparent="1" zPosition="4"/>
+		<widget alphatest="on" name="repeat" pixmaps="buttons/button_20x20_blue_off.png,buttons/button_20x20_blue_on.png" position="560,554" size="20,20" transparent="1" zPosition="2"/>	
 		<widget name="currenttext" position="0,0" size="0,0"/>
 		<widget name="titletext" position="0,0" size="0,0"/>
 	</screen>
@@ -45,7 +45,7 @@
 		<widget font="Regular;22" foregroundColor="#777777" name="track" position="120,370" size="470,26" transparent="1" valign="top" zPosition="2"/>
 		<widget font="Regular;22" name="info_track" position="220,370" size="370,30" transparent="1" valign="center" halign="left" zPosition="2" />                 
 		<widget name="duration" position="420,370" size="60,30" valign="center" halign="right" zPosition="2"  transparent="1" font="Regular;18" />          
-		<widget alphatest="on" name="info_cover" pixmap="Full-Metal-Wizard/general/no_coverArt.png" position="250,150" size="200,200" transparent="1"/>   
+		<widget alphatest="on" name="info_cover" pixmap="general/no_coverArt.png" position="250,150" size="200,200" transparent="1"/>   
 		<eLabel backgroundColor="white" position="665,340" size="450,2" zPosition="2"/>
 		<widget enableWrapAround="1" name="tablist" position="650,120" scrollbarMode="showOnDemand" size="570,207" transparent="1" zPosition="2"/>
 		<widget enableWrapAround="1" name="streamlist" position="650,347" scrollbarMode="showOnDemand" size="570,254" transparent="1" zPosition="2"/>
@@ -71,7 +71,7 @@
 	<screen name="SHOUTcastSetup" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="Full-Metal-Wizard/frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
+		<ePixmap pixmap="frame/frame_400x200.png" position="50,115" size="400,200" alphatest="on" />
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
 	<screen name="SHOUTcastStreamripperRecordingPath" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Select record path for streamripper">
