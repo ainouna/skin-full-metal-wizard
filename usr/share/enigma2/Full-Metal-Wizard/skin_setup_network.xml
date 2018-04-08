@@ -88,7 +88,7 @@
 	<screen name="NetworkServiceSetup" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup_system.png" position="200,150" size="166,162"/>
 		<ePixmap position="725, 185" size="400,300" pixmap="frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget name="lab1" position="800,235" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
 		<widget name="labactive" position="960,235" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
@@ -104,7 +104,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<ePixmap pixmap="menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup_system.png" position="200,150" size="166,162"/>
 		<ePixmap position="725, 185" size="400,300" pixmap="frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget name="lab1" position="800,235" size="150,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
 		<widget name="labactive" position="960,235" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
@@ -117,13 +117,13 @@
 		<panel name="FullScreenColourPanel" />
 		<panel name="SetupTextHelp"/>
 		<panel name="SetupConfig"/>
-		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="200,150" size="166,162"/>
 	</screen>	
 	<!-- FTP Service -->
 	<screen name="NetworkFtp" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network Setup - FTP">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup_system.png" position="200,150" size="166,162"/>
 		<ePixmap position="725, 185" size="400,300" pixmap="frame/frame_400x300.png" alphatest="on" zPosition="2"/>
 		<widget name="lab1" position="800,235" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
 		<widget name="lab2" position="800,305" size="250,30" font="Regular;20" valign="center" transparent="1" zPosition="3"/>
@@ -135,7 +135,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<ePixmap pixmap="menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup_system.png" position="200,150" size="166,162"/>
 		<widget name="autostart" position="710,170" size="100,24" font="Regular;20" valign="center" transparent="1" />
 		<widget name="labdisabled" position="810,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="810,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -168,13 +168,13 @@
 		<panel name="FullScreenColourPanel" />
 		<panel name="SetupTextHelp" />
 		<panel name="SetupConfig"/>
-		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="200,150" size="166,162"/>
 	</screen>
 	<!-- DLNA Server Setup Menu Selection-->
 	<screen name="uShareSelection" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network Setup - DLNA Server Setup">
 		<panel name="FullScreenWindow" />  
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="200,150" size="166,162"/>
 		<widget name="checkList" position="590, 170" size="610, 415" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- DynDNS -->
@@ -182,7 +182,7 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<ePixmap pixmap="menu/mainmenu_tasks_setup_system.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup_system.png" position="200,150" size="166,162"/>
 		<widget name="autostart" position="710,170" size="100,24" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labdisabled" position="810,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
 		<widget name="labactive" position="810,170" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
@@ -207,7 +207,7 @@
 		<panel name="FullScreenColourPanel" />
 		<panel name="SetupTextHelp"/>
 		<panel name="SetupConfig"/>
-		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="200,150" size="166,162"/>
 	</screen>
 	<!-- Mount Manager -->
 	<screen name="AutoMountManager" backgroundColor="un44000000" position="0,0" size="1280,720" flags="wfNoBorder" title="Mount Manager">
@@ -324,7 +324,7 @@
 	<screen name="ScanIP" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Scan Ip">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="55, 155" size="300,500"/>
+		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="200,150" size="166,162"/>
 		<widget position="590, 150" size="610, 435" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>	
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Network Setup">
