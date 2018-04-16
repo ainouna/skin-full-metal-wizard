@@ -106,7 +106,7 @@
 
 	<screen backgroundColor="background" flags="wfNoBorder" name="menu_information" position="0,0" size="1280,720" title="Information">
 		<panel name="FullScreenWindow" />
-		<ePixmap alphatest="on" pixmap="menu/mainmenu_tasks_info.png" position="275,200" size="166,162" zPosition="2" />
+		<ePixmap alphatest="on" pixmap="menu/mainmenu_tasks_info.png" position="200,200" size="166,162" zPosition="2" />
 		<widget backgroundColor="background" position="665,115" render="Listbox" scrollbarMode="showOnDemand" size="500,500" source="menu" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{
@@ -123,7 +123,7 @@
 
 	<screen name="SystemInfoPanel">
 		<panel name="FullScreenWindow" />
-		<ePixmap pixmap="menu/mainmenu_tasks_info.png" position="275,200" size="166,162" zPosition="2" />
+		<ePixmap pixmap="menu/mainmenu_tasks_info.png" position="200,200" size="166,162" zPosition="2" />
 	</screen>
 
 	<screen name="SystemInfoWidgetPanel">
@@ -145,18 +145,18 @@
 					# 33333333 44444444444444444444 Heading label/value, large font
 					#  1111111 555555555 6666666666 Gateway with gateway and destination
 					# 33333333 777777777 888 9      Network interface heading
-					MultiContentEntryText(pos = (0, 1), size = (730, 25), font = 1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a heading, whole line, large font
-					MultiContentEntryText(pos = (25, 1), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a label
-					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the information
-					MultiContentEntryText(pos = (0, 1), size = (200, 25), font = 1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is a label, large font
-					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the information, large font
-					MultiContentEntryText(pos = (225, 1), size = (225, 25), font = 0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the network info gateway
-					MultiContentEntryText(pos = (475, 1), size = (265, 25), font = 0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is the network info gateway destination
-					MultiContentEntryText(pos = (225, 1), size = (225, 25), font = 1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is the interface type
-					MultiContentEntryText(pos = (475, 1), size = (100, 25), font = 1, flags = RT_HALIGN_LEFT, text = 8), # index 8 internet label
+					MultiContentEntryText(pos = (0, 0), size = (730, 25), font = 1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a heading, whole line, large font
+					MultiContentEntryText(pos = (25, 0), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a label
+					MultiContentEntryText(pos = (225, 0), size = (505, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the information
+					MultiContentEntryText(pos = (0, 0), size = (200, 25), font = 1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is a label, large font
+					MultiContentEntryText(pos = (225, 0), size = (505, 25), font = 1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the information, large font
+					MultiContentEntryText(pos = (225, 0), size = (225, 25), font = 0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is the network info gateway
+					MultiContentEntryText(pos = (475, 0), size = (265, 25), font = 0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is the network info gateway destination
+					MultiContentEntryText(pos = (225, 0), size = (225, 25), font = 1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is the interface type
+					MultiContentEntryText(pos = (475, 0), size = (100, 25), font = 1, flags = RT_HALIGN_LEFT, text = 8), # index 8 internet label
 					MultiContentEntryPixmapAlphaTest(pos = (600, 7), size = (15, 16), png = 9), # index 9 is the link state pixmap
 					],
-					"fonts": [gFont("Regular", 22),gFont("Regular", 24)],
+					"fonts": [gFont("Regular", 20),gFont("Regular", 22)],
 					"itemHeight": 25,
 					"selectionEnabled": False,
 				}
@@ -182,8 +182,8 @@
 					# 0   100 200 300 400 500 600 700
 					# |   |   |   |   |   |   |   |
 					# 0000000000 111111111111111111 Normal label/value
-					MultiContentEntryText(pos = (0, 1), size = (250, 25), font = 0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a label
-					MultiContentEntryText(pos = (275, 1), size = (455, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the information
+					MultiContentEntryText(pos = (0, 1), size = (250, 26), font = 0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a label
+					MultiContentEntryText(pos = (275, 1), size = (455, 26), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the information
 ],
 					"fonts": [gFont("Regular", 22)],
 					"itemHeight": 28,
@@ -222,23 +222,23 @@
 					#   888888 9999 AAAAAA BBBBBBBB Filesystem, smaller font
 					#  CCCCCCCCCCCCCCCCCCCCCCCCCCCC Wide filesystem name, smaller font
 					#  DDDDDDDDDDDDDDDDDDDDDDDDDDDD Wide DLNA name
-					MultiContentEntryText(pos = (0, 1), size = (730, 25), font = 1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a heading, whole line, large font
-					MultiContentEntryText(pos = (25, 1), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a label
-					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the information
-					MultiContentEntryText(pos = (0, 1), size = (200, 25), font = 1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is a label, large font
-					MultiContentEntryText(pos = (225, 1), size = (505, 25), font = 1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the information, large font
+					MultiContentEntryText(pos = (0, 0), size = (730, 25), font = 1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is a heading, whole line, large font
+					MultiContentEntryText(pos = (25, 0), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is a label
+					MultiContentEntryText(pos = (225, 0), size = (505, 25), font = 0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the information
+					MultiContentEntryText(pos = (0, 0), size = (200, 25), font = 1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is a label, large font
+					MultiContentEntryText(pos = (225, 0), size = (505, 25), font = 1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the information, large font
 
-					MultiContentEntryText(pos = (25, 1), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is a HDD name
-					MultiContentEntryText(pos = (225, 1), size = (325, 25), font = 0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is a HDD type
-					MultiContentEntryText(pos = (575, 1), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is a HDD size
-					MultiContentEntryText(pos = (50, 1), size = (150, 25), font = 2, flags = RT_HALIGN_LEFT, text = 8), # index 8 is a filesystem name
-					MultiContentEntryText(pos = (225, 1), size = (100, 25), font = 2, flags = RT_HALIGN_LEFT, text = 9), # index 9 filesystem type
-					MultiContentEntryText(pos = (350, 1), size = (150, 25), font = 2, flags = RT_HALIGN_LEFT, text = 10), # index 10 filesystem size
-					MultiContentEntryText(pos = (525, 1), size = (205, 25), font = 2, flags = RT_HALIGN_LEFT, text = 11), # index 11 filesystem free
-					MultiContentEntryText(pos = (25, 1), size = (705, 25), font = 2, flags = RT_HALIGN_LEFT, text = 12), # index 12 is a whole line filesystem name
-					MultiContentEntryText(pos = (25, 1), size = (705, 25), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is a whole line DLNA name
+					MultiContentEntryText(pos = (25, 0), size = (175, 25), font = 0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is a HDD name
+					MultiContentEntryText(pos = (225, 0), size = (325, 25), font = 0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is a HDD type
+					MultiContentEntryText(pos = (575, 0), size = (200, 25), font = 0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is a HDD size
+					MultiContentEntryText(pos = (50, 0), size = (150, 25), font = 2, flags = RT_HALIGN_LEFT, text = 8), # index 8 is a filesystem name
+					MultiContentEntryText(pos = (225, 0), size = (100, 25), font = 2, flags = RT_HALIGN_LEFT, text = 9), # index 9 filesystem type
+					MultiContentEntryText(pos = (350, 0), size = (150, 25), font = 2, flags = RT_HALIGN_LEFT, text = 10), # index 10 filesystem size
+					MultiContentEntryText(pos = (525, 0), size = (205, 25), font = 2, flags = RT_HALIGN_LEFT, text = 11), # index 11 filesystem free
+					MultiContentEntryText(pos = (25, 0), size = (705, 25), font = 2, flags = RT_HALIGN_LEFT, text = 12), # index 12 is a whole line filesystem name
+					MultiContentEntryText(pos = (25, 0), size = (705, 25), font = 0, flags = RT_HALIGN_LEFT, text = 13), # index 13 is a whole line DLNA name
 					],
-					"fonts": [gFont("Regular", 22),gFont("Regular", 24), gFont("Regular", 21)],
+					"fonts": [gFont("Regular", 21), gFont("Regular", 22), gFont("Regular", 20)],
 					"itemHeight": 25,
 					"selectionEnabled": False,
 				}
