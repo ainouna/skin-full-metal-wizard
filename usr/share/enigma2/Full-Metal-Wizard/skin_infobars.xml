@@ -491,7 +491,7 @@
 		</widget>
 
 		<!--	Playback state icon -->
-		<widget name="statusicon" position="230,55" size="20,20" alphatest="on" pixmaps="Full-Metal-Wizard/icons/play.png,Full-Metal-Wizard/icons/pause.png,Full-Metal-Wizard/icons/stop.png,Full-Metal-Wizard/icons/forward.png,Full-Metal-Wizard/icons/backward.png,Full-Metal-Wizard/icons/slow.png,Full-Metal-Wizard/icons/blank.png" />
+		<widget name="statusicon" position="230,55" size="20,20" alphatest="blend" pixmaps="Full-Metal-Wizard/icons/play.png,Full-Metal-Wizard/icons/pause.png,Full-Metal-Wizard/icons/stop.png,Full-Metal-Wizard/icons/forward.png,Full-Metal-Wizard/icons/backward.png,Full-Metal-Wizard/icons/slow.png,Full-Metal-Wizard/icons/blank.png" />
 
 		<!-- Playback speed indicator -->
 		<widget name="speed" position="205,77" size="45,20" font="Regular;16" halign="right" valign="center" foregroundColor="foreground" backgroundColor="background" transparent="1" />
@@ -565,10 +565,10 @@
 		<!-- Chapter info -->
 		<widget name="chapterLabel" position="184, 645" size="380, 22" font="Regular;20" foregroundColor="unc3c3c9" backgroundColor="black" transparent="1"/>
 		<!-- Icons for help -->
-		<ePixmap position="1056, 594" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1094, 594" pixmap="Full-Metal-Wizard/icons/icon_play.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1132, 594" pixmap="Full-Metal-Wizard/icons/icon_pause.png" size="36,36" alphatest="on"/>
-		<ePixmap position="1170, 594" pixmap="Full-Metal-Wizard/icons/icon_forward.png" size="36,36" alphatest="on"/>
+		<ePixmap position="1056, 594" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" size="36,36" alphatest="blend"/>
+		<ePixmap position="1094, 594" pixmap="Full-Metal-Wizard/icons/icon_play.png" size="36,36" alphatest="blend"/>
+		<ePixmap position="1132, 594" pixmap="Full-Metal-Wizard/icons/icon_pause.png" size="36,36" alphatest="blend"/>
+		<ePixmap position="1170, 594" pixmap="Full-Metal-Wizard/icons/icon_forward.png" size="36,36" alphatest="blend"/>
 		<!-- Audio icon (is there multichannel audio?) -->
 		<ePixmap pixmap="Full-Metal-Wizard/icons/i_dolby.png" position="1018, 594" zPosition="1" size="36,36" alphatest="on"/>
 		<widget name="audioLabel" position="968, 645" size="130,22" font="Regular;18" backgroundColor="black" shadowColor="#1d354c" shadowOffset="-1,-1" transparent="1" valign="bottom"/>

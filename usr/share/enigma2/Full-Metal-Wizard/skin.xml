@@ -978,7 +978,7 @@ self.autoResize()
 	</screen>
 
 	<screen name="PTSTimeshiftState" position="center,40"  backgroundColor="background" size="420,70" >
-		<widget name="statusicon" position="12,5" size="20,20" pixmaps="Full-Metal-Wizard/icons/play.png,Full-Metal-Wizard/icons/pause.png,Full-Metal-Wizard/icons/stop.png,Full-Metal-Wizard/icons/forward.png,Full-Metal-Wizard/icons/backward.png,Full-Metal-Wizard/icons/slow.png" zPosition="5" alphatest="on" />
+		<widget name="statusicon" position="12,5" size="20,20" pixmaps="Full-Metal-Wizard/icons/play.png,Full-Metal-Wizard/icons/pause.png,Full-Metal-Wizard/icons/stop.png,Full-Metal-Wizard/icons/forward.png,Full-Metal-Wizard/icons/backward.png,Full-Metal-Wizard/icons/slow.png" zPosition="5" alphatest="blend" />
 		<widget name="speed" position="35,7" size="80,15" font="Regular;17" halign="left" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="5" />
 		<widget source="session.CurrentService" render="Label" position="95,5" size="200,27" font="Regular;20" halign="left" foregroundColor="white"  backgroundColor="background">
 			<convert type="ServicePosition">Position</convert>
@@ -996,7 +996,7 @@ self.autoResize()
 
 	<screen name="TimeshiftState" position="7,7" size="320,75" backgroundColor="background" flags="wfNoBorder" >
 		<ePixmap position="0,0" size="320,75" pixmap="timeshift_panel.png" alphatest="off"/>
-		<widget name="statusicon" position="10,10" size="20,20" zPosition="3" alphatest="on" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" />
+		<widget name="statusicon" position="10,10" size="20,20" zPosition="3" alphatest="blend" pixmaps="icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/backward.png,icons/slow.png" />
 		<widget name="speed" position="50,10" size="60,20" font="Regular;17" halign="left" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="4" />
 		<widget name="state" position="0,0" size="0,0" />
 		<widget name="eventname" position="10,45" size="280,20" font="Regular;17" foregroundColor="foreground" backgroundColor="background"  transparent="1" zPosition="2"/>
@@ -1063,11 +1063,11 @@ self.autoResize()
 		<widget name="SeekState" position="365,585" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>
 		<widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="position_arrow.png:3,5" position="479,587" size="696,20" zPosition="3"/>
 		<eLabel backgroundColor="black" font="Regular;20" position="110,630" size="140,22" text="OK = Menu" transparent="1" zPosition="1"/>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
-		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_play.png"/>
-		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_pause.png"/>
-		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_forward.png"/>
-		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_stop.png"/>
+		<ePixmap position="110, 582" size="48, 48" alphatest="blend" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" zPosition="1"/>
+		<ePixmap position="158, 582" size="48, 48" alphatest="blend" pixmap="Full-Metal-Wizard/icons/icon_play.png"/>
+		<ePixmap position="206, 582" size="48, 48" alphatest="blend" pixmap="Full-Metal-Wizard/icons/icon_pause.png"/>
+		<ePixmap position="254, 582" size="48, 48" alphatest="blend" pixmap="Full-Metal-Wizard/icons/icon_forward.png"/>
+		<ePixmap position="302, 582" size="48, 48" alphatest="blend" pixmap="Full-Metal-Wizard/icons/icon_stop.png"/>
 		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
@@ -1109,11 +1109,11 @@ self.autoResize()
 		<widget source="session.CurrentService" render="Label" position="450,550" size="790,25" zPosition="3" font="Regular; 19" halign="center" valign="center" backgroundColor="black" transparent="1" foregroundColor="white">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<ePixmap pixmap="Full-Metal-Wizard/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="on"/>
-		<ePixmap position="158, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_play.png"/>
-		<ePixmap position="206, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_pause.png"/>
-		<ePixmap position="254, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_forward.png"/>
-		<ePixmap position="302, 582" size="48, 48" alphatest="on" pixmap="Full-Metal-Wizard/icons/icon_stop.png"/>
+		<ePixmap pixmap="Full-Metal-Wizard/icons/icon_rewind.png" position="110, 582" size="48, 48" zPosition="1" alphatest="blend"/>
+		<ePixmap position="158, 582" size="48, 48" alphatest="blend" pixmap="Full-Metal-Wizard/icons/icon_play.png"/>
+		<ePixmap position="206, 582" size="48, 48" alphatest="blend" pixmap="Full-Metal-Wizard/icons/icon_pause.png"/>
+		<ePixmap position="254, 582" size="48, 48" alphatest="blend" pixmap="Full-Metal-Wizard/icons/icon_forward.png"/>
+		<ePixmap position="302, 582" size="48, 48" alphatest="blend" pixmap="Full-Metal-Wizard/icons/icon_stop.png"/>
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" backgroundColor="un808888" pointer="position_arrow.png:3,5" foregroundColor="black"/>
 		<widget name="SeekState" position="365, 585" zPosition="10" size="100,25" halign="center" font="Regular;20" valign="center" transparent="1"/>
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="black" transparent="1"/>
@@ -1535,10 +1535,10 @@ self.autoResize()
 
  <screen name="MusicExplorer" position="0, 70" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" zPosition="-1">
   <ePixmap position="0, 0" zPosition="-1" size="1280,720" pixmap="Full-Metal-Wizard/infobar.png"/>
-  <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" alphatest="on" transparent="1"/>
-  <ePixmap position="120, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_play.png" alphatest="on" transparent="1"/>
-  <ePixmap position="158, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_pause.png" alphatest="on" transparent="1"/>
-  <ePixmap position="196, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_forward.png" alphatest="on" transparent="1"/>
+  <ePixmap position="82, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" alphatest="blend" transparent="1"/>
+  <ePixmap position="120, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_play.png" alphatest="blend" transparent="1"/>
+  <ePixmap position="158, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_pause.png" alphatest="blend" transparent="1"/>
+  <ePixmap position="196, 520" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_forward.png" alphatest="blend" transparent="1"/>
   <widget source="session.CurrentService" render="Label" position="55, 490" size="1220, 26" font="Named; 20" halign="center" valign="center" noWrap="1" backgroundColor="black" transparent="1" foregroundColor="white">
    <convert type="ServiceName">Name</convert>
   </widget>

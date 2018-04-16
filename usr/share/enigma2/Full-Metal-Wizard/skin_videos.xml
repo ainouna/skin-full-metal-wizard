@@ -2,10 +2,10 @@
 <!-- MyTubePlayer -->
 	<screen name="MyTubePlayer" position="0,0" zPosition="-1" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap pixmap="Full-Metal-Wizard/infobar.png" position="0, 70" size="1280,720" zPosition="-1"/>
-		<ePixmap position="82, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" alphatest="on" transparent="1"/>
-		<ePixmap position="120, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_play.png" alphatest="on" transparent="1"/>
-		<ePixmap position="158, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_pause.png" alphatest="on" transparent="1"/>
-		<ePixmap position="196, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_forward.png" alphatest="on" transparent="1"/>
+		<ePixmap position="82, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_rewind.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="120, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_play.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="158, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_pause.png" alphatest="blend" transparent="1"/>
+		<ePixmap position="196, 601" zPosition="0" size="36,36" pixmap="Full-Metal-Wizard/icons/icon_forward.png" alphatest="blend" transparent="1"/>
 		<eLabel position="55, 659" size="205, 1" backgroundColor="crypt_emm" zPosition="2"/>
 		<widget source="session.CurrentService" render="Label" font="Regular; 18" position="93, 665" size="57, 20" halign="right" transparent="1" foregroundColor="white" backgroundColor="black">
 			<convert type="ServiceInfo">VideoWidth</convert>
