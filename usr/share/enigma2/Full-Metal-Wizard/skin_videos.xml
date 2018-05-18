@@ -224,7 +224,7 @@
 		<widget name="movie_sort" position="1118,600" size="35,20" pixmaps="icons/msels_az_31-1.png,icons/msels_31-1_az.png,icons/msels_shuffle.png,icons/msels_za_1-31.png,icons/msels_1-31_za.png,icons/msels_faz.png,icons/msels_fza.png,icons/msels_rec.png,icons/msels_az_1-31.png,icons/msels_za_31-1.png,icons/msels_sl.png,icons/msels_ls.png,icons/msels_sb.png,icons/msels_bs.png" zPosition="10" transparent="1" alphatest="on"/>
 		<widget position="1158,600" size="35,20" name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="on" />
 		<widget source="Service" render="Label" position="830,549" size="410,20" font="Regular;18" foregroundColor="grey" transparent="1" zPosition="1">
-			<convert type="EventName">Genre</convert>
+			<convert type="EventName">GenreList</convert>
 		</widget>
 		<widget source="Service" render="Pixmap" position="830,574" size="40,20" alphatest="blend" zPosition="1">
 			<convert type="EventName">RatingIcon</convert>
