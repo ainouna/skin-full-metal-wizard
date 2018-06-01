@@ -33,23 +33,23 @@
 
 	<screen name="RedPanel">
 		<ePixmap position="185,0" size="200,60" alphatest="on" pixmap="buttons/button_200x60_red.png" zPosition="1" />
-		<widget position="185,0" size="200,36" name="key_red" conditional="key_red" borderWidth="1" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
-		<widget position="185,0" size="200,36" source="key_red" conditional="key_red" borderWidth="1" halign="center" valign="center" backgroundColor="#9f1313" font="Regular;20" render="Label" transparent="1" zPosition="4" />
+		<widget position="189,0" size="192,36" name="key_red" conditional="key_red" borderWidth="1" halign="center" valign="center" noWrap="1" backgroundColor="#9f1313" font="Regular;20" transparent="1" zPosition="3" />
+		<widget position="189,0" size="192,36" source="key_red" conditional="key_red" borderWidth="1" halign="center" valign="center" noWrap="1" backgroundColor="#9f1313" font="Regular;20" render="Label" transparent="1" zPosition="4" />
 	</screen>
 	<screen name="GreenPanel">
 		<ePixmap position="420,0" size="200,60" alphatest="on" pixmap="buttons/button_200x60_green.png" zPosition="1" />
-		<widget position="420,0" size="200,36" name="key_green" conditional="key_green" borderWidth="1" backgroundColor="#1f771f" font="Regular;20" halign="center" valign="center" transparent="1" zPosition="3" />
-		<widget position="420,0" size="200,36" source="key_green" conditional="key_green" borderWidth="1" backgroundColor="#1f771f" font="Regular;20" halign="center" valign="center" render="Label" transparent="1" zPosition="4" />
+		<widget position="424,0" size="192,36" name="key_green" conditional="key_green" borderWidth="1" backgroundColor="#1f771f" font="Regular;20" halign="center" valign="center" noWrap="1" transparent="1" zPosition="3" />
+		<widget position="424,0" size="192,36" source="key_green" conditional="key_green" borderWidth="1" backgroundColor="#1f771f" font="Regular;20" halign="center" valign="center" noWrap="1" render="Label" transparent="1" zPosition="4" />
 	</screen>
 	<screen name="YellowPanel">
 		<ePixmap position="650,0" size="200,60" alphatest="on" pixmap="buttons/button_200x60_yellow.png" zPosition="1" />
-		<widget position="650,0" size="200,36" name="key_yellow" conditional="key_yellow" borderWidth="1" backgroundColor="#a08500" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
-		<widget position="650,0" size="200,36" source="key_yellow" conditional="key_yellow" borderWidth="1" backgroundColor="#a08500" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="4" />
+		<widget position="654,0" size="192,36" name="key_yellow" conditional="key_yellow" borderWidth="1" backgroundColor="#a08500" font="Regular;20" halign="center" transparent="1" valign="center" noWrap="1" zPosition="3" />
+		<widget position="654,0" size="192,36" source="key_yellow" conditional="key_yellow" borderWidth="1" backgroundColor="#a08500" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" noWrap="1" zPosition="4" />
 	</screen>
 	<screen name="BluePanel">
 		<ePixmap position="885,0" size="200,60" alphatest="on" pixmap="buttons/button_200x60_blue.png" zPosition="1" />
-		<widget position="885,0" size="200,36" name="key_blue" conditional="key_blue" borderWidth="1" backgroundColor="#18188b" font="Regular;20" halign="center" transparent="1" valign="center" zPosition="3" />
-		<widget position="885,0" size="200,36" source="key_blue" conditional="key_blue" borderWidth="1" backgroundColor="#18188b" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" zPosition="4" />
+		<widget position="889,0" size="192,36" name="key_blue" conditional="key_blue" borderWidth="1" backgroundColor="#18188b" font="Regular;20" halign="center" transparent="1" valign="center" noWrap="1" zPosition="3" />
+		<widget position="889,0" size="192,36" source="key_blue" conditional="key_blue" borderWidth="1" backgroundColor="#18188b" font="Regular;20" halign="center" render="Label" transparent="1" valign="center" noWrap="1" zPosition="4" />
 	</screen>
 
 	<screen name="MenuButtonPanel">
