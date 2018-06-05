@@ -16,7 +16,7 @@
 			<convert type="EventName">Rating</convert>
 		</widget>
 		<widget source="Event" render="Label" position="730,0" size="450,23" halign="right" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
-			<convert type="EventName">Genre</convert>
+			<convert type="EventName">GenreList</convert>
 		</widget>
 		<widget source="Event" render="Label" position="0,23" size="1180,92" font="Regular;20" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="EventName">FullDescription</convert>
@@ -103,7 +103,7 @@
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget source="Event" render="Label" position="695,600" size="410,23" font="Regular;20" foregroundColor="grey" transparent="1" zPosition="1">
-			<convert type="EventName">Genre</convert>
+			<convert type="EventName">GenreList</convert>
 		</widget>
 		<widget source="Event" render="Pixmap" position="695,631" size="40,20" alphatest="blend">
 			<convert type="EventName">RatingIcon</convert>
@@ -196,7 +196,7 @@
 			<convert type="EventName">SmallRating</convert>
 		</widget>
 		<widget source="Event" render="Label" position="445,77" size="425,23" halign="right" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
-			<convert type="EventName">Genre</convert>
+			<convert type="EventName">GenreList</convert>
 		</widget>
 		<widget position="25,105" size="845,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
