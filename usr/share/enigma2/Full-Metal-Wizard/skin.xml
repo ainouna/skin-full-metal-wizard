@@ -686,8 +686,8 @@ self.autoResize()
 		<widget name="booklist" position="650,410" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,380" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
 		<ePixmap alphatest="on" pixmap="frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
-		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
-		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
+		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,50" transparent="1" valign="center" zPosition="2"/>
+		<widget font="Regular;22" halign="center" name="target" position="170,265" size="360,110" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullScreenColourPanel" />
 		<widget name="red" position="0,0" size="0,0"/>
 		<widget name="green" position="0,0" size="0,0"/>
