@@ -218,7 +218,7 @@
 		<widget position="830,125" size="400,50" source="Service" render="Label" font="Regular;22" halign="center" valign="center" backgroundColor="background" zPosition="1" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget position="830,180" size="400,414" source="Service" render="Label" font="Regular;20" halign="left" backgroundColor="background" zPosition="1" >
+		<widget position="830,180" size="400,345" source="Service" render="Label" font="Regular;20" halign="left" backgroundColor="background" zPosition="1" >
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget name="movie_sort" position="1118,600" size="35,20" pixmaps="icons/msels_az_31-1.png,icons/msels_31-1_az.png,icons/msels_shuffle.png,icons/msels_za_1-31.png,icons/msels_1-31_za.png,icons/msels_faz.png,icons/msels_fza.png,icons/msels_rec.png,icons/msels_az_1-31.png,icons/msels_za_31-1.png,icons/msels_sl.png,icons/msels_ls.png,icons/msels_sb.png,icons/msels_bs.png" zPosition="10" transparent="1" alphatest="on"/>
