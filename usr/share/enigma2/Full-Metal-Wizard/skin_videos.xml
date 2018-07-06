@@ -199,7 +199,7 @@
 		<widget position="50,70" size="220,25" name="numFolders" font="Named;20" halign="left" backgroundColor="background" />
 		<widget position="600,70" size="220,25" name="numFiles" font="Named;20" halign="left" backgroundColor="background" />
 		<widget position="50,95" size="770,500" name="waitingtext" font="Regular;22" halign="center" valign="center" backgroundColor="background" zPosition="4" />
-		<widget position="50,95" size="770,500" name="list" enableWrapAround="1" scrollbarMode="showAlways" backgroundColor="background" dateWidthScale="10.2" />
+		<widget position="0,95" size="820,500" name="list" enableWrapAround="1" scrollbarMode="showAlways" backgroundColor="background" dateWidthScale="10.2" listPos="50" />
 		<widget position="50,600" size="220,25" name="diskSize"  font="Named;20" halign="left" backgroundColor="background" />
 		<widget position="295,600" size="280,25" name="freeDiskSpace" font="Named;20" halign="left" backgroundColor="background" />
 		<widget position="600,600" size="220,25" name="TrashcanSize" font="Named;20" halign="left" backgroundColor="background" />
@@ -218,13 +218,13 @@
 		<widget position="830,125" size="400,50" source="Service" render="Label" font="Regular;22" halign="center" valign="center" backgroundColor="background" zPosition="1" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget position="830,180" size="400,414" source="Service" render="Label" font="Regular;20" halign="left" backgroundColor="background" zPosition="1" >
+		<widget position="830,180" size="400,345" source="Service" render="Label" font="Regular;20" halign="left" backgroundColor="background" zPosition="1" >
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget name="movie_sort" position="1118,600" size="35,20" pixmaps="icons/msels_az_31-1.png,icons/msels_31-1_az.png,icons/msels_shuffle.png,icons/msels_za_1-31.png,icons/msels_1-31_za.png,icons/msels_faz.png,icons/msels_fza.png,icons/msels_rec.png,icons/msels_az_1-31.png,icons/msels_za_31-1.png,icons/msels_sl.png,icons/msels_ls.png,icons/msels_sb.png,icons/msels_bs.png" zPosition="10" transparent="1" alphatest="on"/>
 		<widget position="1158,600" size="35,20" name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="on" />
 		<widget source="Service" render="Label" position="830,549" size="410,20" font="Regular;18" foregroundColor="grey" transparent="1" zPosition="1">
-			<convert type="EventName">Genre</convert>
+			<convert type="EventName">GenreList</convert>
 		</widget>
 		<widget source="Service" render="Pixmap" position="830,574" size="40,20" alphatest="blend" zPosition="1">
 			<convert type="EventName">RatingIcon</convert>

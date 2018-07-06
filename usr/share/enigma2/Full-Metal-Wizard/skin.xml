@@ -378,7 +378,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="50,246" size="525,23" backgroundColor="black" font="Named;20" foregroundColor="grey" transparent="1">
-			<convert type="EventName">Genre</convert>
+			<convert type="EventName">GenreList</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Pixmap" position="50,271" size="40,20" alphatest="blend">
 			<convert type="EventName">RatingIcon</convert>
@@ -496,7 +496,7 @@ self.autoResize()
 			<convert type="EventName">Rating</convert>
 		</widget>
 		<widget source="Event" render="Label" position="650,595" size="480,20" font="Regular;18" foregroundColor="white" halign="right" transparent="1">
-			<convert type="EventName">Genre</convert>
+			<convert type="EventName">GenreList</convert>
 		</widget>
 		<widget name="FullDescription" position="0,0" size="0,0" font="Regular;20" transparent="1" />
 		<widget name="datetime" position="0,0" size="0,0" font="Regular;20" transparent="1" />
@@ -686,8 +686,8 @@ self.autoResize()
 		<widget name="booklist" position="650,410" scrollbarMode="showOnDemand" selectionDisabled="1" size="510,200" transparent="1" zPosition="2"/>
 		<widget name="textbook" position="650,380" size="510,30" valign="center" font="Regular;24" foregroundColor="black" backgroundColor="darkgrey"/>
 		<ePixmap alphatest="on" pixmap="frame/frame_400x200.png" position="150,195" size="400,200" zPosition="1"/>
-		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,80" transparent="1" valign="center" zPosition="2"/>
-		<widget font="Regular;22" halign="center" name="target" position="170,295" size="360,80" transparent="1" valign="center" zPosition="2"/>
+		<widget font="Regular;22" halign="center" name="text" position="170,205" size="360,50" transparent="1" valign="center" zPosition="2"/>
+		<widget font="Regular;22" halign="center" name="target" position="170,265" size="360,110" transparent="1" valign="center" zPosition="2"/>
 		<panel name="FullScreenColourPanel" />
 		<widget name="red" position="0,0" size="0,0"/>
 		<widget name="green" position="0,0" size="0,0"/>
@@ -1038,16 +1038,15 @@ self.autoResize()
 	</screen>
 
 	<screen flags="wfNoBorder" name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor">
-		<eLabel backgroundColor="grey" position="80,125" size="300,420" zPosition="1"/>
-		<eLabel backgroundColor="black" position="81,126" size="298,418" zPosition="2"/>
-		<widget source="global.CurrentTime" render="Label" position="675, 40" size="500, 20" font="Named;18" halign="right" foregroundColor="white">
-			<convert type="ClockToText">Date</convert>
-		</widget>
-		<widget position="90,135" render="Listbox" scrollbarMode="showOnDemand" size="280,400" source="cutlist" transparent="1" zPosition="3">
+		<panel name="FullScreenWindow" />
+		<eLabel position="50,86" size="380,520" backgroundColor="grey" zPosition="1"/>
+		<eLabel position="51,87" size="378,518" backgroundColor="black" zPosition="2"/>
+		<widget position="60,96" size="360,450" render="Listbox" scrollbarMode="showOnDemand" source="cutlist" transparent="1" zPosition="3">
 			<convert type="TemplatedMultiContent">
 					    {"template": [
-					    MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
-					    MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
+					    MultiContentEntryText(pos=(10,2), size=(160, 20), text = 1, backcolor = MultiContentTemplateColor(4)),
+					    MultiContentEntryText(pos=(180,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(4)),
+					    MultiContentEntryText(pos=(270,2), size=(70, 20), text = 3, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(4))
 					    ],
 
 					    "fonts": [gFont("Regular", 20)],
@@ -1055,31 +1054,31 @@ self.autoResize()
 					    }
 				    </convert>
 		</widget>
-		<eLabel backgroundColor="transparent2" position="479,124" size="696,377" zPosition="3"/>
-		<widget name="Video" position="479, 124" size="696, 377" zPosition="-10"/>
-		<widget backgroundColor="black" font="Regular; 18" halign="center" position="450,510" render="Label" size="790,30" source="session.CurrentService" transparent="1" valign="center" zPosition="3" foregroundColor="white">
+		<eLabel position="240,548" size=" 80,20" text="IN" zPosition="3" halign="center" font="Regular;20" backgroundColor="#004000"/>
+		<widget position="330,548" size=" 70,20" name="InLen" zPosition="3" halign="right" font="Regular;20" backgroundColor="#004000"/>
+		<eLabel position="240,573" size=" 80,20" text="OUT" zPosition="3" halign="center" font="Regular;20" backgroundColor="#400000"/>
+		<widget position="330,573" size=" 70,20" name="OutLen" zPosition="3" halign="right" font="Regular;20" backgroundColor="#400000"/>
+		<eLabel position="462,86" size="768,432" backgroundColor="transparent2" zPosition="3"/>
+		<widget position="462,86" size="768,432" name="Video" zPosition="-10"/>
+		<widget position="462,528" size="768,30" backgroundColor="black" font="Regular; 18" halign="center" render="Label" source="session.CurrentService" transparent="1" valign="center" zPosition="3" foregroundColor="white">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget backgroundColor="black" font="Regular; 19" halign="center" position="450,550" render="Label" size="790,25" source="session.CurrentService" transparent="1" valign="center" zPosition="3" foregroundColor="white">
+		<widget position="462,559" size="768,25" backgroundColor="black" font="Regular; 19" halign="center" render="Label" source="session.CurrentService" transparent="1" valign="center" zPosition="3" foregroundColor="white">
 			<convert type="ServicePosition">Position,Detailed</convert>
 		</widget>
-		<widget name="SeekState" position="365,585" zPosition="1" size="100,25" halign="right" font="Regular;20" valign="center"/>
-		<widget backgroundColor="un808888" foregroundColor="black" name="Timeline" pointer="position_arrow.png:3,5" position="479,587" size="696,20" zPosition="3"/>
-		<eLabel backgroundColor="black" font="Regular;20" position="110,630" size="140,22" text="OK = Menu" transparent="1" zPosition="1"/>
-		<ePixmap position="110, 582" size="48, 48" alphatest="blend" pixmap="icons/icon_rewind.png" zPosition="1"/>
-		<ePixmap position="158, 582" size="48, 48" alphatest="blend" pixmap="icons/icon_play.png"/>
-		<ePixmap position="206, 582" size="48, 48" alphatest="blend" pixmap="icons/icon_pause.png"/>
-		<ePixmap position="254, 582" size="48, 48" alphatest="blend" pixmap="icons/icon_forward.png"/>
-		<ePixmap position="302, 582" size="48, 48" alphatest="blend" pixmap="icons/icon_stop.png"/>
+		<widget position="430,584" size=" 65,25" name="SeekState" zPosition="1" halign="right" font="Regular;20" valign="center"/>
+		<widget position="510,586" size="720,20" name="Timeline" backgroundColor="un808888" foregroundColor="black" pointer="position_arrow.png:3,5" zPosition="3"/>
+		<panel name="FullscreenMenuButtonPanel" />
+		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
 	<screen name="CutListMenu" position="center,center" size="510,485" backgroundColor="background" title="Cutlist editor - menu">
-		<widget source="menu" render="Listbox" position="0,0" size="485,500" backgroundColor="#41000000" scrollbarMode="showNever">
+		<widget source="menu" render="Listbox" position="0,0" size="485,465" backgroundColor="#41000000" scrollbarMode="showNever">
 			<convert type="TemplatedMultiContent">
 				{"template": [	MultiContentEntryText(pos = (20,0), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("Regular",28)],
-				"itemHeight": 50
+				"itemHeight": 38
 				}
 			</convert>
 		</widget>
