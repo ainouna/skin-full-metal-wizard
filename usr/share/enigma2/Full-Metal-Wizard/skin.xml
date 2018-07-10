@@ -1247,15 +1247,6 @@ self.autoResize()
 		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
-	<screen name="FileCommanderConfigScreen" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Setup">
-	  <!--<ePixmap pixmap="menu/mainmenu_tasks_setup_tv.png" position="235,200" size="166,162"/>-->
-		<panel name="FullScreenWindow" />
-		<panel name="FullScreenColourPanel" />
-		<ePixmap pixmap="frame/frame_400x400.png" position="50,115" size="400,400" alphatest="on" />
-		<widget name="help" position="100,130" size="300,350"  font="Regular;19" halign="left" transparent="1" valign="center" zPosition="2"/>
-		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-	</screen>
-
 	<screen name="FileCommanderScreenFileSelect" position="0,0" size="1280,720" title="File Commander - file selection" backgroundColor="un44000000" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />
 		<widget name="list_left_head" font="Regular;18" position="50,70" size="570,40" zPosition="1" foregroundColor="yellow" backgroundColor="transpBlack" transparent="1"/>
