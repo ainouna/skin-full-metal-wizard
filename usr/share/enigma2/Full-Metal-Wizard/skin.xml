@@ -86,6 +86,7 @@
 		<font filename="tuxtxt.ttf" name="Console" scale="100"/>
 		<font filename="md_khmurabi_10.ttf" name="Named" scale="100"/>
 		<alias name="Fixed" font="Console" size="20" height="25" />
+		<alias name="FileList" font="Regular" size="20" height="25" />
 	</fonts>
 	<parameters>
 		<parameter name="AllowUserDatesAndTimes" value="1,1" />
