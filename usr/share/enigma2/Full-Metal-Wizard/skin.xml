@@ -1259,6 +1259,10 @@ self.autoResize()
 		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
+	<screen name="FileCommanderContextMenu" position="center,center" size="560,450" title="File Commander context menu" backgroundColor="background">
+		<widget name="menu" position="0,0" size="580,450" itemHeight="30" foregroundColor="white" backgroundColor="background" transparent="0" scrollbarMode="showOnDemand" />
+	</screen>
+
 	<!-- vEditor - FileCommander file editor -->
 	<screen name="vEditor" position="40,80" size="1200,600" title="File Commander - File Viewer">
 		<widget name="list_head" position="10,10" size="1170,45" font="Regular;20" foregroundColor="#00fff000"/>
