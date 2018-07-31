@@ -1304,7 +1304,7 @@ self.autoResize()
 		<ePixmap position="1130,570" size="35,25" pixmap="buttons/key_help.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
 
-	<screen name="FileCommanderFileStatInfo" position="center,center" size="545,345" title="File/Directory Status Information">
+	<screen name="FileCommanderFileStatInfo" position="center,center" size="545,435" title="File/Directory Status Information">
 		<widget name="filename" position="10,0" size="525,46" font="Regular;20"/>
 		<widget source="list" render="Listbox" position="10,60" size="525,275" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1" >
 			<convert type="TemplatedMultiContent">
@@ -1321,6 +1321,9 @@ self.autoResize()
 				}
 			</convert>
 		</widget>
+		<widget name="link_sep"  position="10,335" size="525,2" backgroundColor="darkgrey" transparent="0"/>
+		<widget name="link_label" position="10,340" size="525,23" font="Regular;20"/>
+		<widget name="link_value" position="10,363" size="525,69" font="Regular;20"/>
 	</screen>
 
 	<!-- Setup -->
