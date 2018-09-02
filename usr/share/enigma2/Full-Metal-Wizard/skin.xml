@@ -669,6 +669,13 @@ self.autoResize()
 		<eLabel position="0,105" size="600,2" backgroundColor="crypt_emm"/>
 	</screen>
 
+	<screen name="InputBoxWide" position="center,center" size="1100,120" title="Search">
+		<widget name="text" position="10,10" size="1080,21" font="Regular;18" transparent="1" />
+		<eLabel position="0,55" size="1100,2" backgroundColor="crypt_emm"/>
+		<widget name="input" position="10,68" size="1080,24" font="Regular;22" transparent="1" />
+		<eLabel position="0,105" size="1100,2" backgroundColor="crypt_emm"/>
+	</screen>
+
 	<screen name="Ipkg" position="center,center" size="550,120">
 		<widget name="activityslider" position="0,0" size="550,5" pixmap="progress_small.png" />
 		<widget name="package" position="10,30" size="550,20" font="Regular;18" transparent="0" />
