@@ -240,12 +240,12 @@
 		<widget source="config" render="Listbox" position="510, 120" size="720,480" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (63, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
 					MultiContentEntryText(pos = (145, 7), size = (270, 25), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
 					MultiContentEntryText(pos = (430, 7), size = (160, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
 					MultiContentEntryText(pos = (145, 34), size = (445, 19), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
-					MultiContentEntryPixmapAlphaTest(pos = (625, 15), size = (30, 27), png = 4), # index 4 is the activepng pixmap
-					MultiContentEntryPixmapAlphaTest(pos = (655, 6), size = (48, 48), png = 5), # index 4 is the mounttype pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (650, 15), size = (30, 27), png = 4), # index 4 is the activepng pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (18, 6), size = (48, 48), png = 5), # index 4 is the mounttype pixmap
 				],
 			      "fonts": [gFont("Regular", 22),gFont("Regular", 17)],
 			      "itemHeight": 60
