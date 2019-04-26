@@ -218,15 +218,15 @@
 	</screen>"
 	<screen name="AutoMountManager" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Mount Manager">
 		<panel name="AutoMountManagerCommon" />
-		<widget source="config" render="Listbox" position="510, 120" size="740,420" zPosition="10" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
+		<widget source="config" render="Listbox" position="510, 120" size="740,480" zPosition="10" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (60, 10), size = (580, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-						MultiContentEntryText(pos = (70, 40), size = (570, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-						MultiContentEntryPixmapAlphaTest(pos = (10, 11), size = (48, 48), png = 3), # index 4 is the pixmap
+						MultiContentEntryText(pos = (60, 7), size = (580, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+						MultiContentEntryText(pos = (70, 34), size = (570, 19), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
+						MultiContentEntryPixmapAlphaTest(pos = (6, 11), size = (48, 48), png = 3), # index 4 is the pixmap
 					],
 				"fonts": [gFont("Regular", 22),gFont("Regular", 17)],
-				"itemHeight": 70
+				"itemHeight": 60
 				}
 			</convert>
 		</widget>
@@ -234,16 +234,16 @@
 	<!-- Add new network mount point -->
 	<screen name="AutoMountView" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="MountView">
 		<panel name="AutoMountManagerCommon" />
-		<widget source="legend1" render="Label" position="510, 70" zPosition="1" size="130,60" font="Regular;18" halign="center" valign="center" transparent="1"/>
-		<widget source="legend2" render="Label" position="655, 70" zPosition="1" size="445,60" font="Regular;18" halign="center" valign="center" transparent="1"/>
-		<widget source="legend3" render="Label" position="1125, 70" zPosition="1" size="100,60" font="Regular;18" halign="center" valign="center"/>
-		<widget source="config" render="Listbox" position="510, 130" size="720,480" scrollbarMode="showOnDemand" transparent="1">
+		<widget source="legend1" render="Label" position="510, 70" zPosition="1" size="130,45" font="Regular;18" halign="center" valign="center" transparent="1"/>
+		<widget source="legend2" render="Label" position="655, 70" zPosition="1" size="455,45" font="Regular;18" halign="center" valign="center" transparent="1"/>
+		<widget source="legend3" render="Label" position="1125, 70" zPosition="1" size="100,45" font="Regular;18" halign="center" valign="center" transparent="1"/>
+		<widget source="config" render="Listbox" position="510, 120" size="720,480" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
-					MultiContentEntryText(pos = (145, 5), size = (270, 28), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
-					MultiContentEntryText(pos = (430, 8), size = (160, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
-					MultiContentEntryText(pos = (145, 35), size = (445, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
+					MultiContentEntryText(pos = (145, 7), size = (270, 25), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
+					MultiContentEntryText(pos = (430, 7), size = (160, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
+					MultiContentEntryText(pos = (145, 34), size = (445, 19), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
 					MultiContentEntryPixmapAlphaTest(pos = (625, 15), size = (30, 27), png = 4), # index 4 is the activepng pixmap
 					MultiContentEntryPixmapAlphaTest(pos = (655, 6), size = (48, 48), png = 5), # index 4 is the mounttype pixmap
 				],
@@ -287,15 +287,15 @@
 		<widget source="list" render="Listbox" position="510, 120" size="720, 480" zPosition="10" scrollbarMode="showOnDemand" enableWrapAround="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-					MultiContentEntryPixmapAlphaTest(pos = (10, 11), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
-					MultiContentEntryText(pos = (70, 9), size = (620, 26), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
-					MultiContentEntryText(pos = (160, 10), size = (520, 25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
-					MultiContentEntryText(pos = (160, 31), size = (520, 17), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
-					MultiContentEntryPixmapAlphaTest(pos = (65, 11), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
-					MultiContentEntryPixmapAlphaTest(pos = (110, 11), size = (48, 48), png = 6), # index 6 is the isMounted icon
+					MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
+					MultiContentEntryText(pos = (70, 7), size = (620, 27), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
+					MultiContentEntryText(pos = (160, 7), size = (520, 25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
+					MultiContentEntryText(pos = (160, 34), size = (520, 19), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
+					MultiContentEntryPixmapAlphaTest(pos = (65, 6), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
+					MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # index 6 is the isMounted icon
 					],
 				"fonts": [gFont("Regular", 22),gFont("Regular", 17),gFont("Regular", 24)],
-				"itemHeight": 70
+				"itemHeight": 60
 				}
 			</convert>
 		</widget>
