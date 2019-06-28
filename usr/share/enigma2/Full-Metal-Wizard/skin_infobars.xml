@@ -264,6 +264,11 @@
 			<convert type="EGExtraInfo">CamName</convert>
 		</widget> -->
 
+		<!--	Bouquet -->
+		<widget source="session.CurrentService" render="Label" position="25,145" size="150,16" font="Bold; 14" halign="center" foregroundColor="border1" backgroundColor="black" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" noWrap="1">
+			<convert type="ServiceName2">Bouquet</convert>
+		</widget>
+
 		<!-- Bottom bar - info icons top right -->
 
 		<!-- Icons for Online services -->
