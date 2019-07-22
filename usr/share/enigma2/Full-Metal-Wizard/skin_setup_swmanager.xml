@@ -104,7 +104,6 @@
 	<screen name="PluginManager" position="0,0" size="1280,720" backgroundColor="un44000000" flags="wfNoBorder" title="Extension management">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<widget source="list" render="Listbox" position="510,100" size="720,500" backgroundColor="#41000000" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"templates":

@@ -19,6 +19,7 @@
 			<panel name="GreenPanel" />
 			<panel name="YellowPanel" />
 			<panel name="BluePanel" />
+			<panel name="HelpButtonPanel" />
 		</panel>
 	</screen>
 
@@ -28,6 +29,7 @@
 			<panel name="GreenPanel" />
 			<panel name="YellowPanel" />
 			<panel name="BluePanel" />
+			<panel name="HelpButtonPanel" />
 		</panel>
 	</screen>
 
@@ -67,7 +69,9 @@
 		<ePixmap position="1110,0" size="50,35" pixmap="buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
 	<screen name="HelpButtonPanel">
-		<ePixmap position="1180,0" size="50,35" pixmap="buttons/key_help_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
+		<widget source="key_help" render="Pixmap" pixmap="buttons/key_help_50x35.png" position="1180,0" size="50,35" alphatest="blend" objectTypes="key_help,StaticText" transparent="1" zPosition="10">
+			<convert type="ConditionalShowHide" />
+		</widget>
 	</screen>
 
 <!-- Full screen button hints -->
@@ -86,7 +90,9 @@
 		<ePixmap position="1110,635" size="50,35" pixmap="buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
 	<screen name="FullscreenHelpButtonPanel">
-		<ePixmap position="1180,635" size="50,35" pixmap="buttons/key_help_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
+		<panel position="0,635" size="200,60">
+			<panel name="HelpButtonPanel" />
+		</panel>
 	</screen>
 
 <!--
@@ -108,13 +114,20 @@
 		<ePixmap position="1110,670" size="50,35" pixmap="buttons/key_text_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
 	<screen name="FullscreenLowHelpButtonPanel">
-		<ePixmap position="1180,670" size="50,35" pixmap="buttons/key_help_50x35.png" alphatest="blend" transparent="1" zPosition="10" />
+		<panel position="0,670" size="200,50">
+			<panel name="HelpButtonPanel" />
+		</panel>
 	</screen>
 
 <!--
  |  "Small" button hint backgrounds and button hints to fit in
  |  the limited space at the bottom of GraphicalInfoBarEPG.
  +-->
+	<screen name="SmallHelpButtonPanel">
+		<widget source="key_help" render="Pixmap" pixmap="buttons/key_help.png" position="1180,0" size="35,25" alphatest="blend" objectTypes="key_help,StaticText" transparent="1" zPosition="10">
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
 	<screen name="FullscreenSmallMenuButtonPanel">
 		<ePixmap position="40,166" size="35,25" pixmap="buttons/key_menu.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
@@ -146,6 +159,8 @@
 		<ePixmap position="1110,166" size="35,25" pixmap="buttons/key_text.png" alphatest="blend" transparent="1" zPosition="10" />
 	</screen>
 	<screen name="FullscreenSmallHelpButtonPanel">
-		<ePixmap position="1180,166" size="35,25" pixmap="buttons/key_help.png" alphatest="blend" transparent="1" zPosition="10" />
+		<panel position="0,166" size="35,25">
+			<panel name="SmallHelpButtonPanel"/>
+		</panel>
 	</screen>
 </skin>

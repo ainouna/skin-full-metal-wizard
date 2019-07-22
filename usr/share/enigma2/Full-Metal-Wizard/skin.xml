@@ -266,7 +266,6 @@
 		<widget name="description" position="70,100" size="360,235"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 		<widget name="HelpWindow" position="50,345" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<panel name="FullscreenVKeyIconButtonPanel" />
 	</screen>
 
@@ -313,7 +312,6 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<panel name="FullscreenInfoButtonPanel" />
 		<widget name="list" position="600, 120" zPosition="3" size="620, 485" backgroundColor="background"
 			    backgroundColorSelected="#41002299"
@@ -703,7 +701,6 @@ self.autoResize()
 		<widget name="yellow" position="0,0" size="0,0"/>
 		<widget name="blue" position="0,0" size="0,0"/>
 		<panel name="FullscreenMenuButtonPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
 	<!-- Movie Location Box -->
@@ -890,7 +887,6 @@ self.autoResize()
 		<panel name="FullScreenWindow" /> 
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<panel name="FullscreenInfoButtonPanel" />
 		<ePixmap pixmap="menu/mainmenu_tv.png" position="55, 115" size="400,500"/>
 		
@@ -1079,7 +1075,6 @@ self.autoResize()
 		<widget position="510,586" size="720,20" name="Timeline" backgroundColor="un808888" foregroundColor="black" pointer="position_arrow.png:3,5" zPosition="3"/>
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
 	<screen name="CutListMenu" position="center,center" size="510,485" backgroundColor="background" title="Cutlist editor - menu">
@@ -1282,7 +1277,6 @@ self.autoResize()
 		<panel name="FullscreenMenuButtonPanel" />
 		<panel name="FullscreenInfoButtonPanel" />
 		<panel name="FullscreenVKeyIconButtonPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
 	<screen name="FileCommanderScreenFileSelect" position="0,0" size="1280,720" title="File Commander - file selection" backgroundColor="un44000000" flags="wfNoBorder">
@@ -1290,7 +1284,6 @@ self.autoResize()
 		<panel name="FileCommanderFileListPanel" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenInfoButtonPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 	</screen>
 
 	<screen name="FileCommanderContextMenu" position="center,center" size="560,570" title="File Commander context menu" backgroundColor="background">

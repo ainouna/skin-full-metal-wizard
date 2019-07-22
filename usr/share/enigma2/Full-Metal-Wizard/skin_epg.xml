@@ -45,7 +45,6 @@
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel"/>
 		<panel name="FullscreenInfoButtonPanel"/>
-		<panel name="FullscreenHelpButtonPanel"/>
 	</screen>
 	<screen name="EPGSearch" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Search">
 		<panel name="EPGSelection" />
@@ -116,7 +115,6 @@
 		<panel name="FullscreenLowMenuButtonPanel"/>
 		<panel name="FullscreenLowInfoButtonPanel"/>
 		<panel name="FullscreenLowTextButtonPanel"/>
-		<panel name="FullscreenLowHelpButtonPanel"/>
 	</screen>
 
 	<screen name="GraphicalEPG" position="0,0" size="1280,720" backgroundColor="#0015215b" flags="wfNoBorder" title="Electronic Program Guide">
@@ -159,7 +157,6 @@
 		<panel name="FullscreenLowMenuButtonPanel"/>
 		<panel name="FullscreenLowInfoButtonPanel"/>
 		<panel name="FullscreenLowTextButtonPanel"/>
-		<panel name="FullscreenLowHelpButtonPanel"/>
 	</screen>
 	<screen name="GraphicalEPGPIG" position="0,0" size="1280,720" backgroundColor="#0015215b" transparent="0" flags="wfNoBorder">
 		<widget position="0,0" size="1280,720" source="Event" render="Pixmap" pixmap="epg/multiepg.png" zPosition="-1">
@@ -228,7 +225,6 @@
 		<panel name="FullscreenLowMenuButtonPanel"/>
 		<panel name="FullscreenLowInfoButtonPanel"/>
 		<panel name="FullscreenLowTextButtonPanel"/>
-		<panel name="FullscreenLowHelpButtonPanel"/>
 	</screen>
 	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="#00222329" transparent="0" flags="wfNoBorder" >
 		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />

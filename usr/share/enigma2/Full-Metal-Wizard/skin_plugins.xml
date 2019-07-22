@@ -18,7 +18,6 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<ePixmap alphatest="on" pixmap="menu/mainmenu_tasks_timer.png" position="200,200" size="166,162" />
 		<widget position="510, 120" size="720, 450" name="entries" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>
