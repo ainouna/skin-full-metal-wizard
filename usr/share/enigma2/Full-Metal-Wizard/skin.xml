@@ -442,6 +442,7 @@ self.autoResize()
 	<screen name="Console" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Command execution...">
 		<panel name="FullScreenWindow" />
 		<widget name="text" position="55,100" size="1060,520" transparent="1" font="Console;21"/>
+		<panel name="FullScreenColourPanel" />
 	</screen>
 
 	<screen name="clockDisplay" position="center,center" size="300,300">
