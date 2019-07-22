@@ -1291,18 +1291,11 @@ self.autoResize()
 	</screen>
 
 	<!-- vEditor - FileCommander file editor -->
-	<screen name="vEditor" position="40,80" size="1200,600" title="File Commander - File Viewer">
-		<widget name="list_head" position="10,10" size="1170,45" font="Regular;20" foregroundColor="#00fff000"/>
-		<widget name="filedata"  scrollbarMode="showOnDemand" position="10,60" size="1160,500" itemHeight="25"/>
-		<widget name="key_red" position="130,570" size="260,25" transparent="1" font="Regular;20"/>
-		<widget name="key_green" position="380,570" size="260,25"  transparent="1" font="Regular;20"/>
-		<widget name="key_yellow" position="630,570" size="260,25" transparent="1" font="Regular;20"/>
-		<widget name="key_blue" position="880,570" size="260,25" transparent="1" font="Regular;20"/>
-		<ePixmap position="100,570" size="15,16" zPosition="0" pixmap="buttons/button_red.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="350,570" size="15,16" zPosition="0" pixmap="buttons/button_green.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="600,570" size="15,16" zPosition="0" pixmap="buttons/button_yellow.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="850,570" size="15,16" zPosition="0" pixmap="buttons/button_blue.png" transparent="1" alphatest="blend"/>
-		<ePixmap position="1130,570" size="35,25" pixmap="buttons/key_help.png" alphatest="blend" transparent="1" zPosition="10" />
+	<screen name="vEditor" position="0,0" size="1280,720" title="File Commander - File Viewer" flags="wfNoBorder">
+		<widget name="list_head" position="50,70" size="1180,45" font="Regular;20" foregroundColor="#00fff000"/>
+		<widget name="filedata"  scrollbarMode="showOnDemand" position="50,120" size="1180,500" itemHeight="25"/>
+		<panel name="FullScreenWindow" />
+		<panel name="FullScreenColourPanel" />
 	</screen>
 
 	<screen name="FileCommanderFileStatInfo" position="center,center" size="545,435" title="File/Directory Status Information">
