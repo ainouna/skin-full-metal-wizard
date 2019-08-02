@@ -118,7 +118,6 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<panel name="FullscreenVKeyIconButtonPanel" />
 		<ePixmap pixmap="menu/mainmenu_source_youtube.png" position="55, 155" size="300,500"/>
 		<widget name="config" position="590, 100" size="610, 500" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>		
@@ -193,7 +192,6 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<panel name="FullscreenInfoButtonPanel" />
 		<panel name="FullscreenTextButtonPanel" />
 		<widget position="50,70" size="220,25" name="numFolders" font="Named;20" halign="left" backgroundColor="background" />

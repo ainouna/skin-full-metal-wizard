@@ -3,7 +3,6 @@
 	<screen name="AdapterSetupConfiguration" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network Configuration...">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<widget position="55, 160" size="710, 415" name="menulist" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="55, 155" size="1100, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
@@ -17,7 +16,6 @@
 	<screen name="AdapterSetup" position="0, 0" size="1280, 720" flags="wfNoBorder" backgroundColor="background" title="Network settings">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<panel name="FullscreenVKeyIconButtonPanel"/>
 		<widget name="HelpWindow" position="848,338" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel position="55, 155" size="1100, 2" backgroundColor="crypt_emm"/>
@@ -42,7 +40,6 @@
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Nameserver Setup">
 		<panel name="SetupCommon" />
 		<panel name="SetupConfig"/>
-		<panel name="FullscreenHelpButtonPanel" />
 		<widget source="introduction" render="Label" position="60,130" size="380,170"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<!-- Network Test -->
@@ -309,7 +306,6 @@
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Network Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<widget position="55, 160" size="710, 415" name="menulist" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget source="introduction" render="Label" position="c-385, 470" size="740, 30" zPosition="10" font="Regular; 24" halign="center" valign="center" backgroundColor="un9f1313" transparent="1"/>
 	</screen>	
@@ -324,7 +320,6 @@
 	<screen name="NetworkAdapterSelection" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Select Network Adapter">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<eLabel position="55, 100" size="760, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 561" size="760, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 102" size="760, 2" backgroundColor="crypt_emm"/>
