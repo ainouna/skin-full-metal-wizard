@@ -4,7 +4,6 @@
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
 		<panel name="FullscreenMenuButtonPanel" />
-		<panel name="FullscreenHelpButtonPanel"/>
 		<panel name="FullscreenInfoButtonPanel" />
 		<panel name="FullscreenTextButtonPanel" />
 		<eLabel backgroundColor="white" position="665,340" size="450,2" zPosition="2"/>
@@ -50,7 +49,6 @@
 		<widget enableWrapAround="1" name="tablist" position="650,120" scrollbarMode="showOnDemand" size="570,207" transparent="1" zPosition="2"/>
 		<widget enableWrapAround="1" name="streamlist" position="650,347" scrollbarMode="showOnDemand" size="570,254" transparent="1" zPosition="2"/>
 		<panel name="FullscreenMenuButtonPanel" />
-		<panel name="FullscreenHelpButtonPanel"/>
 		<widget name="infolabel" position="0,600" size="1280,20" valign="center" halign="center" zPosition="2" transparent="1" font="Regular;18" />           
         </screen> 
 	<screen name="SHOUTcastWidget" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="SHOUTcast">

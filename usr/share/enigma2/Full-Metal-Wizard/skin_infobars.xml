@@ -264,6 +264,11 @@
 			<convert type="EGExtraInfo">CamName</convert>
 		</widget> -->
 
+		<!--	Bouquet -->
+		<widget source="session.CurrentService" render="Label" position="25,145" size="150,16" font="Bold; 14" halign="center" foregroundColor="border1" backgroundColor="black" transparent="1" shadowColor="#000000" shadowOffset="-2,-2" noWrap="1">
+			<convert type="ServiceName2">Bouquet</convert>
+		</widget>
+
 		<!-- Bottom bar - info icons top right -->
 
 		<!-- Icons for Online services -->
@@ -418,7 +423,7 @@
 		</widget>
 		<!-- Genre and Event Rating Area -->
 		<widget source="session.Event_Now" render="Label" position="20,402" size="560,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" transparent="1">
-			<convert type="EventName">Genre</convert>
+			<convert type="EventName">GenreList</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Pixmap" position="20,427" size="40,20" alphatest="blend">
 			<convert type="EventName">RatingIcon</convert>
@@ -460,7 +465,7 @@
 		</widget>
 		<!-- Genre and Event Rating Area -->
 		<widget source="session.Event_Next" render="Label" position="20,402" size="500,20" backgroundColor="background" font="Regular;18" foregroundColor="grey" transparent="1">
-			<convert type="EventName">Genre</convert>
+			<convert type="EventName">GenreList</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Pixmap" position="20,427" size="40,20" alphatest="blend">
 			<convert type="EventName">RatingIcon</convert>

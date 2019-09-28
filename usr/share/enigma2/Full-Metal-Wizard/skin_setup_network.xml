@@ -3,7 +3,6 @@
 	<screen name="AdapterSetupConfiguration" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Network Configuration...">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<widget position="55, 160" size="710, 415" name="menulist" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<eLabel position="55, 155" size="1100, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
@@ -17,7 +16,6 @@
 	<screen name="AdapterSetup" position="0, 0" size="1280, 720" flags="wfNoBorder" backgroundColor="background" title="Network settings">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<panel name="FullscreenVKeyIconButtonPanel"/>
 		<widget name="HelpWindow" position="848,338" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<eLabel position="55, 155" size="1100, 2" backgroundColor="crypt_emm"/>
@@ -42,7 +40,6 @@
 	<screen name="NameserverSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Nameserver Setup">
 		<panel name="SetupCommon" />
 		<panel name="SetupConfig"/>
-		<panel name="FullscreenHelpButtonPanel" />
 		<widget source="introduction" render="Label" position="60,130" size="380,170"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
 	</screen>
 	<!-- Network Test -->
@@ -210,116 +207,95 @@
 		<ePixmap pixmap="menu/mainmenu_tasks_setup.png" position="200,150" size="166,162"/>
 	</screen>
 	<!-- Mount Manager -->
-	<screen name="AutoMountManager" backgroundColor="un44000000" position="0,0" size="1280,720" flags="wfNoBorder" title="Mount Manager">
+	<screen name="AutoMountManagerCommon">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget source="config" render="Listbox" position="55, 120" size="740,420" zPosition="10" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
-		<convert type="TemplatedMultiContent">
-					    {"template": [
-							    MultiContentEntryText(pos = (60, 10), size = (580, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
-							    MultiContentEntryText(pos = (70, 40), size = (570, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
-							    MultiContentEntryPixmapAlphaTest(pos = (10, 11), size = (48, 48), png = 3), # index 4 is the pixmap
-						    ],
-					    "fonts": [gFont("Regular", 22),gFont("Regular", 17)],
-					    "itemHeight": 70
-					    }
-				    </convert>
-		</widget>
-		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
-		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
-		<widget source="introduction" render="Label" position="55, 580" size="740, 30" zPosition="10" font="Regular;24" halign="center" backgroundColor="#41000000" transparent="1"/>
-		<eLabel position="55, 100" size="1100, 2" backgroundColor="crypt_emm"/>
-	</screen>
-	<!-- Add new network mount point -->
-	<screen name="AutoMountView" backgroundColor="un44000000" position="0,0" size="1280,720" flags="wfNoBorder" title="MountView">
-		<panel name="FullScreenWindow" />
-		<panel name="FullScreenColourPanel" />
-		<eLabel position="55, 80" size="760, 2" backgroundColor="crypt_emm"/>
-		<widget source="legend1" render="Label" backgroundColor="#41000000" position="55, 100" zPosition="1" size="130,60" font="Regular;18" halign="center" valign="center" transparent="1"/>
-		<widget source="legend2" render="Label" backgroundColor="#41000000" position="200, 100" zPosition="1" size="310,60" font="Regular;18" halign="center" valign="center" transparent="1"/>
-		<widget source="legend3" render="Label" backgroundColor="#41000000" position="525, 100" zPosition="1" size="100,60" font="Regular;18" halign="center" valign="center" transparent="1"/>
-		<eLabel position="55, 175" size="760, 2" backgroundColor="crypt_emm"/>
-		<widget source="config" render="Listbox" position="55, 190" size="660,420" scrollbarMode="showOnDemand" transparent="1">
-		<convert type="TemplatedMultiContent">
-					      {"template": [
-							      MultiContentEntryPixmapAlphaTest(pos = (40, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
-							      MultiContentEntryText(pos = (200, 5), size = (200, 28), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
-							      MultiContentEntryText(pos = (380, 8), size = (250, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
-							      MultiContentEntryText(pos = (200, 35), size = (350, 20), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
-							      MultiContentEntryPixmapAlphaTest(pos = (570, 15), size = (48, 48), png = 4), # index 4 is the activepng pixmap
-							      MultiContentEntryPixmapAlphaTest(pos = (600, 6), size = (48, 48), png = 5), # index 4 is the mounttype pixmap
-						      ],
-					      "fonts": [gFont("Regular", 22),gFont("Regular", 17)],
-					      "itemHeight": 60
-					      }
-				      </convert>
-		</widget>
-		<eLabel position="815, 80" size="2, 538" backgroundColor="crypt_emm"/>
-		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
-		<widget source="introduction" backgroundColor="#41000000" render="Label" position="55, 580" size="740, 30" zPosition="10" font="Regular;24" halign="center" transparent="1"/>
-	</screen>
-	<!-- Mount Edit -->
-	<screen name="AutoMountEdit" backgroundColor="un44000000" position="0,0" size="1280,720" flags="wfNoBorder" title="MountEdit">
-		<panel name="FullScreenWindow" />
-		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenVKeyIconButtonPanel" />
-		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
-		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
-		<widget source="introduction" render="Label" position="55, 575" size="740, 30" zPosition="10" font="Regular;24" halign="center" transparent="1"/>
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="825,250" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<eLabel position="55, 100" size="1100, 2" backgroundColor="crypt_emm"/>
-	</screen>
-	<!-- User Management -->
-	<screen name="UserManager" backgroundColor="un44000000" position="0,0" size="1280,720" flags="wfNoBorder" title="User Manager">
-		<panel name="FullScreenWindow" />
-		<panel name="FullScreenColourPanel" />
-		<eLabel position="55, 100" size="760, 2" backgroundColor="crypt_emm"/>
-		<widget source="config" render="Listbox" position="55, 120" size="660,420" scrollbarMode="showOnDemand" transparent="1">
-		<convert type="TemplatedMultiContent">
+		<ePixmap position="55,120" size="390,180" borderColor="grey" borderWidth="2" transparent="1"/>
+		<widget source="introduction" render="Label" position="60,125" size="380,170" font="Regular;18" halign="center" transparent="1" valign="center" zPosition="2"/>
+	</screen>"
+	<screen name="AutoMountManager" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Mount Manager">
+		<panel name="AutoMountManagerCommon" />
+		<widget source="config" render="Listbox" position="510, 120" size="740,480" zPosition="10" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
+			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (80, 7), size = (590, 50), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
-						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the status pixmap
+						MultiContentEntryText(pos = (60, 7), size = (580, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+						MultiContentEntryText(pos = (70, 34), size = (570, 19), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
+						MultiContentEntryPixmapAlphaTest(pos = (6, 11), size = (48, 48), png = 3), # index 4 is the pixmap
 					],
-				"fonts": [gFont("Regular", 40)],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 17)],
 				"itemHeight": 60
 				}
 			</convert>
 		</widget>
-		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
-		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
-		<widget source="introduction" render="Label" position="55, 580" size="740, 30" zPosition="10" font="Regular;24" halign="center" transparent="1"/>
-	</screen> 
-	<screen name="UserDialog" backgroundColor="un44000000" position="0,0" size="1280,720" title="User Dialog">
-		<panel name="FullScreenWindow" />
-		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenVKeyIconButtonPanel" />
-		<widget position="55, 130" size="710, 415" name="config" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
-		<eLabel position="815, 100" size="2,518" backgroundColor="crypt_emm"/>
-		<eLabel position="55, 618" size="1100,2" backgroundColor="crypt_emm"/>
-		<widget source="introduction" render="Label" position="55, 575" size="740, 30" zPosition="10" font="Regular;24" halign="center" transparent="1"/>
-		<widget name="HelpWindow" pixmap="vkey_icon.png" position="825,250" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<eLabel position="55, 100" size="1100, 2" backgroundColor="crypt_emm"/>
-	</screen> 
-	<screen name="NetworkBrowser" position="0,0" backgroundColor="background" size="1280,720" flags="wfNoBorder" title="Network Neighbourhood">
-		<panel name="FullScreenWindow" />
-		<widget source="list" render="Listbox" position="55, 120" size="740,420" zPosition="10" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1">
+	</screen>
+	<!-- Add new network mount point -->
+	<screen name="AutoMountView" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="MountView">
+		<panel name="AutoMountManagerCommon" />
+		<widget source="legend1" render="Label" position="510, 70" zPosition="1" size="130,45" font="Regular;18" halign="center" valign="center" transparent="1"/>
+		<widget source="legend2" render="Label" position="655, 70" zPosition="1" size="455,45" font="Regular;18" halign="center" valign="center" transparent="1"/>
+		<widget source="legend3" render="Label" position="1125, 70" zPosition="1" size="100,45" font="Regular;18" halign="center" valign="center" transparent="1"/>
+		<widget source="config" render="Listbox" position="510, 120" size="720,480" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="TemplatedMultiContent">
-					      {"template": [
-							      MultiContentEntryPixmapAlphaTest(pos = (10, 11), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
-							      MultiContentEntryText(pos = (70, 9), size = (620, 26), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
-							      MultiContentEntryText(pos = (160, 10), size = (520, 25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
-							      MultiContentEntryText(pos = (160, 31), size = (520, 17), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
-							      MultiContentEntryPixmapAlphaTest(pos = (65, 11), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
-							      MultiContentEntryPixmapAlphaTest(pos = (110, 11), size = (48, 48), png = 6), # index 6 is the isMounted icon
-						      ],
-					      "fonts": [gFont("Regular", 22),gFont("Regular", 17),gFont("Regular", 24)],
-					      "itemHeight": 70
-					      }
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (63, 6), size = (48, 48), png = 0), # index 0 is the isMounted pixmap
+					MultiContentEntryText(pos = (145, 7), size = (270, 25), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the sharename
+					MultiContentEntryText(pos = (430, 7), size = (160, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the IPdescription
+					MultiContentEntryText(pos = (145, 34), size = (445, 19), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the DIRdescription
+					MultiContentEntryPixmapAlphaTest(pos = (650, 15), size = (30, 27), png = 4), # index 4 is the activepng pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (18, 6), size = (48, 48), png = 5), # index 4 is the mounttype pixmap
+				],
+			      "fonts": [gFont("Regular", 22),gFont("Regular", 17)],
+			      "itemHeight": 60
+			      }
+		      </convert>
+		</widget>
+	</screen>
+	<!-- Mount Edit -->
+	<screen name="AutoMountEdit" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="MountEdit">
+		<panel name="AutoMountManagerCommon" />
+		<panel name="SetupTextHelp" />
+		<widget name="config" position="510, 120" size="720, 450" itemHeight="45" scrollbarMode="showOnDemand" transparent="1"/>
+	</screen>
+	<!-- User Management -->
+	<screen name="UserManager" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="User Manager">
+		<panel name="AutoMountManagerCommon" />
+		<widget source="config" render="Listbox" position="510, 120" size="720,480" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (80, 7), size = (590, 50), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
+						MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 3), # index 4 is the status pixmap
+					],
+				"fonts": [gFont("Regular", 24)],
+				"itemHeight": 60
+				}
 			</convert>
 		</widget>
-		<widget source="infotext" render="Label" position="55, 580" size="740, 30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="black" transparent="1"/>
+	</screen> 
+	<screen name="UserDialog" position="0,0" size="1280,720" backgroundColor="background" title="User Dialog">
+		<panel name="AutoMountManagerCommon" />
+		<panel name="SetupTextHelp" />
+		<panel name="SetupConfig" />
+	</screen> 
+	<screen name="NetworkBrowser" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="Network Neighbourhood">
+		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
+		<ePixmap position="55,120" size="390,180" borderColor="grey" borderWidth="2" transparent="1"/>
+		<widget source="infotext" render="Label" position="60,125" size="380,170" font="Regular;18" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget source="list" render="Listbox" position="510, 120" size="720, 480" zPosition="10" scrollbarMode="showOnDemand" enableWrapAround="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (10, 6), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
+					MultiContentEntryText(pos = (70, 7), size = (620, 27), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
+					MultiContentEntryText(pos = (160, 7), size = (520, 25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
+					MultiContentEntryText(pos = (160, 34), size = (520, 19), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
+					MultiContentEntryPixmapAlphaTest(pos = (65, 6), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
+					MultiContentEntryPixmapAlphaTest(pos = (110, 6), size = (48, 48), png = 6), # index 6 is the isMounted icon
+					],
+				"fonts": [gFont("Regular", 22),gFont("Regular", 17),gFont("Regular", 24)],
+				"itemHeight": 60
+				}
+			</convert>
+		</widget>
 	</screen>
 	<screen name="ScanIP" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Scan Ip">
 		<panel name="FullScreenWindow" />
@@ -330,7 +306,6 @@
 	<screen name="NetworkMountsMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background" title="Network Setup">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<widget position="55, 160" size="710, 415" name="menulist" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<widget source="introduction" render="Label" position="c-385, 470" size="740, 30" zPosition="10" font="Regular; 24" halign="center" valign="center" backgroundColor="un9f1313" transparent="1"/>
 	</screen>	
@@ -345,7 +320,6 @@
 	<screen name="NetworkAdapterSelection" position="0, 0" size="1280, 720" backgroundColor="background" flags="wfNoBorder" title="Select Network Adapter">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel" />
 		<eLabel position="55, 100" size="760, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 561" size="760, 2" backgroundColor="crypt_emm"/>
 		<eLabel position="55, 102" size="760, 2" backgroundColor="crypt_emm"/>

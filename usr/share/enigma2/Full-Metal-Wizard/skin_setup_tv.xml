@@ -40,8 +40,8 @@
 		<panel name="SetupCommon" />
 		<widget name="input" position="590, 150" font="Named; 46" size="210, 50" backgroundColor="#41000000" transparent="1"/>
 		<widget name="service" position="100,170" size="300,30"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="text" position="100,200" size="300,30"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
-		<widget name="tries" position="100,230" size="300,30"  font="Regular;20" halign="center" transparent="1" valign="center" zPosition="2"/>
+		<widget name="text" position="60,136" size="380,69"  font="Regular;20" halign="center" transparent="1" valign="bottom" zPosition="2"/>
+		<widget name="tries" position="60,215" size="380,69"  font="Regular;20" halign="center" transparent="1" valign="top" zPosition="2"/>
 	</screen>
 	<screen name="ZapHistoryConfigurator" position="0,0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Zap History Setup">
 		<panel name="FullScreenWindow" />
