@@ -4,7 +4,7 @@
 	  <!--<ePixmap pixmap="menu/mainmenu_tasks_setup_tv.png" position="55, 155" size="300,500"/>-->
 		<panel name="SetupCommon" />
 		<widget name="text" position="60,130" size="380,170"  font="Regular;20" halign="center" transparent="1" valign="top" zPosition="2"/>
-		<widget name="config" position="590,100" size="618,512" itemHeight="32" font="Regular;24" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget name="config" position="590,90" size="618,510" itemHeight="30" font="Regular;22" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 	</screen>  
 	<!-- Tuner Configuration -->
 	<screen name="NimSelection" position="0, 0" size="1280, 720" backgroundColor="un44000000" flags="wfNoBorder" title="Choose Tuner">
