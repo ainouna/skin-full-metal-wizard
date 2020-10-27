@@ -30,7 +30,7 @@
 			<panel name="EPGSelectionInfoNoTitle" />
 		</panel>
 	</screen>
-	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection">
+	<screen name="EPGSearch" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Search">
 		<panel name="FullScreenWindow" />
 		<widget position="750,20" size="90,40" source="Event" render="Pixmap" pixmap="epg/icetv_90x40.png" alphatest="blend" zPosition="-1">
 			<convert type="ConfigEntryTest">config.plugins.icetv.enable_epg,True</convert>
@@ -46,8 +46,13 @@
 		<panel name="FullscreenMenuButtonPanel"/>
 		<panel name="FullscreenInfoButtonPanel"/>
 	</screen>
-	<screen name="EPGSearch" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Search">
-		<panel name="EPGSelection" />
+	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection">
+		<panel name="EPGSearch" />
+		<widget source="Service" render="Picon" position="center,0" size="100,60" alphatest="blend">
+			<convert type="ServiceName">Reference</convert>
+			<convert type="ConfigEntryTest">config.epgselection.enhanced_picon,True</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
 	</screen>
 	<screen name="EPGSelectionMulti" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder" title="EPG Selection Multi">
 		<widget position="0,0" size="1280,720" source="Event" render="Pixmap" pixmap="epg/multiepg.png" zPosition="-1">
