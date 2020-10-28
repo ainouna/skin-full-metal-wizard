@@ -24,7 +24,6 @@
 	<screen name="EcasaPictureWall" position="0,0" size="1280,720" backgroundColor="background" flags="wfNoBorder">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<panel name="FullscreenHelpButtonPanel"/>
 		<!-- <panel name="FullscreenMenuButtonPanel" /> -->
 		<widget name="waitingtext" position="center,center" size="1280,720" backgroundColor="#41000000"  valign="center" halign="center" font="Regular;26" transparent="1"/>
 		
