@@ -91,6 +91,7 @@
 	<parameters>
 		<parameter name="AllowUserDatesAndTimes" value="1,1" />
 		<parameter name="FileListName" value="35,1,470,23" />
+		<parameter name="FrontendInfoColors" value="green,red,darkergrey" />
 	</parameters>
 	<windowstyle type="skinned" id="0">
 		<title offset="20,8" font="Named;23"/>

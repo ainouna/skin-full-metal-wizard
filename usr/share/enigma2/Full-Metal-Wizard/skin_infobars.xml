@@ -136,68 +136,6 @@
 		</widget>
 	</screen>
 
-	<!--	Tuner use -->
-
-	<screen name="InfoBarTunerInfo" position="0,0" size="34,48" backgroundColor="transparent2" flags="wfNoBorder">
-
-		<!--	dark grey text, tuner not in use
-		 |	green text, current liveTV tuner
-		 |	red text, in use for recording
-		 +-->
-
-		 <!--	Unused tuner id - overwritten by tuners in use -->
-		<eLabel text="A" position="0,0" size="17,24" font="Named; 18" halign="center" foregroundColor="darkergrey" backgroundColor="transpBlack" transparent="1" />
-		<eLabel text="B" position="17,0" size="17,24" font="Named; 18" halign="center" foregroundColor="darkergrey" backgroundColor="transpBlack" transparent="1" />
-		<eLabel text="C" position="0,24" size="17,24" font="Named; 18" halign="center" foregroundColor="darkergrey" backgroundColor="transpBlack" transparent="1" />
-		<eLabel text="D" position="17,24" size="17,24" font="Named; 18" halign="center" foregroundColor="darkergrey" backgroundColor="transpBlack" transparent="1" />
-		 <!--	Tuners used for recording
-		  |	- overwrites "unused" background
-		  +-->
-		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="0,0" zPosition="1" size="17,24" font="Named; 18" halign="center" foregroundColor="red" backgroundColor="transpBlack" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">1</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="17,0" zPosition="1" size="17,24" font="Named; 18" halign="center" foregroundColor="red" backgroundColor="transpBlack" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">2</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="0,24" zPosition="1" size="17,24" font="Named; 18" halign="center" foregroundColor="red" backgroundColor="transpBlack" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">4</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="17,24" zPosition="1" size="17,24" font="Named; 18" halign="center" foregroundColor="red" backgroundColor="transpBlack" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">8</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		 <!--	Tuner used for live TV
-		  |	- overwrites "unused" background & recording tuners
-		  +-->
-		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="0,0" zPosition="2" size="17,24" font="Named; 18" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">0,0</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="17,0" zPosition="2" size="17,24" font="Named; 18" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">1,1</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="0,24" zPosition="2" size="17,24" font="Named; 18" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">2,2</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="17,24" zPosition="2" size="17,24" font="Named; 18" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">3,3</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-	</screen>
-
 	<!--	Live TV tuner signal strength/quality
 		AGC -> signal strength: bar, percentage
 		SNR -> signal quality: bar, percentage
@@ -294,10 +232,10 @@
 			<convert type="ServiceInfo">VideoInfo</convert>
 		</widget>
 
-		<!--	Digital broadcast type / transponder info  -->
+		<!--	Transponder info  -->
 
-		<widget position="838,129" size="420,32" source="session.CurrentService" render="Label" font="Bold; 14" halign="right" foregroundColor="border1" backgroundColor="black" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
-			<convert type="PliExtraInfo">TransponderInfo2line</convert>
+		<widget position="638,145" size="620,16" source="session.CurrentService" render="Label" font="Bold; 14" halign="right" foregroundColor="border1" backgroundColor="black" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
+			<convert type="PliExtraInfo">User,ProviderName,TerrestrialChannelNumber,TransponderFrequencyMHz,TransponderSymbolRate</convert>
 		</widget>
 
 		<!-- Current event information -->
@@ -349,13 +287,12 @@
 			<panel name="InfoBarBroadcastTypeIcon"/>
 		</panel>
 
-		<!--	Tuner use -->
-		<panel position="1072,80" size="34,48">
-			<panel name="InfoBarTunerInfo"/>
-		</panel>
+		<!--    Tuner use -->
+		<widget source="session.FrontendInfo" render="Label" position="1002,125" zPosition="2" size="256,24" font="Named; 18" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
+			<convert type="FrontendInfo">STRING</convert>
+		</widget>
 
 		<!--	Live TV tuner signal strength/quality -->
-
 		<panel position="1112,91" size="146,35">
 			<panel name="InfoBarSignalInfo"/>
 		</panel>
