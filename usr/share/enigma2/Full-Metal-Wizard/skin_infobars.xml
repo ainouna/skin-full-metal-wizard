@@ -79,24 +79,7 @@
 
 	<!-- Icons for DTV services - live only -->
 
-	<screen name="InfoBarDTVIcons" position="0,0" size="97,20" backgroundColor="transparent2" flags="wfNoBorder">
-
-		<!--	HBBTV icon -->
-		<ePixmap position="0,0" size="56,20" pixmap="infobar/ico_hbbtv_off.png" alphatest="blend" />
-		<widget position="0,0" size="56,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_hbbtv_on.png" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">HasHBBTV</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-
-		<!--	Teletext icon -->
-		<ePixmap position="62,1" size="35,19" pixmap="infobar/ico_txt_off.png" alphatest="blend" />
-		<widget position="62,1" size="35,19" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_txt_on.png" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">HasTelext</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-	</screen>
-
-	<screen name="InfoBarVideoIcons" position="0,0" size="136,21" backgroundColor="transparent2" flags="wfNoBorder">
+	<screen name="InfoBarVideoIcons" position="0,0" size="93,21" backgroundColor="transparent2" flags="wfNoBorder">
 		<!--	Dolby audio icon -->
 		<ePixmap position="0,1" size="57,21" pixmap="infobar/ico_dolby_off.png" alphatest="blend" />
 		<widget position="0,1" size="57,21" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_dolby_on.png" zPosition="1" alphatest="blend">
@@ -104,16 +87,9 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 
-		<!--	Widescreen icon -->
-		<ePixmap position="63,1" size="37,20" pixmap="infobar/ico_169_off.png" alphatest="blend" />
-		<widget position="63,1" size="37,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_169_on.png" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-
 		<!--	HD TV icon -->
-		<ePixmap position="106,1" size="30,20" pixmap="infobar/ico_hd_off.png" alphatest="blend" />
-		<widget position="106,1" size="30,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_hd_on.png" zPosition="1" alphatest="blend">
+		<ePixmap position="63,1" size="30,20" pixmap="infobar/ico_hd_off.png" alphatest="blend" />
+		<widget position="63,1" size="30,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_hd_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">800,2000</convert>
 			<convert type="ConditionalShowHide" />
@@ -223,13 +199,9 @@
 
 		<!-- Icons for DTV services -->
 
-		<panel position="1030,26" size="97,20" >
-			<panel name="InfoBarDTVIcons" />
-		</panel>
-
 		<!-- Icons for video stream state -->
 
-		<panel position="1133,26" size="136,21" >
+		<panel position="1165,26" size="93,21" >
 			<panel name="InfoBarVideoIcons" />
 		</panel>
 
