@@ -79,26 +79,7 @@
 
 	<!-- Icons for DTV services - live only -->
 
-	<screen name="InfoBarDTVIcons" position="0,0" size="97,20" backgroundColor="transparent2" flags="wfNoBorder">
-
-		<!--	HBBTV icon -->
-		<ePixmap position="0,0" size="56,20" pixmap="infobar/ico_hbbtv_off.png" alphatest="blend" />
-		<widget position="0,0" size="56,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_hbbtv_on.png" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">HasHBBTV</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-
-		<!--	Teletext icon -->
-		<ePixmap position="62,1" size="35,19" pixmap="infobar/ico_txt_off.png" alphatest="blend" />
-		<widget position="62,1" size="35,19" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_txt_on.png" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">HasTelext</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-	</screen>
-
-	<!-- Icons for video stream state - common to live and playback -->
-
-	<screen name="InfoBarVideoIcons" position="0,0" size="136,21" backgroundColor="transparent2" flags="wfNoBorder">
+	<screen name="InfoBarVideoIcons" position="0,0" size="93,21" backgroundColor="transparent2" flags="wfNoBorder">
 		<!--	Dolby audio icon -->
 		<ePixmap position="0,1" size="57,21" pixmap="infobar/ico_dolby_off.png" alphatest="blend" />
 		<widget position="0,1" size="57,21" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_dolby_on.png" zPosition="1" alphatest="blend">
@@ -106,21 +87,15 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 
-		<!--	Widescreen icon -->
-		<ePixmap position="63,1" size="37,20" pixmap="infobar/ico_169_off.png" alphatest="blend" />
-		<widget position="63,1" size="37,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_169_on.png" zPosition="1" alphatest="blend">
-			<convert type="ServiceInfo">IsWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-
 		<!--	HD TV icon -->
-		<ePixmap position="106,1" size="30,20" pixmap="infobar/ico_hd_off.png" alphatest="blend" />
-		<widget position="106,1" size="30,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_hd_on.png" zPosition="1" alphatest="blend">
+		<ePixmap position="63,1" size="30,20" pixmap="infobar/ico_hd_off.png" alphatest="blend" />
+		<widget position="63,1" size="30,20" source="session.CurrentService" render="Pixmap" pixmap="infobar/ico_hd_on.png" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">800,2000</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
+
 
 	<screen name="InfoBarBroadcastTypeIcon" position="0,0" size="25,26" backgroundColor="transparent2" flags="wfNoBorder">
 		<!--	Digital broadcast type icons terrestrial/satellite -->
@@ -136,91 +111,36 @@
 		</widget>
 	</screen>
 
-	<!--	Tuner use -->
-
-	<screen name="InfoBarTunerInfo" position="0,0" size="34,48" backgroundColor="transparent2" flags="wfNoBorder">
-
-		<!--	dark grey text, tuner not in use
-		 |	green text, current liveTV tuner
-		 |	red text, in use for recording
-		 +-->
-
-		 <!--	Unused tuner id - overwritten by tuners in use -->
-		<eLabel text="A" position="0,0" size="17,24" font="Named; 18" halign="center" foregroundColor="darkergrey" backgroundColor="transpBlack" transparent="1" />
-		<eLabel text="B" position="17,0" size="17,24" font="Named; 18" halign="center" foregroundColor="darkergrey" backgroundColor="transpBlack" transparent="1" />
-		<eLabel text="C" position="0,24" size="17,24" font="Named; 18" halign="center" foregroundColor="darkergrey" backgroundColor="transpBlack" transparent="1" />
-		<eLabel text="D" position="17,24" size="17,24" font="Named; 18" halign="center" foregroundColor="darkergrey" backgroundColor="transpBlack" transparent="1" />
-		 <!--	Tuners used for recording
-		  |	- overwrites "unused" background
-		  +-->
-		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="0,0" zPosition="1" size="17,24" font="Named; 18" halign="center" foregroundColor="red" backgroundColor="transpBlack" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">1</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="17,0" zPosition="1" size="17,24" font="Named; 18" halign="center" foregroundColor="red" backgroundColor="transpBlack" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">2</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="0,24" zPosition="1" size="17,24" font="Named; 18" halign="center" foregroundColor="red" backgroundColor="transpBlack" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">4</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="17,24" zPosition="1" size="17,24" font="Named; 18" halign="center" foregroundColor="red" backgroundColor="transpBlack" transparent="1">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">8</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		 <!--	Tuner used for live TV
-		  |	- overwrites "unused" background & recording tuners
-		  +-->
-		<widget source="session.FrontendInfo" render="FixedLabel" text="A" position="0,0" zPosition="2" size="17,24" font="Named; 18" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">0,0</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="B" position="17,0" zPosition="2" size="17,24" font="Named; 18" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">1,1</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="C" position="0,24" zPosition="2" size="17,24" font="Named; 18" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">2,2</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" text="D" position="17,24" zPosition="2" size="17,24" font="Named; 18" halign="center" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">3,3</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-	</screen>
 
 	<!--	Live TV tuner signal strength/quality
 		AGC -> signal strength: bar, percentage
 		SNR -> signal quality: bar, percentage
 	  -->
 
-	<screen name="InfoBarSignalInfo" position="0,0" size="152,35" backgroundColor="transparent2" flags="wfNoBorder">
+	<screen name="InfoBarSignalInfo" position="0,0" size="251,35" backgroundColor="transparent2" flags="wfNoBorder">
+		<!--	AGC label -->
+		<eLabel text="S" position="2,0" size="13,20" font="Regular; 15" foregroundColor="grey" backgroundColor="background" transparent="1" halign="center" />
+
 		<!--	AGC bar -->
-		<widget position="0,6" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="progress_snr.png">
+		<widget position="20,3" render="Progress" size="185,12" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="progress_snr.png" backgroundColor="un202020">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 
 		<!--	AGC percentage -->
-		<widget source="session.FrontendStatus" render="Label" position="103,0" size="49,20" font="Regular; 15" foregroundColor="uncccccc" backgroundColor="background" transparent="1" halign="left">
+		<widget source="session.FrontendStatus" render="Label" position="208,0" size="43,20" font="Regular; 15" foregroundColor="grey" backgroundColor="background" transparent="1" halign="right">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 
+		<!--	SNR label -->
+		<eLabel text="Q" position="2,15" size="13,20" font="Regular; 15" foregroundColor="grey" backgroundColor="background" transparent="1" halign="center" />
+
 		<!--	SNR bar -->
-		<widget position="0,21" render="Progress" size="100,5" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="progress_snr.png">
+		<widget position="20,18" render="Progress" size="185,12" source="session.FrontendStatus" borderWidth="1" borderColor="progresoazul" pixmap="progress_snr.png" backgroundColor="un202020">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 
 		<!--	SNR percentage -->
-		<widget source="session.FrontendStatus" render="Label" position="103,15" size="49,20" font="Regular; 15" foregroundColor="uncccccc" backgroundColor="background" transparent="1">
+		<widget source="session.FrontendStatus" render="Label" position="208,15" size="43,20" font="Regular; 15" foregroundColor="grey" backgroundColor="background" transparent="1" halign="right">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 	</screen>
@@ -279,25 +199,21 @@
 
 		<!-- Icons for DTV services -->
 
-		<panel position="1030,26" size="97,20" >
-			<panel name="InfoBarDTVIcons" />
-		</panel>
-
 		<!-- Icons for video stream state -->
 
-		<panel position="1133,26" size="136,21" >
+		<panel position="1165,26" size="93,21" >
 			<panel name="InfoBarVideoIcons" />
 		</panel>
 
 		<!--	Video Info -->
-		<widget position="1143,60" size="115,20" source="session.CurrentService" render="Label" font="Bold;14" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1">
+		<widget position="1112,124" size="146,16" source="session.CurrentService" render="Label" font="Bold;14" halign="right" foregroundColor="grey" backgroundColor="black" transparent="1">
 			<convert type="ServiceInfo">VideoInfo</convert>
 		</widget>
 
-		<!--	Digital broadcast type / tranponder info  -->
+		<!--	Transponder info  -->
 
-		<widget position="839,129" size="409,32" source="session.CurrentService" render="Label" font="Bold; 14" halign="right" foregroundColor="border1" backgroundColor="black" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
-			<convert type="PliExtraInfo">TransponderInfo2line</convert>
+		<widget position="638,145" size="620,16" source="session.CurrentService" render="Label" font="Bold; 14" halign="right" foregroundColor="border1" backgroundColor="black" transparent="1" shadowColor="#000000" shadowOffset="-2,-2">
+			<convert type="PliExtraInfo">User,ProviderName,TerrestrialChannelNumber,TransponderFrequencyMHz,TransponderSymbolRate</convert>
 		</widget>
 
 		<!-- Current event information -->
@@ -320,8 +236,8 @@
 		</widget>
 
 		<!--	Event progress bar -->
-		<ePixmap position="390,94" size="600,7" pixmap="progress_event_background.png" alphatest="on" transparent="1" />
-		<widget source="session.Event_Now" render="Progress" position="390,95" size="600,8" pixmap="progress_event.png" transparent="1" zPosition="1">
+		<ePixmap position="390,96" size="600,6" pixmap="progress_event_background.png" alphatest="on" transparent="1" />
+		<widget source="session.Event_Now" render="Progress" position="390,96" size="600,6" pixmap="progress_event.png" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 
@@ -344,19 +260,13 @@
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 
-		<!--	Digital broadcast type icons terrestrial/satellite -->
-		<panel position="1046,88" size="97,20" >
-			<panel name="InfoBarBroadcastTypeIcon"/>
-		</panel>
-
-		<!--	Tuner use -->
-		<panel position="1072,80" size="34,48">
-			<panel name="InfoBarTunerInfo"/>
-		</panel>
+		<!--    Tuner use -->
+		<widget source="session.FrontendInfo" render="Label" position="1007,60" zPosition="2" size="251,24" font="Named; 18" halign="right" foregroundColor="green" backgroundColor="transpBlack" transparent="1">
+			<convert type="FrontendInfo">STRING</convert>
+		</widget>
 
 		<!--	Live TV tuner signal strength/quality -->
-
-		<panel position="1109,91" size="152,35">
+		<panel position="1007,84" size="251,35">
 			<panel name="InfoBarSignalInfo"/>
 		</panel>
 
