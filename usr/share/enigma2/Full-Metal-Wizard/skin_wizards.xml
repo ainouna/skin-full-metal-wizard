@@ -27,11 +27,11 @@
 		<widget enableWrapAround="1" position="550,365" size="600,300" render="Listbox" source="list" transparent="1" zPosition="2">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (20, 10), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
-						MultiContentEntryText(pos = (535, 10), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
+						MultiContentEntryText(pos = (20, 0), size = (515, 30), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0),
+						MultiContentEntryText(pos = (535, 0), size = (30, 30), flags = RT_HALIGN_RIGHT | RT_VALIGN_CENTER, text = ">")
 					],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 50
+				"fonts": [gFont("Regular", 22)],
+				"itemHeight": 30
 				}
 			</convert>
 		</widget>
