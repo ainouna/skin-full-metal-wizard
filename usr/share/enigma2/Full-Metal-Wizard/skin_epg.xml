@@ -12,13 +12,13 @@
 			<convert type="EventName">RatingIcon</convert>
 			<convert type="ValueToPixmap">Path</convert>
 		</widget>
-		<widget source="Event" render="Label" position="375,0" size="355,23" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="Event" render="Label" position="375,0" size="355,23" font="Regular;20" noWrap="1" foregroundColor="silver" backgroundColor="background" transparent="1">
 			<convert type="EventName">Rating</convert>
 		</widget>
-		<widget source="Event" render="Label" position="730,0" size="450,23" halign="right" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="Event" render="Label" position="730,0" size="450,23" halign="right" font="Regular;20" noWrap="1" foregroundColor="silver" backgroundColor="background" transparent="1">
 			<convert type="EventName">GenreList</convert>
 		</widget>
-		<widget source="Event" render="Label" position="0,23" size="1180,92" font="Regular;20" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="Event" render="Label" position="0,23" size="1180,92" font="Regular;20" foregroundColor="silver" backgroundColor="background" transparent="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
@@ -103,17 +103,17 @@
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget source="Event" render="Label" position="695,433" size="575,161" font="Regular;20" foregroundColor="grey" transparent="1" valign="top" zPosition="2">
+		<widget source="Event" render="Label" position="695,433" size="575,161" font="Regular;20" foregroundColor="silver" transparent="1" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget source="Event" render="Label" position="695,600" size="410,23" font="Regular;20" foregroundColor="grey" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="695,600" size="410,23" font="Regular;20" foregroundColor="silver" transparent="1" zPosition="1">
 			<convert type="EventName">GenreList</convert>
 		</widget>
 		<widget source="Event" render="Pixmap" position="695,631" size="40,20" alphatest="blend">
 			<convert type="EventName">RatingIcon</convert>
 			<convert type="ValueToPixmap">Path</convert>
 		</widget>
-		<widget source="Event" render="Label" position="740,630" size="365,23" font="Regular;20" foregroundColor="grey" transparent="1" zPosition="1">
+		<widget source="Event" render="Label" position="740,630" size="365,23" font="Regular;20" foregroundColor="silver" transparent="1" zPosition="1">
 			<convert type="EventName">Rating</convert>
 		</widget>
 		<panel name="FullScreenLowColourPanel" />
@@ -194,13 +194,13 @@
 			<convert type="EventName">RatingIcon</convert>
 			<convert type="ValueToPixmap">Path</convert>
 		</widget>
-		<widget source="Event" render="Label" position="400,77" size="40,23" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="Event" render="Label" position="400,77" size="40,23" font="Regular;20" noWrap="1" foregroundColor="silver" backgroundColor="background" transparent="1">
 			<convert type="EventName">SmallRating</convert>
 		</widget>
-		<widget source="Event" render="Label" position="445,77" size="425,23" halign="right" font="Regular;20" noWrap="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="Event" render="Label" position="445,77" size="425,23" halign="right" font="Regular;20" noWrap="1" foregroundColor="silver" backgroundColor="background" transparent="1">
 			<convert type="EventName">GenreList</convert>
 		</widget>
-		<widget position="25,105" size="845,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="grey" backgroundColor="background" transparent="1" valign="top">
+		<widget position="25,105" size="845,125" source="Event" render="Label" zPosition="1" font="Regular;22" foregroundColor="silver" backgroundColor="background" transparent="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget position="25,235" size="835,30" source="Title" render="Label" font="Regular;24" valign="bottom" transparent="1" foregroundColor="white" backgroundColor="background" zPosition="1" />
@@ -314,7 +314,7 @@
 		<widget name="list" position="193,70" size="775,60" foregroundColor="colorsel" backgroundColor="abackground" transparent="1"/>
 
 		<!--	Video Info -->
-		<widget position="1143,60" size="115,20" source="session.CurrentService" render="Label" font="Regular;14" halign="center" foregroundColor="grey" backgroundColor="abackground" transparent="1">
+		<widget position="1143,60" size="115,20" source="session.CurrentService" render="Label" font="Regular;14" halign="center" foregroundColor="silver" backgroundColor="abackground" transparent="1">
 			<convert type="ServiceInfo">VideoInfo</convert>
 		</widget>
 
