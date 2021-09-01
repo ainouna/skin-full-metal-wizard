@@ -4,7 +4,7 @@
 	<screen position="0,0" size="1280,720" name="HarddiskSelection" flags="wfNoBorder" backgroundColor="un44000000" title="Select HDD">
 		<panel name="FullScreenWindow" />
 		<panel name="FullScreenColourPanel" />
-		<widget name="hddlist" position="590, 100" size="610, 500" itemHeight="50" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
+		<widget name="hddlist" position="510, 120" size="720, 450" itemHeight="45" backgroundColor="#41000000" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<ePixmap pixmap="menu/mainmenu_source_mount.png" position="235,200" size="166,162"/>
 	</screen>
 	<!-- Harddisk setup -->
